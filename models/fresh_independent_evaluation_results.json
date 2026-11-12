@@ -1,0 +1,74 @@
+{
+  "productpage": {
+    "service": "productpage",
+    "architecture": "random_forest",
+    "untouched_friday_loic": {
+      "total_evaluated": 40000,
+      "attack_flows": 20000,
+      "benign_flows": 20000,
+      "accuracy": 0.5854,
+      "attack_recall": 0.9998,
+      "precision": 0.5467,
+      "f1_score": 0.7069,
+      "false_positive_rate": 0.8289
+    },
+    "untouched_monday_benign": {
+      "total_evaluated": 40000,
+      "false_positive_rate": 0.5456
+    }
+  },
+  "details": {
+    "service": "details",
+    "architecture": "hist_gradient_boosting",
+    "untouched_friday_loic": {
+      "total_evaluated": 40000,
+      "attack_flows": 20000,
+      "benign_flows": 20000,
+      "accuracy": 0.5681,
+      "attack_recall": 0.9983,
+      "precision": 0.5366,
+      "f1_score": 0.698,
+      "false_positive_rate": 0.8622
+    },
+    "untouched_monday_benign": {
+      "total_evaluated": 40000,
+      "false_positive_rate": 0.568
+    }
+  },
+  "reviews": {
+    "service": "reviews",
+    "architecture": "hist_gradient_boosting",
+    "untouched_friday_loic": {
+      "total_evaluated": 40000,
+      "attack_flows": 20000,
+      "benign_flows": 20000,
+      "accuracy": 0.9384,
+      "attack_recall": 0.9996,
+      "precision": 0.8905,
+      "f1_score": 0.9419,
+      "false_positive_rate": 0.1229
+    },
+    "untouched_monday_benign": {
+      "total_evaluated": 40000,
+      "false_positive_rate": 0.0554
+    }
+  },
+  "ratings": {
+    "service": "ratings",
+    "architecture": "random_forest",
+    "untouched_friday_loic": {
+      "total_evaluated": 40000,
+      "attack_flows": 20000,
+      "benign_flows": 20000,
+      "accuracy": 0.9985,
+      "attack_recall": 0.9996,
+      "precision": 0.9974,
+      "f1_score": 0.9985,
+      "false_positive_rate": 0.0026
+    },
+    "untouched_monday_benign": {
+      "total_evaluated": 40000,
+      "false_positive_rate": 0.0155
+    }
+  }
+}

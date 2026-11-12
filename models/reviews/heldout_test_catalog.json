@@ -1,0 +1,2617 @@
+{
+  "service": "reviews",
+  "total_test_vectors": 200,
+  "benign_count": 100,
+  "attack_count": 100,
+  "features_order": [
+    "Flow Duration",
+    "Flow IAT Mean",
+    "Fwd IAT Mean",
+    "Bwd IAT Mean",
+    "Active Mean",
+    "Idle Mean",
+    "Flow IAT Max"
+  ],
+  "test_vectors": [
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 115869901.0,
+        "Flow IAT Mean": 2228267.326923077,
+        "Fwd IAT Mean": 5037821.782608694,
+        "Bwd IAT Mean": 4137375.0,
+        "Active Mean": 46212.24999999999,
+        "Idle Mean": 9603923.666666668,
+        "Flow IAT Max": 9997639.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 115114669.0,
+        "Flow IAT Mean": 2951658.179487179,
+        "Fwd IAT Mean": 6058666.7894736845,
+        "Bwd IAT Mean": 6057017.157894737,
+        "Active Mean": 34258.90909090909,
+        "Idle Mean": 10001671.545454549,
+        "Flow IAT Max": 10012282.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5862985.0,
+        "Flow IAT Mean": 837569.2857142858,
+        "Fwd IAT Mean": 1465746.25,
+        "Bwd IAT Mean": 2890936.5,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 4684593.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 6207164.0,
+        "Flow IAT Mean": 1241432.8,
+        "Fwd IAT Mean": 2069054.6666666665,
+        "Bwd IAT Mean": 6100272.0,
+        "Active Mean": 106964.0,
+        "Idle Mean": 5993103.0,
+        "Flow IAT Max": 5993103.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5463625.0,
+        "Flow IAT Mean": 303534.72222222213,
+        "Fwd IAT Mean": 667953.4999999999,
+        "Bwd IAT Mean": 593691.2222222222,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 4923355.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 251390.0,
+        "Flow IAT Mean": 83796.66666666666,
+        "Fwd IAT Mean": 48.0,
+        "Bwd IAT Mean": 4.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 251338.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 115179989.0,
+        "Flow IAT Mean": 3490302.696969697,
+        "Fwd IAT Mean": 6775293.470588235,
+        "Bwd IAT Mean": 7677659.133333333,
+        "Active Mean": 40643.36363636363,
+        "Idle Mean": 9979245.090909092,
+        "Flow IAT Max": 10015771.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 60699.0,
+        "Flow IAT Mean": 60699.0,
+        "Fwd IAT Mean": 0.0,
+        "Bwd IAT Mean": 0.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 60699.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 168992.0,
+        "Flow IAT Mean": 12999.384615384615,
+        "Fwd IAT Mean": 28165.33333333333,
+        "Bwd IAT Mean": 21503.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 42099.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 225.0,
+        "Flow IAT Mean": 75.0,
+        "Fwd IAT Mean": 3.0,
+        "Bwd IAT Mean": 3.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 219.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 663.0,
+        "Flow IAT Mean": 663.0,
+        "Fwd IAT Mean": 0.0,
+        "Bwd IAT Mean": 0.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 663.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 118687071.0,
+        "Flow IAT Mean": 225212.6584440228,
+        "Fwd IAT Mean": 500156.4050632912,
+        "Bwd IAT Mean": 410162.3079584774,
+        "Active Mean": 691876.3636363639,
+        "Idle Mean": 10084220.727272728,
+        "Flow IAT Max": 10089989.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 30770.0,
+        "Flow IAT Mean": 30770.0,
+        "Fwd IAT Mean": 0.0,
+        "Bwd IAT Mean": 0.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 30770.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5706206.0,
+        "Flow IAT Mean": 1141241.2,
+        "Fwd IAT Mean": 1902068.6666666665,
+        "Bwd IAT Mean": 5655870.0,
+        "Active Mean": 50282.0,
+        "Idle Mean": 5605555.0,
+        "Flow IAT Max": 5605555.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 116656157.0,
+        "Flow IAT Mean": 2991183.5128205125,
+        "Fwd IAT Mean": 5832807.85,
+        "Bwd IAT Mean": 6478864.611111111,
+        "Active Mean": 109847.75,
+        "Idle Mean": 9607943.416666668,
+        "Flow IAT Max": 10004035.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 494627.0,
+        "Flow IAT Mean": 12365.675,
+        "Fwd IAT Mean": 19625.57894736842,
+        "Bwd IAT Mean": 18630.5,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 122017.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 45415471.0,
+        "Flow IAT Mean": 3784622.5833333335,
+        "Fwd IAT Mean": 7569245.166666667,
+        "Bwd IAT Mean": 9078347.2,
+        "Active Mean": 23691.0,
+        "Idle Mean": 9054615.0,
+        "Flow IAT Max": 10007718.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 50984003.0,
+        "Flow IAT Mean": 3398933.5333333337,
+        "Fwd IAT Mean": 7276153.571428571,
+        "Bwd IAT Mean": 7276167.428571429,
+        "Active Mean": 50979.2,
+        "Idle Mean": 9979620.2,
+        "Flow IAT Max": 9999596.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 31401.0,
+        "Flow IAT Mean": 31401.0,
+        "Fwd IAT Mean": 0.0,
+        "Bwd IAT Mean": 0.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 31401.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 53120.0,
+        "Flow IAT Mean": 17706.666666666664,
+        "Fwd IAT Mean": 3.0,
+        "Bwd IAT Mean": 49.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 53068.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 448.0,
+        "Flow IAT Mean": 448.0,
+        "Fwd IAT Mean": 0.0,
+        "Bwd IAT Mean": 0.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 448.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5488959.0,
+        "Flow IAT Mean": 365930.6,
+        "Fwd IAT Mean": 686093.125,
+        "Bwd IAT Mean": 900598.6666666666,
+        "Active Mean": 311007.0,
+        "Idle Mean": 5092509.0,
+        "Flow IAT Max": 5092509.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 115287156.0,
+        "Flow IAT Mean": 3718940.516129032,
+        "Fwd IAT Mean": 7205447.25,
+        "Bwd IAT Mean": 8233093.571428571,
+        "Active Mean": 42015.91666666666,
+        "Idle Mean": 9563277.0,
+        "Flow IAT Max": 10008591.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5302788.0,
+        "Flow IAT Mean": 530278.7999999999,
+        "Fwd IAT Mean": 1043494.2,
+        "Bwd IAT Mean": 1304415.5,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 4804086.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 31038.0,
+        "Flow IAT Mean": 31038.0,
+        "Fwd IAT Mean": 0.0,
+        "Bwd IAT Mean": 0.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 31038.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5530665.0,
+        "Flow IAT Mean": 790095.0,
+        "Fwd IAT Mean": 1382666.25,
+        "Bwd IAT Mean": 2633266.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 3963769.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 25487947.0,
+        "Flow IAT Mean": 3185993.375,
+        "Fwd IAT Mean": 6371986.75,
+        "Bwd IAT Mean": 8488092.0,
+        "Active Mean": 23715.33333333333,
+        "Idle Mean": 8464463.0,
+        "Flow IAT Max": 9996629.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 70796.0,
+        "Flow IAT Mean": 7866.222222222223,
+        "Fwd IAT Mean": 11899.5,
+        "Bwd IAT Mean": 11875.5,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 23294.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 124361.0,
+        "Flow IAT Mean": 13817.88888888889,
+        "Fwd IAT Mean": 23533.25,
+        "Bwd IAT Mean": 23197.25,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 31572.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 115533412.0,
+        "Flow IAT Mean": 3726884.2580645154,
+        "Fwd IAT Mean": 7220838.25,
+        "Bwd IAT Mean": 8249380.642857142,
+        "Active Mean": 44035.454545454544,
+        "Idle Mean": 9999866.90909091,
+        "Flow IAT Max": 10014291.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 687416.0,
+        "Flow IAT Mean": 76379.55555555556,
+        "Fwd IAT Mean": 117339.5,
+        "Bwd IAT Mean": 113966.75,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 231549.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 118246431.0,
+        "Flow IAT Mean": 3695200.96875,
+        "Fwd IAT Mean": 7388948.5,
+        "Bwd IAT Mean": 7881561.866666667,
+        "Active Mean": 25513.416666666664,
+        "Idle Mean": 9826417.916666666,
+        "Flow IAT Max": 10013363.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 32868762.0,
+        "Flow IAT Mean": 225128.50684931508,
+        "Fwd IAT Mean": 597613.8545454546,
+        "Bwd IAT Mean": 364883.77777777775,
+        "Active Mean": 507769.0,
+        "Idle Mean": 32333628.0,
+        "Flow IAT Max": 32333628.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 118607955.0,
+        "Flow IAT Mean": 3121261.973684211,
+        "Fwd IAT Mean": 5929293.35,
+        "Bwd IAT Mean": 6975631.000000001,
+        "Active Mean": 279112.0,
+        "Idle Mean": 9603043.583333332,
+        "Flow IAT Max": 10006275.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 60505678.0,
+        "Flow IAT Mean": 2750258.090909091,
+        "Fwd IAT Mean": 5495926.454545455,
+        "Bwd IAT Mean": 6045495.399999999,
+        "Active Mean": 62831.833333333336,
+        "Idle Mean": 9996908.5,
+        "Flow IAT Max": 10007039.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 11567322.0,
+        "Flow IAT Mean": 462692.88,
+        "Fwd IAT Mean": 956906.5,
+        "Bwd IAT Mean": 956900.9166666667,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 4923314.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 37766133.0,
+        "Flow IAT Mean": 1573588.875,
+        "Fwd IAT Mean": 3147177.75,
+        "Bwd IAT Mean": 3430002.818181818,
+        "Active Mean": 48976.333333333336,
+        "Idle Mean": 9975588.0,
+        "Flow IAT Max": 10024123.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5147074.0,
+        "Flow IAT Mean": 571897.1111111111,
+        "Fwd IAT Mean": 1020428.8,
+        "Bwd IAT Mean": 1699519.6666666665,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 4919222.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 157.0,
+        "Flow IAT Mean": 52.33333333333333,
+        "Fwd IAT Mean": 3.0,
+        "Bwd IAT Mean": 3.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 151.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 115361116.0,
+        "Flow IAT Mean": 3117868.000000001,
+        "Fwd IAT Mean": 6071637.684210526,
+        "Bwd IAT Mean": 6783793.705882353,
+        "Active Mean": 43631.0,
+        "Idle Mean": 10010109.363636363,
+        "Flow IAT Max": 10011672.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5791206.0,
+        "Flow IAT Mean": 827315.1428571428,
+        "Fwd IAT Mean": 1447801.5,
+        "Bwd IAT Mean": 2877029.0,
+        "Active Mean": 73690.0,
+        "Idle Mean": 5680521.0,
+        "Flow IAT Max": 5680521.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 117101867.0,
+        "Flow IAT Mean": 3444172.5588235296,
+        "Fwd IAT Mean": 6505659.277777777,
+        "Bwd IAT Mean": 7804819.266666668,
+        "Active Mean": 121902.75,
+        "Idle Mean": 9634104.0,
+        "Flow IAT Max": 10018532.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 116412028.0,
+        "Flow IAT Mean": 2530696.260869566,
+        "Fwd IAT Mean": 4850501.166666667,
+        "Bwd IAT Mean": 5541671.714285715,
+        "Active Mean": 69628.5,
+        "Idle Mean": 9628301.000000002,
+        "Flow IAT Max": 10015125.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5191480.0,
+        "Flow IAT Mean": 1038296.0,
+        "Fwd IAT Mean": 1730493.3333333335,
+        "Bwd IAT Mean": 5140220.0,
+        "Active Mean": 51231.0,
+        "Idle Mean": 5089394.0,
+        "Flow IAT Max": 5089394.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 47546695.0,
+        "Flow IAT Mean": 3396192.4999999995,
+        "Fwd IAT Mean": 6790240.428571429,
+        "Bwd IAT Mean": 7921926.0,
+        "Active Mean": 1532437.0,
+        "Idle Mean": 45999130.0,
+        "Flow IAT Max": 45999130.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 67875353.0,
+        "Flow IAT Mean": 3992667.823529412,
+        "Fwd IAT Mean": 8481404.5,
+        "Bwd IAT Mean": 8481538.75,
+        "Active Mean": 23410.0,
+        "Idle Mean": 9669598.285714284,
+        "Flow IAT Max": 9997640.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 9193417.0,
+        "Flow IAT Mean": 835765.1818181819,
+        "Fwd IAT Mean": 1532236.1666666667,
+        "Bwd IAT Mean": 2275851.5,
+        "Active Mean": 89835.0,
+        "Idle Mean": 5328274.0,
+        "Flow IAT Max": 5328274.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 31552628.0,
+        "Flow IAT Mean": 2103508.5333333327,
+        "Fwd IAT Mean": 4504026.857142857,
+        "Bwd IAT Mean": 4504106.142857143,
+        "Active Mean": 32474.666666666668,
+        "Idle Mean": 10012943.333333334,
+        "Flow IAT Max": 10024332.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5577036.0,
+        "Flow IAT Mean": 796719.4285714286,
+        "Fwd IAT Mean": 1394259.0,
+        "Bwd IAT Mean": 2647688.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 3729608.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 24069.0,
+        "Flow IAT Mean": 8023.0,
+        "Fwd IAT Mean": 48.0,
+        "Bwd IAT Mean": 3.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 24018.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 75345474.0,
+        "Flow IAT Mean": 25115158.0,
+        "Fwd IAT Mean": 74575144.0,
+        "Bwd IAT Mean": 75315083.0,
+        "Active Mean": 30391.0,
+        "Idle Mean": 74544753.0,
+        "Flow IAT Max": 74544753.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 139.0,
+        "Flow IAT Mean": 46.33333333333333,
+        "Fwd IAT Mean": 3.0,
+        "Bwd IAT Mean": 3.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 133.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 184.0,
+        "Flow IAT Mean": 61.33333333333333,
+        "Fwd IAT Mean": 3.0,
+        "Bwd IAT Mean": 1.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 180.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 808492.0,
+        "Flow IAT Mean": 20212.3,
+        "Fwd IAT Mean": 41633.43749999999,
+        "Bwd IAT Mean": 28949.260869565216,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 142659.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5808127.0,
+        "Flow IAT Mean": 1161625.4,
+        "Fwd IAT Mean": 1936042.3333333333,
+        "Bwd IAT Mean": 5792975.0,
+        "Active Mean": 15142.0,
+        "Idle Mean": 5777634.0,
+        "Flow IAT Max": 5777634.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 116429224.0,
+        "Flow IAT Mean": 3424388.941176471,
+        "Fwd IAT Mean": 6468290.222222221,
+        "Bwd IAT Mean": 7760943.0,
+        "Active Mean": 132597.63636363638,
+        "Idle Mean": 10002140.272727272,
+        "Flow IAT Max": 10012931.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 117249691.0,
+        "Flow IAT Mean": 3782248.0967741935,
+        "Fwd IAT Mean": 7816646.066666666,
+        "Bwd IAT Mean": 7814202.8,
+        "Active Mean": 422106.5,
+        "Idle Mean": 58065855.5,
+        "Flow IAT Max": 58356998.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 14899805.0,
+        "Flow IAT Mean": 647817.6086956521,
+        "Fwd IAT Mean": 1146138.8461538462,
+        "Bwd IAT Mean": 1655528.888888889,
+        "Active Mean": 218272.0,
+        "Idle Mean": 14681467.0,
+        "Flow IAT Max": 14681467.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5686069.0,
+        "Flow IAT Mean": 1137213.8,
+        "Fwd IAT Mean": 1895356.3333333333,
+        "Bwd IAT Mean": 5601199.0,
+        "Active Mean": 84830.0,
+        "Idle Mean": 5516813.0,
+        "Flow IAT Max": 5516813.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 116701771.0,
+        "Flow IAT Mean": 401037.0137457044,
+        "Fwd IAT Mean": 956571.8934426229,
+        "Bwd IAT Mean": 694500.4166666666,
+        "Active Mean": 107690.83333333334,
+        "Idle Mean": 9615332.333333334,
+        "Flow IAT Max": 9995160.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 656094.0,
+        "Flow IAT Mean": 65609.40000000001,
+        "Fwd IAT Mean": 141721.25,
+        "Bwd IAT Mean": 113403.6,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 235609.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 51266.0,
+        "Flow IAT Mean": 17088.666666666664,
+        "Fwd IAT Mean": 3.0,
+        "Bwd IAT Mean": 3.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 51260.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5119006.0,
+        "Flow IAT Mean": 1023801.2,
+        "Fwd IAT Mean": 1706335.3333333335,
+        "Bwd IAT Mean": 5082395.0,
+        "Active Mean": 36723.0,
+        "Idle Mean": 5045850.0,
+        "Flow IAT Max": 5045850.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 38.0,
+        "Flow IAT Mean": 12.666666666666668,
+        "Fwd IAT Mean": 3.0,
+        "Bwd IAT Mean": 3.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 32.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 59750776.0,
+        "Flow IAT Mean": 6638975.111111111,
+        "Fwd IAT Mean": 19908289.666666664,
+        "Bwd IAT Mean": 11945502.2,
+        "Active Mean": 23264.0,
+        "Idle Mean": 29839066.0,
+        "Flow IAT Max": 45002363.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 30748.0,
+        "Flow IAT Mean": 30748.0,
+        "Fwd IAT Mean": 0.0,
+        "Bwd IAT Mean": 0.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 30748.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5756407.0,
+        "Flow IAT Mean": 1151281.4,
+        "Fwd IAT Mean": 1918802.3333333333,
+        "Bwd IAT Mean": 5670928.0,
+        "Active Mean": 85463.0,
+        "Idle Mean": 5585415.0,
+        "Flow IAT Max": 5585415.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 115235717.0,
+        "Flow IAT Mean": 1889110.114754098,
+        "Fwd IAT Mean": 3717281.193548387,
+        "Bwd IAT Mean": 3972880.620689656,
+        "Active Mean": 24927.63636363636,
+        "Idle Mean": 10197747.636363637,
+        "Flow IAT Max": 10218168.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5420832.0,
+        "Flow IAT Mean": 774404.5714285715,
+        "Fwd IAT Mean": 1355208.0,
+        "Bwd IAT Mean": 2699254.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 4382933.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5403930.0,
+        "Flow IAT Mean": 1080786.0,
+        "Fwd IAT Mean": 1801310.0,
+        "Bwd IAT Mean": 5388834.0,
+        "Active Mean": 15094.0,
+        "Idle Mean": 5373716.0,
+        "Flow IAT Max": 5373716.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 8405883.0,
+        "Flow IAT Mean": 933987.0,
+        "Fwd IAT Mean": 2075108.0,
+        "Bwd IAT Mean": 2074826.25,
+        "Active Mean": 214856.0,
+        "Idle Mean": 8085576.0,
+        "Flow IAT Max": 8085576.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 3378901.0,
+        "Flow IAT Mean": 422362.625,
+        "Fwd IAT Mean": 838927.25,
+        "Bwd IAT Mean": 1118577.3333333335,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 2023561.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 20.0,
+        "Flow IAT Mean": 1.6666666666666663,
+        "Fwd IAT Mean": 1.6666666666666663,
+        "Bwd IAT Mean": 0.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 7.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 116023165.0,
+        "Flow IAT Mean": 3314947.571428572,
+        "Fwd IAT Mean": 6445731.388888889,
+        "Bwd IAT Mean": 7250006.25,
+        "Active Mean": 30266.545454545456,
+        "Idle Mean": 10214493.727272728,
+        "Flow IAT Max": 10216977.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 46059618.0,
+        "Flow IAT Mean": 362674.1574803149,
+        "Fwd IAT Mean": 742652.0806451613,
+        "Bwd IAT Mean": 719442.3593749999,
+        "Active Mean": 30845.6,
+        "Idle Mean": 9177970.4,
+        "Flow IAT Max": 10224798.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 119142669.0,
+        "Flow IAT Mean": 3843311.903225807,
+        "Fwd IAT Mean": 7443822.312500001,
+        "Bwd IAT Mean": 8507209.214285715,
+        "Active Mean": 97102.5,
+        "Idle Mean": 9827993.916666668,
+        "Flow IAT Max": 10198476.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5750029.0,
+        "Flow IAT Mean": 1150005.8,
+        "Fwd IAT Mean": 1916676.3333333333,
+        "Bwd IAT Mean": 5711846.0,
+        "Active Mean": 38204.0,
+        "Idle Mean": 5673948.0,
+        "Flow IAT Max": 5673948.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 48935214.0,
+        "Flow IAT Mean": 1957408.56,
+        "Fwd IAT Mean": 3763088.076923077,
+        "Bwd IAT Mean": 4447272.0,
+        "Active Mean": 596273.0,
+        "Idle Mean": 9187734.8,
+        "Flow IAT Max": 9996836.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 69628392.0,
+        "Flow IAT Mean": 1740709.8,
+        "Fwd IAT Mean": 3358600.611111111,
+        "Bwd IAT Mean": 3314559.761904762,
+        "Active Mean": 53759.42857142857,
+        "Idle Mean": 9893153.714285716,
+        "Flow IAT Max": 10025571.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5107612.0,
+        "Flow IAT Mean": 851268.6666666667,
+        "Fwd IAT Mean": 1691384.6666666665,
+        "Bwd IAT Mean": 2537081.5,
+        "Active Mean": 33473.0,
+        "Idle Mean": 5032787.0,
+        "Flow IAT Max": 5032787.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 115216000.0,
+        "Flow IAT Mean": 3716645.161290323,
+        "Fwd IAT Mean": 7201000.000000001,
+        "Bwd IAT Mean": 8227997.499999999,
+        "Active Mean": 46343.36363636364,
+        "Idle Mean": 9980653.181818182,
+        "Flow IAT Max": 10006405.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 117819587.0,
+        "Flow IAT Mean": 818191.5763888888,
+        "Fwd IAT Mean": 1812609.0307692303,
+        "Bwd IAT Mean": 1510211.9102564105,
+        "Active Mean": 211703.16666666663,
+        "Idle Mean": 9604650.416666668,
+        "Flow IAT Max": 10025021.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 48630.0,
+        "Flow IAT Mean": 48630.0,
+        "Fwd IAT Mean": 0.0,
+        "Bwd IAT Mean": 0.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 48630.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5250391.0,
+        "Flow IAT Mean": 1050078.2,
+        "Fwd IAT Mean": 1750130.3333333335,
+        "Bwd IAT Mean": 5209115.0,
+        "Active Mean": 41311.0,
+        "Idle Mean": 5167848.0,
+        "Flow IAT Max": 5167848.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 116839908.0,
+        "Flow IAT Mean": 251810.1465517241,
+        "Fwd IAT Mean": 660112.4745762713,
+        "Bwd IAT Mean": 408474.2097902097,
+        "Active Mean": 163434.27272727276,
+        "Idle Mean": 10001155.272727272,
+        "Flow IAT Max": 10003835.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 11852644.0,
+        "Flow IAT Mean": 2370528.8,
+        "Fwd IAT Mean": 3950881.333333333,
+        "Bwd IAT Mean": 11828747.0,
+        "Active Mean": 23922.0,
+        "Idle Mean": 11805023.0,
+        "Flow IAT Max": 11805023.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5563393.0,
+        "Flow IAT Mean": 794770.4285714286,
+        "Fwd IAT Mean": 1390848.25,
+        "Bwd IAT Mean": 2640839.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 3751441.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5717756.0,
+        "Flow IAT Mean": 1143551.2,
+        "Fwd IAT Mean": 1905918.6666666665,
+        "Bwd IAT Mean": 5680740.0,
+        "Active Mean": 37043.0,
+        "Idle Mean": 5643699.0,
+        "Flow IAT Max": 5643699.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 30949.0,
+        "Flow IAT Mean": 10316.333333333332,
+        "Fwd IAT Mean": 3.0,
+        "Bwd IAT Mean": 4.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 30942.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 185.0,
+        "Flow IAT Mean": 61.66666666666667,
+        "Fwd IAT Mean": 1.0,
+        "Bwd IAT Mean": 1.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 183.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 103462.0,
+        "Flow IAT Mean": 10346.2,
+        "Fwd IAT Mean": 17681.25,
+        "Bwd IAT Mean": 14170.6,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 32829.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 118393998.0,
+        "Flow IAT Mean": 3482176.4117647056,
+        "Fwd IAT Mean": 6577444.333333333,
+        "Bwd IAT Mean": 7890465.133333334,
+        "Active Mean": 337534.090909091,
+        "Idle Mean": 9979705.909090908,
+        "Flow IAT Max": 10009820.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 61255096.0,
+        "Flow IAT Mean": 2784322.5454545454,
+        "Fwd IAT Mean": 5564832.727272727,
+        "Bwd IAT Mean": 6121295.3,
+        "Active Mean": 110590.83333333331,
+        "Idle Mean": 9958948.5,
+        "Flow IAT Max": 9998646.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 90968.0,
+        "Flow IAT Mean": 30322.666666666664,
+        "Fwd IAT Mean": 49.0,
+        "Bwd IAT Mean": 3.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 90916.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 294300.0,
+        "Flow IAT Mean": 42042.857142857145,
+        "Fwd IAT Mean": 60748.0,
+        "Bwd IAT Mean": 121534.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 74563.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5698949.0,
+        "Flow IAT Mean": 1139789.8,
+        "Fwd IAT Mean": 1899649.6666666665,
+        "Bwd IAT Mean": 5683661.0,
+        "Active Mean": 15275.0,
+        "Idle Mean": 5668022.0,
+        "Flow IAT Max": 5668022.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 162140.0,
+        "Flow IAT Mean": 6485.600000000001,
+        "Fwd IAT Mean": 11581.428571428572,
+        "Bwd IAT Mean": 12526.6,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 41655.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 20909141.0,
+        "Flow IAT Mean": 1100481.1052631582,
+        "Fwd IAT Mean": 2090914.1,
+        "Bwd IAT Mean": 2601055.125,
+        "Active Mean": 2893683.5,
+        "Idle Mean": 7510530.0,
+        "Flow IAT Max": 9891028.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 116041243.0,
+        "Flow IAT Mean": 3626288.843750001,
+        "Fwd IAT Mean": 7252577.6875,
+        "Bwd IAT Mean": 7730323.466666667,
+        "Active Mean": 114872.72727272726,
+        "Idle Mean": 9982000.090909092,
+        "Flow IAT Max": 10005766.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 100469.0,
+        "Flow IAT Mean": 11163.222222222224,
+        "Fwd IAT Mean": 19289.0,
+        "Bwd IAT Mean": 19329.25,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 29437.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 165995.0,
+        "Flow IAT Mean": 15090.454545454544,
+        "Fwd IAT Mean": 33199.0,
+        "Bwd IAT Mean": 30687.4,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 138140.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 40464.0,
+        "Flow IAT Mean": 3678.545454545455,
+        "Fwd IAT Mean": 8092.8,
+        "Bwd IAT Mean": 6514.800000000001,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 21420.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 160988.0,
+        "Flow IAT Mean": 13415.666666666666,
+        "Fwd IAT Mean": 26831.33333333333,
+        "Bwd IAT Mean": 29777.2,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 127016.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 502981.0,
+        "Flow IAT Mean": 33532.066666666666,
+        "Fwd IAT Mean": 55886.77777777778,
+        "Bwd IAT Mean": 95265.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 215993.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 32075757.0,
+        "Flow IAT Mean": 2138383.8000000007,
+        "Fwd IAT Mean": 4582250.999999999,
+        "Bwd IAT Mean": 809.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 32063338.0,
+        "Flow IAT Max": 32063338.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 173987.0,
+        "Flow IAT Mean": 12427.642857142857,
+        "Fwd IAT Mean": 24855.28571428572,
+        "Bwd IAT Mean": 27001.33333333333,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 137222.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 191961.0,
+        "Flow IAT Mean": 14766.230769230768,
+        "Fwd IAT Mean": 31993.500000000004,
+        "Bwd IAT Mean": 29847.83333333333,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 136122.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 158991.0,
+        "Flow IAT Mean": 13249.250000000002,
+        "Fwd IAT Mean": 22713.0,
+        "Bwd IAT Mean": 36875.25,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 136068.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 1370942.0,
+        "Flow IAT Mean": 97924.42857142858,
+        "Fwd IAT Mean": 171367.75,
+        "Bwd IAT Mean": 72290.4,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 995947.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 1069935.0,
+        "Flow IAT Mean": 82302.69230769233,
+        "Fwd IAT Mean": 152847.85714285716,
+        "Bwd IAT Mean": 10516.8,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 999942.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 1173972.0,
+        "Flow IAT Mean": 83855.14285714287,
+        "Fwd IAT Mean": 167710.2857142857,
+        "Bwd IAT Mean": 27003.166666666668,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 997986.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 67985.0,
+        "Flow IAT Mean": 5229.615384615384,
+        "Fwd IAT Mean": 11330.833333333332,
+        "Bwd IAT Mean": 9507.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 35389.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 8996.0,
+        "Flow IAT Mean": 692.0,
+        "Fwd IAT Mean": 1124.5,
+        "Bwd IAT Mean": 1059.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 3656.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 1001497.0,
+        "Flow IAT Mean": 91045.18181818184,
+        "Fwd IAT Mean": 143070.99999999997,
+        "Bwd IAT Mean": 598.6666666666667,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 997471.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 1168953.0,
+        "Flow IAT Mean": 77930.2,
+        "Fwd IAT Mean": 129883.66666666664,
+        "Bwd IAT Mean": 31275.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 996976.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 9887.0,
+        "Flow IAT Mean": 898.8181818181818,
+        "Fwd IAT Mean": 1647.8333333333333,
+        "Bwd IAT Mean": 1152.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 3693.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 32017.0,
+        "Flow IAT Mean": 2286.928571428572,
+        "Fwd IAT Mean": 4573.857142857142,
+        "Bwd IAT Mean": 3648.5,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 9842.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 166987.0,
+        "Flow IAT Mean": 12845.15384615384,
+        "Fwd IAT Mean": 27831.166666666664,
+        "Bwd IAT Mean": 25796.666666666664,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 140277.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 164977.0,
+        "Flow IAT Mean": 14997.90909090909,
+        "Fwd IAT Mean": 32995.4,
+        "Bwd IAT Mean": 30310.8,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 138445.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 82056.0,
+        "Flow IAT Mean": 5861.142857142857,
+        "Fwd IAT Mean": 11722.285714285716,
+        "Bwd IAT Mean": 11684.666666666666,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 45993.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11498789.0,
+        "Flow IAT Mean": 884522.2307692308,
+        "Fwd IAT Mean": 1642684.1428571427,
+        "Bwd IAT Mean": 2291793.8,
+        "Active Mean": 2056.5,
+        "Idle Mean": 5727450.5,
+        "Flow IAT Max": 6453240.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11763253.0,
+        "Flow IAT Mean": 904865.6153846156,
+        "Fwd IAT Mean": 1470406.625,
+        "Bwd IAT Mean": 2931463.5,
+        "Active Mean": 1257.5,
+        "Idle Mean": 5861707.0,
+        "Flow IAT Max": 6720441.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 54061243.0,
+        "Flow IAT Mean": 5406124.3,
+        "Fwd IAT Mean": 9010207.166666668,
+        "Bwd IAT Mean": 3952617.3333333335,
+        "Active Mean": 13659.333333333334,
+        "Idle Mean": 18006755.0,
+        "Flow IAT Max": 42165399.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11485199.0,
+        "Flow IAT Mean": 883476.846153846,
+        "Fwd IAT Mean": 1640742.7142857143,
+        "Bwd IAT Mean": 2289256.0,
+        "Active Mean": 1753.5,
+        "Idle Mean": 5721415.5,
+        "Flow IAT Max": 6442059.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 28623440.0,
+        "Flow IAT Mean": 1908229.3333333333,
+        "Fwd IAT Mean": 3180382.222222222,
+        "Bwd IAT Mean": 2277789.4000000004,
+        "Active Mean": 2520884.0,
+        "Idle Mean": 11790836.0,
+        "Flow IAT Max": 17195090.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11437597.0,
+        "Flow IAT Mean": 816971.2142857143,
+        "Fwd IAT Mean": 1429699.625,
+        "Bwd IAT Mean": 2080096.4,
+        "Active Mean": 500812.5,
+        "Idle Mean": 5198330.5,
+        "Flow IAT Max": 5392984.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11458999.0,
+        "Flow IAT Mean": 818499.9285714286,
+        "Fwd IAT Mean": 1432374.875,
+        "Bwd IAT Mean": 2284410.8,
+        "Active Mean": 1031.0,
+        "Idle Mean": 6420794.0,
+        "Flow IAT Max": 6420794.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11488854.0,
+        "Flow IAT Mean": 883758.0,
+        "Fwd IAT Mean": 1436106.75,
+        "Bwd IAT Mean": 2862456.75,
+        "Active Mean": 2367.0,
+        "Idle Mean": 5722586.0,
+        "Flow IAT Max": 6444245.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 10201552.0,
+        "Flow IAT Mean": 1020155.2,
+        "Fwd IAT Mean": 2040310.4,
+        "Bwd IAT Mean": 2540321.25,
+        "Active Mean": 3090.0,
+        "Idle Mean": 5157707.0,
+        "Flow IAT Max": 5157707.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11711880.0,
+        "Flow IAT Mean": 900913.8461538462,
+        "Fwd IAT Mean": 1463985.0,
+        "Bwd IAT Mean": 2918275.75,
+        "Active Mean": 704.0,
+        "Idle Mean": 6670559.0,
+        "Flow IAT Max": 6670559.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11403352.0,
+        "Flow IAT Mean": 877180.9230769229,
+        "Fwd IAT Mean": 1629050.2857142857,
+        "Bwd IAT Mean": 2272931.6,
+        "Active Mean": 1560.0,
+        "Idle Mean": 5680792.0,
+        "Flow IAT Max": 6358854.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 59378231.0,
+        "Flow IAT Mean": 1979274.3666666672,
+        "Fwd IAT Mean": 2827534.809523809,
+        "Bwd IAT Mean": 7042125.499999999,
+        "Active Mean": 3139583.0,
+        "Idle Mean": 9984269.4,
+        "Flow IAT Max": 19713814.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 17625924.0,
+        "Flow IAT Mean": 1355840.3076923075,
+        "Fwd IAT Mean": 2203240.5,
+        "Bwd IAT Mean": 4396435.75,
+        "Active Mean": 1514.5,
+        "Idle Mean": 8791387.5,
+        "Flow IAT Max": 12581254.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 96282062.0,
+        "Flow IAT Mean": 9628206.2,
+        "Fwd IAT Mean": 16047010.333333332,
+        "Bwd IAT Mean": 3697867.6666666665,
+        "Active Mean": 2520529.0,
+        "Idle Mean": 45620502.0,
+        "Flow IAT Max": 85150065.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 42815938.0,
+        "Flow IAT Mean": 4281593.8,
+        "Fwd IAT Mean": 7135989.666666667,
+        "Bwd IAT Mean": 3565712.0,
+        "Active Mean": 13829.0,
+        "Idle Mean": 14258150.333333334,
+        "Flow IAT Max": 32079253.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 12587249.0,
+        "Flow IAT Mean": 839149.9333333333,
+        "Fwd IAT Mean": 1398583.2222222222,
+        "Bwd IAT Mean": 2281458.6,
+        "Active Mean": 959.0,
+        "Idle Mean": 6405352.0,
+        "Flow IAT Max": 6405352.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11708202.0,
+        "Flow IAT Mean": 1170820.2,
+        "Fwd IAT Mean": 1951367.0,
+        "Bwd IAT Mean": 3558288.6666666665,
+        "Active Mean": 501623.5,
+        "Idle Mean": 5333893.0,
+        "Flow IAT Max": 5666948.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 12008330.0,
+        "Flow IAT Mean": 857737.8571428573,
+        "Fwd IAT Mean": 1501041.25,
+        "Bwd IAT Mean": 2394281.8,
+        "Active Mean": 1743.5,
+        "Idle Mean": 5984003.5,
+        "Flow IAT Max": 6966257.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 5044581.0,
+        "Flow IAT Mean": 360327.2142857143,
+        "Fwd IAT Mean": 720654.4285714286,
+        "Bwd IAT Mean": 834238.3333333334,
+        "Active Mean": 3245.0,
+        "Idle Mean": 5002209.0,
+        "Flow IAT Max": 5002209.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11043342.0,
+        "Flow IAT Mean": 613519.0000000001,
+        "Fwd IAT Mean": 920278.5,
+        "Bwd IAT Mean": 1600468.4,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 4997979.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 55146272.0,
+        "Flow IAT Mean": 11029254.400000002,
+        "Fwd IAT Mean": 27573136.0,
+        "Bwd IAT Mean": 27571459.5,
+        "Active Mean": 57.0,
+        "Idle Mean": 55136109.0,
+        "Flow IAT Max": 55136109.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 105002310.0,
+        "Flow IAT Mean": 35000770.0,
+        "Fwd IAT Mean": 105002288.0,
+        "Bwd IAT Mean": 105002294.0,
+        "Active Mean": 16.0,
+        "Idle Mean": 105002272.0,
+        "Flow IAT Max": 105002272.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 72778493.0,
+        "Flow IAT Mean": 4548655.8125,
+        "Fwd IAT Mean": 5598340.384615384,
+        "Bwd IAT Mean": 36389235.5,
+        "Active Mean": 3203493.0,
+        "Idle Mean": 13274287.8,
+        "Flow IAT Max": 21444386.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 14.0,
+        "Flow IAT Mean": 14.0,
+        "Fwd IAT Mean": 0.0,
+        "Bwd IAT Mean": 0.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 14.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 35.0,
+        "Flow IAT Mean": 35.0,
+        "Fwd IAT Mean": 0.0,
+        "Bwd IAT Mean": 0.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 35.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 103680743.0,
+        "Flow IAT Mean": 6098867.235294118,
+        "Fwd IAT Mean": 7405762.142857143,
+        "Bwd IAT Mean": 51341491.5,
+        "Active Mean": 3705126.5,
+        "Idle Mean": 19254083.4,
+        "Flow IAT Max": 51327666.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 103658751.0,
+        "Flow IAT Mean": 6097573.588235294,
+        "Fwd IAT Mean": 7404191.428571428,
+        "Bwd IAT Mean": 51329483.0,
+        "Active Mean": 3706003.0,
+        "Idle Mean": 19249334.8,
+        "Flow IAT Max": 51327455.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 100000902.0,
+        "Flow IAT Mean": 33333634.0,
+        "Fwd IAT Mean": 100000796.0,
+        "Bwd IAT Mean": 100000806.0,
+        "Active Mean": 96.0,
+        "Idle Mean": 100000700.0,
+        "Flow IAT Max": 100000700.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 108002293.0,
+        "Flow IAT Mean": 36000764.33333333,
+        "Fwd IAT Mean": 108002251.0,
+        "Bwd IAT Mean": 108002232.0,
+        "Active Mean": 61.0,
+        "Idle Mean": 108002190.0,
+        "Flow IAT Max": 108002190.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 2.0,
+        "Flow IAT Mean": 2.0,
+        "Fwd IAT Mean": 0.0,
+        "Bwd IAT Mean": 0.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 2.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 105009314.0,
+        "Flow IAT Mean": 35003104.66666667,
+        "Fwd IAT Mean": 105009263.0,
+        "Bwd IAT Mean": 105009239.0,
+        "Active Mean": 75.0,
+        "Idle Mean": 105009188.0,
+        "Flow IAT Max": 105009188.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 99999545.0,
+        "Flow IAT Mean": 33333181.666666664,
+        "Fwd IAT Mean": 99999417.0,
+        "Bwd IAT Mean": 99999505.0,
+        "Active Mean": 40.0,
+        "Idle Mean": 99999377.0,
+        "Flow IAT Max": 99999377.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 103690466.0,
+        "Flow IAT Mean": 6099439.176470588,
+        "Fwd IAT Mean": 7406456.357142856,
+        "Bwd IAT Mean": 51345360.0,
+        "Active Mean": 3706161.0,
+        "Idle Mean": 19255613.4,
+        "Flow IAT Max": 51327431.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 24.0,
+        "Flow IAT Mean": 24.0,
+        "Fwd IAT Mean": 0.0,
+        "Bwd IAT Mean": 0.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 24.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 102685929.0,
+        "Flow IAT Mean": 6417870.5625,
+        "Fwd IAT Mean": 7898909.307692308,
+        "Bwd IAT Mean": 51342901.5,
+        "Active Mean": 3207801.5,
+        "Idle Mean": 19254043.6,
+        "Flow IAT Max": 51327454.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 108002340.0,
+        "Flow IAT Mean": 36000780.0,
+        "Fwd IAT Mean": 108002253.0,
+        "Bwd IAT Mean": 108002232.0,
+        "Active Mean": 108.0,
+        "Idle Mean": 108002145.0,
+        "Flow IAT Max": 108002145.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 99999858.0,
+        "Flow IAT Mean": 33333286.0,
+        "Fwd IAT Mean": 99999792.0,
+        "Bwd IAT Mean": 99999794.0,
+        "Active Mean": 64.0,
+        "Idle Mean": 99999728.0,
+        "Flow IAT Max": 99999728.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 102598587.0,
+        "Flow IAT Mean": 6412411.6875,
+        "Fwd IAT Mean": 7892189.692307692,
+        "Bwd IAT Mean": 51299237.0,
+        "Active Mean": 3204116.5,
+        "Idle Mean": 19238046.6,
+        "Flow IAT Max": 51263266.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 102617768.0,
+        "Flow IAT Mean": 6413610.5,
+        "Fwd IAT Mean": 7893664.461538462,
+        "Bwd IAT Mean": 51308845.5,
+        "Active Mean": 3205629.5,
+        "Idle Mean": 19241275.8,
+        "Flow IAT Max": 51327641.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 102727481.0,
+        "Flow IAT Mean": 6420467.5625,
+        "Fwd IAT Mean": 7902105.076923078,
+        "Bwd IAT Mean": 51363676.5,
+        "Active Mean": 3204629.0,
+        "Idle Mean": 19263621.6,
+        "Flow IAT Max": 51391449.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 110982989.0,
+        "Flow IAT Mean": 10089362.636363637,
+        "Fwd IAT Mean": 22196597.8,
+        "Bwd IAT Mean": 22196469.200000003,
+        "Active Mean": 5418.0,
+        "Idle Mean": 109272719.0,
+        "Flow IAT Max": 109272719.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 109826816.0,
+        "Flow IAT Mean": 18304469.333333336,
+        "Fwd IAT Mean": 36608911.333333336,
+        "Bwd IAT Mean": 54913397.0,
+        "Active Mean": 5259.0,
+        "Idle Mean": 109821475.0,
+        "Flow IAT Max": 109821475.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 109977856.0,
+        "Flow IAT Mean": 18329642.666666668,
+        "Fwd IAT Mean": 36659237.66666666,
+        "Bwd IAT Mean": 54988898.0,
+        "Active Mean": 5261.0,
+        "Idle Mean": 109972452.0,
+        "Flow IAT Max": 109972452.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 109873921.0,
+        "Flow IAT Mean": 18312320.166666664,
+        "Fwd IAT Mean": 36624625.333333336,
+        "Bwd IAT Mean": 54936938.0,
+        "Active Mean": 5640.0,
+        "Idle Mean": 109868236.0,
+        "Flow IAT Max": 109868236.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 109281053.0,
+        "Flow IAT Mean": 18213508.83333333,
+        "Fwd IAT Mean": 36426983.66666666,
+        "Bwd IAT Mean": 54640502.0,
+        "Active Mean": 5280.0,
+        "Idle Mean": 109275671.0,
+        "Flow IAT Max": 109275671.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 109816716.0,
+        "Flow IAT Mean": 18302786.0,
+        "Fwd IAT Mean": 36605535.333333336,
+        "Bwd IAT Mean": 54908335.5,
+        "Active Mean": 5445.0,
+        "Idle Mean": 109811161.0,
+        "Flow IAT Max": 109811161.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 107472376.0,
+        "Flow IAT Mean": 13434047.0,
+        "Fwd IAT Mean": 21494460.6,
+        "Bwd IAT Mean": 52234348.0,
+        "Active Mean": 3004737.0,
+        "Idle Mean": 104467566.0,
+        "Flow IAT Max": 104467566.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 104.0,
+        "Flow IAT Mean": 104.0,
+        "Fwd IAT Mean": 0.0,
+        "Bwd IAT Mean": 0.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 104.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 3269024.0,
+        "Flow IAT Mean": 272418.6666666667,
+        "Fwd IAT Mean": 363224.8888888889,
+        "Bwd IAT Mean": 1634129.5,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 1191497.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 105430529.0,
+        "Flow IAT Mean": 13178816.125000002,
+        "Fwd IAT Mean": 21086099.4,
+        "Bwd IAT Mean": 51214990.5,
+        "Active Mean": 3001637.0,
+        "Idle Mean": 102428860.0,
+        "Flow IAT Max": 102428860.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 109541165.0,
+        "Flow IAT Mean": 18256860.833333336,
+        "Fwd IAT Mean": 36513699.333333336,
+        "Bwd IAT Mean": 54770556.0,
+        "Active Mean": 5277.0,
+        "Idle Mean": 109535821.0,
+        "Flow IAT Max": 109535821.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 21015339.0,
+        "Flow IAT Mean": 4203067.8,
+        "Fwd IAT Mean": 10507669.5,
+        "Bwd IAT Mean": 10507233.0,
+        "Active Mean": 13.0,
+        "Idle Mean": 20999127.0,
+        "Flow IAT Max": 20999127.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 105620046.0,
+        "Flow IAT Mean": 5867780.333333333,
+        "Fwd IAT Mean": 7041326.933333334,
+        "Bwd IAT Mean": 51309415.0,
+        "Active Mean": 4706816.5,
+        "Idle Mean": 19241254.2,
+        "Flow IAT Max": 51327267.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 31437241.0,
+        "Flow IAT Mean": 2245517.2142857146,
+        "Fwd IAT Mean": 2619770.083333333,
+        "Bwd IAT Mean": 31436783.0,
+        "Active Mean": 6541367.0,
+        "Idle Mean": 8298500.666666667,
+        "Flow IAT Max": 13071868.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 111163152.0,
+        "Flow IAT Mean": 10105741.09090909,
+        "Fwd IAT Mean": 22232630.4,
+        "Bwd IAT Mean": 22232500.4,
+        "Active Mean": 5281.0,
+        "Idle Mean": 109469793.0,
+        "Flow IAT Max": 109469793.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 110735523.0,
+        "Flow IAT Mean": 5273120.142857143,
+        "Fwd IAT Mean": 6151969.722222222,
+        "Bwd IAT Mean": 39835846.0,
+        "Active Mean": 4474770.0,
+        "Idle Mean": 13901592.142857144,
+        "Flow IAT Max": 28312268.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 109920456.0,
+        "Flow IAT Mean": 18320076.0,
+        "Fwd IAT Mean": 36640107.333333336,
+        "Bwd IAT Mean": 54960192.0,
+        "Active Mean": 5322.0,
+        "Idle Mean": 109915000.0,
+        "Flow IAT Max": 109915000.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 108615772.0,
+        "Flow IAT Mean": 18102628.666666664,
+        "Fwd IAT Mean": 36205237.0,
+        "Bwd IAT Mean": 54307857.0,
+        "Active Mean": 5274.0,
+        "Idle Mean": 108610437.0,
+        "Flow IAT Max": 108610437.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 21018261.0,
+        "Flow IAT Mean": 4203652.2,
+        "Fwd IAT Mean": 10509130.5,
+        "Bwd IAT Mean": 10508609.5,
+        "Active Mean": 63.0,
+        "Idle Mean": 20999016.0,
+        "Flow IAT Max": 20999016.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 21026964.0,
+        "Flow IAT Mean": 4205392.8,
+        "Fwd IAT Mean": 10513482.0,
+        "Bwd IAT Mean": 10513116.5,
+        "Active Mean": 53.0,
+        "Idle Mean": 20998760.0,
+        "Flow IAT Max": 20998760.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 5998841.0,
+        "Flow IAT Mean": 428488.6428571429,
+        "Fwd IAT Mean": 749855.125,
+        "Bwd IAT Mean": 7005.0,
+        "Active Mean": 47326.0,
+        "Idle Mean": 5951515.0,
+        "Flow IAT Max": 5951515.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 6849927.0,
+        "Flow IAT Mean": 622720.6363636364,
+        "Fwd IAT Mean": 1141654.5,
+        "Bwd IAT Mean": 89602.0,
+        "Active Mean": 372136.0,
+        "Idle Mean": 6477791.0,
+        "Flow IAT Max": 6477791.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 9760852.0,
+        "Flow IAT Mean": 887350.1818181819,
+        "Fwd IAT Mean": 1394407.4285714286,
+        "Bwd IAT Mean": 619178.3333333333,
+        "Active Mean": 1861896.0,
+        "Idle Mean": 7898956.0,
+        "Flow IAT Max": 7898956.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 3746041.0,
+        "Flow IAT Mean": 267574.3571428572,
+        "Fwd IAT Mean": 468255.125,
+        "Bwd IAT Mean": 62511.2,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 3398112.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 12457694.0,
+        "Flow IAT Mean": 1132517.6363636365,
+        "Fwd IAT Mean": 2076282.3333333333,
+        "Bwd IAT Mean": 72469.0,
+        "Active Mean": 306970.0,
+        "Idle Mean": 12150724.0,
+        "Flow IAT Max": 12150724.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 2254645.0,
+        "Flow IAT Mean": 187887.0833333333,
+        "Fwd IAT Mean": 322092.1428571429,
+        "Bwd IAT Mean": 14974.5,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 2156613.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 5832767.0,
+        "Flow IAT Mean": 448674.3846153846,
+        "Fwd IAT Mean": 833252.4285714286,
+        "Bwd IAT Mean": 337811.8,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 4142400.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 9138707.0,
+        "Flow IAT Mean": 761558.9166666667,
+        "Fwd IAT Mean": 1523117.8333333335,
+        "Bwd IAT Mean": 218417.0,
+        "Active Mean": 1099924.0,
+        "Idle Mean": 8038783.0,
+        "Flow IAT Max": 8038783.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 9261645.0,
+        "Flow IAT Mean": 771803.7500000001,
+        "Fwd IAT Mean": 1323092.142857143,
+        "Bwd IAT Mean": 20049.25,
+        "Active Mean": 101791.0,
+        "Idle Mean": 9159854.0,
+        "Flow IAT Max": 9159854.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 9841728.0,
+        "Flow IAT Mean": 757056.0,
+        "Fwd IAT Mean": 1405961.142857143,
+        "Bwd IAT Mean": 359699.4,
+        "Active Mean": 1815939.0,
+        "Idle Mean": 8025789.0,
+        "Flow IAT Max": 8025789.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 7617169.0,
+        "Flow IAT Mean": 585936.076923077,
+        "Fwd IAT Mean": 1088167.0,
+        "Bwd IAT Mean": 165653.40000000002,
+        "Active Mean": 829864.0,
+        "Idle Mean": 6787305.0,
+        "Flow IAT Max": 6787305.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 5774850.0,
+        "Flow IAT Mean": 384990.0,
+        "Fwd IAT Mean": 824978.5714285715,
+        "Bwd IAT Mean": 245762.71428571432,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 4035882.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 4020809.0,
+        "Flow IAT Mean": 309293.0,
+        "Fwd IAT Mean": 502601.125,
+        "Bwd IAT Mean": 22103.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 3915905.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 9754908.0,
+        "Flow IAT Mean": 696779.1428571428,
+        "Fwd IAT Mean": 1219363.5,
+        "Bwd IAT Mean": 283554.8,
+        "Active Mean": 1451949.0,
+        "Idle Mean": 8302959.0,
+        "Flow IAT Max": 8302959.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 2667009.0,
+        "Flow IAT Mean": 177800.6,
+        "Fwd IAT Mean": 296334.3333333333,
+        "Bwd IAT Mean": 33122.8,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 2470231.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 4216483.0,
+        "Flow IAT Mean": 351373.5833333334,
+        "Fwd IAT Mean": 702747.1666666666,
+        "Bwd IAT Mean": 19200.6,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 4114918.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 2052904.0,
+        "Flow IAT Mean": 186627.63636363635,
+        "Fwd IAT Mean": 342150.6666666666,
+        "Bwd IAT Mean": 8563.5,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 2011936.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11774688.0,
+        "Flow IAT Mean": 1177468.8,
+        "Fwd IAT Mean": 1962447.6666666667,
+        "Bwd IAT Mean": 555372.3333333333,
+        "Active Mean": 1667990.0,
+        "Idle Mean": 10106698.0,
+        "Flow IAT Max": 10106698.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 5530833.0,
+        "Flow IAT Mean": 502803.0,
+        "Fwd IAT Mean": 790118.9999999999,
+        "Bwd IAT Mean": 243866.0,
+        "Active Mean": 0.0,
+        "Idle Mean": 0.0,
+        "Flow IAT Max": 4793852.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 12080758.0,
+        "Flow IAT Mean": 929289.076923077,
+        "Fwd IAT Mean": 1725822.5714285714,
+        "Bwd IAT Mean": 374204.6,
+        "Active Mean": 1882772.0,
+        "Idle Mean": 10197986.0,
+        "Flow IAT Max": 10197986.0
+      }
+    }
+  ]
+}

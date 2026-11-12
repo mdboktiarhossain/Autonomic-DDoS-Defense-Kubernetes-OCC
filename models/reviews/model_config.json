@@ -1,0 +1,33 @@
+{
+  "service": "reviews",
+  "app_label": "reviews",
+  "canonical_name": "reviews",
+  "architecture": "hist_gradient_boosting",
+  "feature_count": 7,
+  "features": [
+    "Total Length of Bwd Packet",
+    "Bwd Packet Length Mean",
+    "Packet Length Variance",
+    "Packet Length Std",
+    "Total Bwd packets",
+    "Down/Up Ratio",
+    "Flow IAT Mean"
+  ],
+  "units": [
+    "bytes",
+    "bytes",
+    "bytes^2",
+    "bytes",
+    "count",
+    "ratio",
+    "us"
+  ],
+  "model_file": "reviews_bundle_7feat.joblib",
+  "in_distribution_validation": {
+    "accuracy": 0.9993,
+    "recall": 0.9998,
+    "precision": 0.9991,
+    "f1": 0.9995,
+    "fpr": 0.0017
+  }
+}

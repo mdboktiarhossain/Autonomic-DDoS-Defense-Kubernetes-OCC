@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "dataset": "Improved CIC-IDS2017",
+    "dataset_citation": "Engelen et al., CNS 2022 (DistriNet Corrected Edition)",
+    "training_corpus_flows": 88166,
+    "train_split_flows": 70579,
+    "test_split_flows": 17587,
+    "partitioning_method": "GroupShuffleSplit by Flow ID (0% overlap, 100% leak-free)",
+    "configured_at": "2026-11-02T11:48:00Z"
+  },
+  "services": {
+    "productpage": {
+      "service_role": "frontend_ingress_gateway",
+      "selected_architecture": "Random Forest",
+      "selection_rationale": "Selected based on highest Accuracy (97.95%), highest Attack Recall (99.35%), and highest F1 Score (97.93%)",
+      "model_file": "model.joblib",
+      "scaler_file": "scaler.joblib",
+      "feature_count": 7,
+      "features": [
+        "Flow Duration",
+        "Flow IAT Mean",
+        "Flow IAT Std",
+        "Flow Packets/s",
+        "Fwd Packets/s",
+        "Total Fwd Packet",
+        "Bwd Packets/s"
+      ],
+      "metrics": {
+        "accuracy": 0.9795,
+        "balanced_accuracy": 0.9799,
+        "precision": 0.9656,
+        "recall": 0.9935,
+        "f1_score": 0.9793,
+        "false_positive_rate": 0.0338,
+        "median_latency_us": 3162.5
+      },
+      "sub_attack_recalls": {
+        "DoS Hulk": 0.9977,
+        "DoS GoldenEye": 0.9849,
+        "DoS Slowloris": 0.9961,
+        "DoS Slowhttptest": 1.0,
+        "DDoS": 0.9921
+      }
+    },
+    "details": {
+      "service_role": "leaf_static_metadata_service",
+      "selected_architecture": "HistGradientBoosting",
+      "selection_rationale": "Selected based on highest Accuracy (99.98%), highest Precision (99.98%), and highest F1 Score (99.98%) with sub-millisecond latency (653.9 us)",
+      "model_file": "hist_gradient_boosting.joblib",
+      "scaler_file": "scaler.joblib",
+      "feature_count": 7,
+      "features": [
+        "Total Fwd Packet",
+        "Total Bwd packets",
+        "Total Length of Fwd Packet",
+        "Total Length of Bwd Packet",
+        "Fwd Packet Length Mean",
+        "Bwd Packet Length Mean",
+        "Down/Up Ratio"
+      ],
+      "metrics": {
+        "accuracy": 0.9998,
+        "balanced_accuracy": 0.9998,
+        "precision": 0.9998,
+        "recall": 0.9999,
+        "f1_score": 0.9998,
+        "false_positive_rate": 0.0002,
+        "median_latency_us": 653.9
+      },
+      "sub_attack_recalls": {
+        "DoS Hulk": 0.9997,
+        "DoS GoldenEye": 1.0,
+        "DoS Slowloris": 1.0,
+        "DoS Slowhttptest": 1.0,
+        "DDoS": 1.0
+      }
+    },
+    "reviews": {
+      "service_role": "business_logic_composite_aggregator",
+      "selected_architecture": "Random Forest",
+      "selection_rationale": "Selected based on highest Accuracy (99.16%), highest Attack Recall (99.59%), and highest F1 Score (99.14%)",
+      "model_file": "model.joblib",
+      "scaler_file": "scaler.joblib",
+      "feature_count": 7,
+      "features": [
+        "Flow Duration",
+        "Flow IAT Mean",
+        "Fwd IAT Mean",
+        "Bwd IAT Mean",
+        "Active Mean",
+        "Idle Mean",
+        "Flow IAT Max"
+      ],
+      "metrics": {
+        "accuracy": 0.9916,
+        "balanced_accuracy": 0.9917,
+        "precision": 0.9870,
+        "recall": 0.9959,
+        "f1_score": 0.9914,
+        "false_positive_rate": 0.0126,
+        "median_latency_us": 3181.0
+      },
+      "sub_attack_recalls": {
+        "DoS Hulk": 0.9984,
+        "DoS GoldenEye": 0.9961,
+        "DoS Slowloris": 0.9961,
+        "DoS Slowhttptest": 1.0,
+        "DDoS": 0.9928
+      }
+    },
+    "ratings": {
+      "service_role": "backend_database_leaf_service",
+      "selected_architecture": "Random Forest",
+      "selection_rationale": "Selected based on highest Accuracy (99.96%), highest Attack Recall (99.97%), and highest F1 Score (99.96%)",
+      "model_file": "model.joblib",
+      "scaler_file": "scaler.joblib",
+      "feature_count": 7,
+      "features": [
+        "Total Fwd Packet",
+        "Total Bwd packets",
+        "Packet Length Mean",
+        "Packet Length Std",
+        "Packet Length Variance",
+        "PSH Flag Count",
+        "ACK Flag Count"
+      ],
+      "metrics": {
+        "accuracy": 0.9996,
+        "balanced_accuracy": 0.9996,
+        "precision": 0.9995,
+        "recall": 0.9997,
+        "f1_score": 0.9996,
+        "false_positive_rate": 0.0004,
+        "median_latency_us": 3096.9
+      },
+      "sub_attack_recalls": {
+        "DoS Hulk": 1.0,
+        "DoS GoldenEye": 0.9987,
+        "DoS Slowloris": 1.0,
+        "DoS Slowhttptest": 0.9968,
+        "DDoS": 1.0
+      }
+    }
+  }
+}

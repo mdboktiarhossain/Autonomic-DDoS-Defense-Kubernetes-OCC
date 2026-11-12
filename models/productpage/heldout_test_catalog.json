@@ -1,0 +1,2617 @@
+{
+  "service": "productpage",
+  "total_test_vectors": 200,
+  "benign_count": 100,
+  "attack_count": 100,
+  "features_order": [
+    "Flow Duration",
+    "Flow IAT Mean",
+    "Flow IAT Std",
+    "Flow Packets/s",
+    "Fwd Packets/s",
+    "Total Fwd Packet",
+    "Bwd Packets/s"
+  ],
+  "test_vectors": [
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 115869901.0,
+        "Flow IAT Mean": 2228267.326923077,
+        "Flow IAT Std": 4127813.4604334673,
+        "Flow Packets/s": 0.4574095562574097,
+        "Fwd Packets/s": 0.2071288556637327,
+        "Total Fwd Packet": 24.0,
+        "Bwd Packets/s": 0.250280700593677
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 115114669.0,
+        "Flow IAT Mean": 2951658.179487179,
+        "Flow IAT Std": 4537248.5307377055,
+        "Flow Packets/s": 0.3474796074859929,
+        "Fwd Packets/s": 0.1737398037429964,
+        "Total Fwd Packet": 20.0,
+        "Bwd Packets/s": 0.1737398037429964
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5862985.0,
+        "Flow IAT Mean": 837569.2857142858,
+        "Flow IAT Std": 1735918.6048562983,
+        "Flow Packets/s": 1.364492660308699,
+        "Fwd Packets/s": 0.8528079126929371,
+        "Total Fwd Packet": 5.0,
+        "Bwd Packets/s": 0.5116847476157622
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 6207164.0,
+        "Flow IAT Mean": 1241432.8,
+        "Flow IAT Std": 2656802.1121484,
+        "Flow Packets/s": 0.9666250158687608,
+        "Fwd Packets/s": 0.6444166772458405,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.3222083386229202
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5463625.0,
+        "Flow IAT Mean": 303534.72222222213,
+        "Flow IAT Std": 1153874.6496857398,
+        "Flow Packets/s": 3.4775446704340065,
+        "Fwd Packets/s": 1.6472580017845293,
+        "Total Fwd Packet": 9.0,
+        "Bwd Packets/s": 1.8302866686494768
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 251390.0,
+        "Flow IAT Mean": 83796.66666666666,
+        "Flow IAT Std": 145095.05251845543,
+        "Flow Packets/s": 15.91153188273201,
+        "Fwd Packets/s": 7.955765941366005,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 7.955765941366005
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 115179989.0,
+        "Flow IAT Mean": 3490302.696969697,
+        "Flow IAT Std": 4736327.099269958,
+        "Flow Packets/s": 0.2951901653680484,
+        "Fwd Packets/s": 0.1562771463713197,
+        "Total Fwd Packet": 18.0,
+        "Bwd Packets/s": 0.1389130189967286
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 60699.0,
+        "Flow IAT Mean": 60699.0,
+        "Flow IAT Std": 0.0,
+        "Flow Packets/s": 32.949471984711444,
+        "Fwd Packets/s": 16.474735992355722,
+        "Total Fwd Packet": 1.0,
+        "Bwd Packets/s": 16.474735992355722
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 168992.0,
+        "Flow IAT Mean": 12999.384615384615,
+        "Flow IAT Std": 19245.02698767685,
+        "Flow Packets/s": 82.84415830335163,
+        "Fwd Packets/s": 41.42207915167582,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 41.42207915167582
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 225.0,
+        "Flow IAT Mean": 75.0,
+        "Flow IAT Std": 124.70765814495915,
+        "Flow Packets/s": 17777.777777777777,
+        "Fwd Packets/s": 8888.888888888889,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 8888.888888888889
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 663.0,
+        "Flow IAT Mean": 663.0,
+        "Flow IAT Std": 0.0,
+        "Flow Packets/s": 3016.5912518853697,
+        "Fwd Packets/s": 1508.2956259426849,
+        "Total Fwd Packet": 1.0,
+        "Bwd Packets/s": 1508.2956259426849
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 118687071.0,
+        "Flow IAT Mean": 225212.6584440228,
+        "Flow IAT Std": 1446169.8734541896,
+        "Flow Packets/s": 4.448673267874308,
+        "Fwd Packets/s": 2.005273177564556,
+        "Total Fwd Packet": 238.0,
+        "Bwd Packets/s": 2.4434000903097526
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 30770.0,
+        "Flow IAT Mean": 30770.0,
+        "Flow IAT Std": 0.0,
+        "Flow Packets/s": 64.99837504062398,
+        "Fwd Packets/s": 32.49918752031199,
+        "Total Fwd Packet": 1.0,
+        "Bwd Packets/s": 32.49918752031199
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5706206.0,
+        "Flow IAT Mean": 1141241.2,
+        "Flow IAT Std": 2495752.826672786,
+        "Flow Packets/s": 1.0514867496897238,
+        "Fwd Packets/s": 0.7009911664598159,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.3504955832299079
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 116656157.0,
+        "Flow IAT Mean": 2991183.5128205125,
+        "Flow IAT Std": 4521433.471347572,
+        "Flow Packets/s": 0.3428880311906726,
+        "Fwd Packets/s": 0.1800162163751031,
+        "Total Fwd Packet": 21.0,
+        "Bwd Packets/s": 0.1628718148155695
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 494627.0,
+        "Flow IAT Mean": 12365.675,
+        "Flow IAT Std": 36939.64370698991,
+        "Flow Packets/s": 82.89074393431818,
+        "Fwd Packets/s": 40.43450923625277,
+        "Total Fwd Packet": 20.0,
+        "Bwd Packets/s": 42.456234698065416
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 45415471.0,
+        "Flow IAT Mean": 3784622.5833333335,
+        "Flow IAT Std": 4826240.722515713,
+        "Flow Packets/s": 0.2862460679974011,
+        "Fwd Packets/s": 0.1541324981524467,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 0.1321135698449544
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 50984003.0,
+        "Flow IAT Mean": 3398933.5333333337,
+        "Flow IAT Std": 4819783.861493374,
+        "Flow Packets/s": 0.3138239263009615,
+        "Fwd Packets/s": 0.1569119631504807,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 0.1569119631504807
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 31401.0,
+        "Flow IAT Mean": 31401.0,
+        "Flow IAT Std": 0.0,
+        "Flow Packets/s": 63.69223910066559,
+        "Fwd Packets/s": 31.846119550332794,
+        "Total Fwd Packet": 1.0,
+        "Bwd Packets/s": 31.846119550332794
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 53120.0,
+        "Flow IAT Mean": 17706.666666666664,
+        "Flow IAT Std": 30623.82161542438,
+        "Flow Packets/s": 75.3012048192771,
+        "Fwd Packets/s": 37.65060240963855,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 37.65060240963855
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 448.0,
+        "Flow IAT Mean": 448.0,
+        "Flow IAT Std": 0.0,
+        "Flow Packets/s": 4464.285714285715,
+        "Fwd Packets/s": 2232.1428571428573,
+        "Total Fwd Packet": 1.0,
+        "Bwd Packets/s": 2232.1428571428573
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5488959.0,
+        "Flow IAT Mean": 365930.6,
+        "Flow IAT Std": 1308109.455102057,
+        "Flow Packets/s": 2.914942523709869,
+        "Fwd Packets/s": 1.6396551695868014,
+        "Total Fwd Packet": 9.0,
+        "Bwd Packets/s": 1.2752873541230676
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 115287156.0,
+        "Flow IAT Mean": 3718940.516129032,
+        "Flow IAT Std": 4801132.195148771,
+        "Flow Packets/s": 0.2775677804039159,
+        "Fwd Packets/s": 0.1474578833395803,
+        "Total Fwd Packet": 17.0,
+        "Bwd Packets/s": 0.1301098970643356
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5302788.0,
+        "Flow IAT Mean": 530278.7999999999,
+        "Flow IAT Std": 1502950.2914736143,
+        "Flow Packets/s": 2.074380495693964,
+        "Fwd Packets/s": 1.1314802703785254,
+        "Total Fwd Packet": 6.0,
+        "Bwd Packets/s": 0.942900225315438
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 31038.0,
+        "Flow IAT Mean": 31038.0,
+        "Flow IAT Std": 0.0,
+        "Flow Packets/s": 64.43714156840002,
+        "Fwd Packets/s": 32.21857078420001,
+        "Total Fwd Packet": 1.0,
+        "Bwd Packets/s": 32.21857078420001
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5530665.0,
+        "Flow IAT Mean": 790095.0,
+        "Flow IAT Std": 1446668.6740140836,
+        "Flow Packets/s": 1.446480667333856,
+        "Fwd Packets/s": 0.90405041708366,
+        "Total Fwd Packet": 5.0,
+        "Bwd Packets/s": 0.542430250250196
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 25487947.0,
+        "Flow IAT Mean": 3185993.375,
+        "Flow IAT Std": 4594022.072206785,
+        "Flow Packets/s": 0.3531080788892098,
+        "Fwd Packets/s": 0.1961711549384499,
+        "Total Fwd Packet": 5.0,
+        "Bwd Packets/s": 0.1569369239507599
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 70796.0,
+        "Flow IAT Mean": 7866.222222222223,
+        "Flow IAT Std": 11536.56143287264,
+        "Flow Packets/s": 141.25091813096785,
+        "Fwd Packets/s": 70.62545906548392,
+        "Total Fwd Packet": 5.0,
+        "Bwd Packets/s": 70.62545906548392
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 124361.0,
+        "Flow IAT Mean": 13817.88888888889,
+        "Flow IAT Std": 14094.761131750727,
+        "Flow Packets/s": 80.4110613455987,
+        "Fwd Packets/s": 40.20553067279935,
+        "Total Fwd Packet": 5.0,
+        "Bwd Packets/s": 40.20553067279935
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 115533412.0,
+        "Flow IAT Mean": 3726884.2580645154,
+        "Flow IAT Std": 4810067.957297582,
+        "Flow Packets/s": 0.2769761530110441,
+        "Fwd Packets/s": 0.1471435812871172,
+        "Total Fwd Packet": 17.0,
+        "Bwd Packets/s": 0.1298325717239269
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 687416.0,
+        "Flow IAT Mean": 76379.55555555556,
+        "Flow IAT Std": 110091.90960296664,
+        "Flow Packets/s": 14.547231952704038,
+        "Fwd Packets/s": 7.273615976352019,
+        "Total Fwd Packet": 5.0,
+        "Bwd Packets/s": 7.273615976352019
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 118246431.0,
+        "Flow IAT Mean": 3695200.96875,
+        "Flow IAT Std": 4838908.257222927,
+        "Flow Packets/s": 0.2790781905290655,
+        "Fwd Packets/s": 0.1437675526967913,
+        "Total Fwd Packet": 17.0,
+        "Bwd Packets/s": 0.1353106378322742
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 32868762.0,
+        "Flow IAT Mean": 225128.50684931508,
+        "Flow IAT Std": 2675747.577396733,
+        "Flow Packets/s": 4.472331510386671,
+        "Fwd Packets/s": 1.7037453372901603,
+        "Total Fwd Packet": 56.0,
+        "Bwd Packets/s": 2.7685861730965104
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 118607955.0,
+        "Flow IAT Mean": 3121261.973684211,
+        "Flow IAT Std": 4524913.224662937,
+        "Flow Packets/s": 0.3288143699973581,
+        "Fwd Packets/s": 0.1770538915370389,
+        "Total Fwd Packet": 21.0,
+        "Bwd Packets/s": 0.1517604784603191
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 60505678.0,
+        "Flow IAT Mean": 2750258.090909091,
+        "Flow IAT Std": 4542125.99065425,
+        "Flow Packets/s": 0.3801296136207249,
+        "Fwd Packets/s": 0.1983284940629869,
+        "Total Fwd Packet": 12.0,
+        "Bwd Packets/s": 0.181801119557738
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 11567322.0,
+        "Flow IAT Mean": 462692.88,
+        "Flow IAT Std": 1308872.4085948092,
+        "Flow Packets/s": 2.2477112680013573,
+        "Fwd Packets/s": 1.123855634000679,
+        "Total Fwd Packet": 13.0,
+        "Bwd Packets/s": 1.123855634000679
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 37766133.0,
+        "Flow IAT Mean": 1573588.875,
+        "Flow IAT Std": 3354958.684917496,
+        "Flow Packets/s": 0.6619687538567954,
+        "Fwd Packets/s": 0.3442237520055336,
+        "Total Fwd Packet": 13.0,
+        "Bwd Packets/s": 0.3177450018512618
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5147074.0,
+        "Flow IAT Mean": 571897.1111111111,
+        "Flow IAT Std": 1630506.136225455,
+        "Flow Packets/s": 1.942851414220973,
+        "Fwd Packets/s": 1.1657108485325838,
+        "Total Fwd Packet": 6.0,
+        "Bwd Packets/s": 0.7771405656883892
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 157.0,
+        "Flow IAT Mean": 52.33333333333333,
+        "Flow IAT Std": 85.44783984006462,
+        "Flow Packets/s": 25477.707006369423,
+        "Fwd Packets/s": 12738.853503184711,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 12738.853503184711
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 115361116.0,
+        "Flow IAT Mean": 3117868.000000001,
+        "Flow IAT Std": 4608647.542995228,
+        "Flow Packets/s": 0.3294004194619615,
+        "Fwd Packets/s": 0.173368641822085,
+        "Total Fwd Packet": 20.0,
+        "Bwd Packets/s": 0.1560317776398765
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5791206.0,
+        "Flow IAT Mean": 827315.1428571428,
+        "Flow IAT Std": 2140141.302463261,
+        "Flow Packets/s": 1.3814048403734904,
+        "Fwd Packets/s": 0.8633780252334315,
+        "Total Fwd Packet": 5.0,
+        "Bwd Packets/s": 0.5180268151400589
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 117101867.0,
+        "Flow IAT Mean": 3444172.5588235296,
+        "Flow IAT Std": 4705708.328648008,
+        "Flow Packets/s": 0.2988850724301432,
+        "Fwd Packets/s": 0.1622518964620777,
+        "Total Fwd Packet": 19.0,
+        "Bwd Packets/s": 0.1366331759680654
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 116412028.0,
+        "Flow IAT Mean": 2530696.260869566,
+        "Flow IAT Std": 4313292.9295407925,
+        "Flow Packets/s": 0.4037383490991154,
+        "Fwd Packets/s": 0.2147544410101677,
+        "Total Fwd Packet": 25.0,
+        "Bwd Packets/s": 0.1889839080889476
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5191480.0,
+        "Flow IAT Mean": 1038296.0,
+        "Flow IAT Std": 2264776.014116076,
+        "Flow Packets/s": 1.1557397890389638,
+        "Fwd Packets/s": 0.7704931926926425,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.3852465963463212
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 47546695.0,
+        "Flow IAT Mean": 3396192.4999999995,
+        "Flow IAT Std": 12268219.613086931,
+        "Flow Packets/s": 0.3154793408879418,
+        "Fwd Packets/s": 0.168255648473569,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 0.1472236924143728
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 67875353.0,
+        "Flow IAT Mean": 3992667.823529412,
+        "Flow IAT Std": 4924538.812526462,
+        "Flow Packets/s": 0.2651919909720395,
+        "Fwd Packets/s": 0.1325959954860197,
+        "Total Fwd Packet": 9.0,
+        "Bwd Packets/s": 0.1325959954860197
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 9193417.0,
+        "Flow IAT Mean": 835765.1818181819,
+        "Flow IAT Std": 1590353.6215757686,
+        "Flow Packets/s": 1.3052818119748075,
+        "Fwd Packets/s": 0.7614143903186378,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 0.5438674216561699
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 31552628.0,
+        "Flow IAT Mean": 2103508.5333333327,
+        "Flow IAT Std": 4108098.112130493,
+        "Flow Packets/s": 0.5070892985522474,
+        "Fwd Packets/s": 0.2535446492761237,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 0.2535446492761237
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5577036.0,
+        "Flow IAT Mean": 796719.4285714286,
+        "Flow IAT Std": 1370775.3921749126,
+        "Flow Packets/s": 1.4344537134061894,
+        "Fwd Packets/s": 0.8965335708788683,
+        "Total Fwd Packet": 5.0,
+        "Bwd Packets/s": 0.537920142527321
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 24069.0,
+        "Flow IAT Mean": 8023.0,
+        "Flow IAT Std": 13852.094606953851,
+        "Flow Packets/s": 166.1888736549088,
+        "Fwd Packets/s": 83.0944368274544,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 83.0944368274544
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 75345474.0,
+        "Flow IAT Mean": 25115158.0,
+        "Flow IAT Std": 42808883.70220542,
+        "Flow Packets/s": 0.0530887893810317,
+        "Fwd Packets/s": 0.0265443946905158,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 0.0265443946905158
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 139.0,
+        "Flow IAT Mean": 46.33333333333333,
+        "Flow IAT Std": 75.05553499465135,
+        "Flow Packets/s": 28776.97841726619,
+        "Fwd Packets/s": 14388.489208633096,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 14388.489208633096
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 184.0,
+        "Flow IAT Mean": 61.33333333333333,
+        "Flow IAT Std": 102.77321311184804,
+        "Flow Packets/s": 21739.130434782608,
+        "Fwd Packets/s": 10869.565217391304,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 10869.565217391304
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 808492.0,
+        "Flow IAT Mean": 20212.3,
+        "Flow IAT Std": 46479.412263595055,
+        "Flow Packets/s": 50.71169535381921,
+        "Fwd Packets/s": 21.026800512559184,
+        "Total Fwd Packet": 17.0,
+        "Bwd Packets/s": 29.684894841260025
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5808127.0,
+        "Flow IAT Mean": 1161625.4,
+        "Flow IAT Std": 2580438.2711771657,
+        "Flow Packets/s": 1.0330352624865125,
+        "Fwd Packets/s": 0.6886901749910083,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.3443450874955041
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 116429224.0,
+        "Flow IAT Mean": 3424388.941176471,
+        "Flow IAT Std": 4694998.43205984,
+        "Flow Packets/s": 0.3006118120309725,
+        "Fwd Packets/s": 0.1631892693882422,
+        "Total Fwd Packet": 19.0,
+        "Bwd Packets/s": 0.1374225426427303
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 117249691.0,
+        "Flow IAT Mean": 3782248.0967741935,
+        "Flow IAT Std": 14491542.892334277,
+        "Flow Packets/s": 0.2729218279986767,
+        "Fwd Packets/s": 0.1364609139993383,
+        "Total Fwd Packet": 16.0,
+        "Bwd Packets/s": 0.1364609139993383
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 14899805.0,
+        "Flow IAT Mean": 647817.6086956521,
+        "Flow IAT Std": 3059564.2479420872,
+        "Flow Packets/s": 1.610759335440967,
+        "Fwd Packets/s": 0.9396096123405642,
+        "Total Fwd Packet": 14.0,
+        "Bwd Packets/s": 0.671149723100403
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5686069.0,
+        "Flow IAT Mean": 1137213.8,
+        "Flow IAT Std": 2448634.380425792,
+        "Flow Packets/s": 1.0552105505578635,
+        "Fwd Packets/s": 0.7034737003719089,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.3517368501859544
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 116701771.0,
+        "Flow IAT Mean": 401037.0137457044,
+        "Flow IAT Std": 1930050.473917636,
+        "Flow Packets/s": 2.502104273978841,
+        "Fwd Packets/s": 1.0539685811623205,
+        "Total Fwd Packet": 123.0,
+        "Bwd Packets/s": 1.4481356928165212
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 656094.0,
+        "Flow IAT Mean": 65609.40000000001,
+        "Flow IAT Std": 81264.02697818459,
+        "Flow Packets/s": 16.765890253530745,
+        "Fwd Packets/s": 7.620859206150339,
+        "Total Fwd Packet": 5.0,
+        "Bwd Packets/s": 9.145031047380408
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 51266.0,
+        "Flow IAT Mean": 17088.666666666664,
+        "Flow IAT Std": 29593.242747852648,
+        "Flow Packets/s": 78.02442164397456,
+        "Fwd Packets/s": 39.01221082198728,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 39.01221082198728
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5119006.0,
+        "Flow IAT Mean": 1023801.2,
+        "Flow IAT Std": 2248466.977563536,
+        "Flow Packets/s": 1.1721025527221496,
+        "Fwd Packets/s": 0.7814017018147664,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.3907008509073832
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 38.0,
+        "Flow IAT Mean": 12.666666666666668,
+        "Flow IAT Std": 16.743157806499145,
+        "Flow Packets/s": 105263.15789473684,
+        "Fwd Packets/s": 52631.57894736842,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 52631.57894736842
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 59750776.0,
+        "Flow IAT Mean": 6638975.111111111,
+        "Flow IAT Std": 15181850.637414502,
+        "Flow Packets/s": 0.1673618431332172,
+        "Fwd Packets/s": 0.0669447372532868,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.1004171058799303
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 30748.0,
+        "Flow IAT Mean": 30748.0,
+        "Flow IAT Std": 0.0,
+        "Flow Packets/s": 65.04488096786783,
+        "Fwd Packets/s": 32.52244048393391,
+        "Total Fwd Packet": 1.0,
+        "Bwd Packets/s": 32.52244048393391
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5756407.0,
+        "Flow IAT Mean": 1151281.4,
+        "Flow IAT Std": 2479123.1739908163,
+        "Flow Packets/s": 1.042316847992159,
+        "Fwd Packets/s": 0.6948778986614393,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.3474389493307196
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 115235717.0,
+        "Flow IAT Mean": 1889110.114754098,
+        "Flow IAT Std": 3945064.12174409,
+        "Flow Packets/s": 0.5380276325264675,
+        "Fwd Packets/s": 0.2776916813039832,
+        "Total Fwd Packet": 32.0,
+        "Bwd Packets/s": 0.2603359512224842
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5420832.0,
+        "Flow IAT Mean": 774404.5714285715,
+        "Flow IAT Std": 1632909.0819168773,
+        "Flow Packets/s": 1.4757882184874942,
+        "Fwd Packets/s": 0.922367636554684,
+        "Total Fwd Packet": 5.0,
+        "Bwd Packets/s": 0.5534205819328103
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5403930.0,
+        "Flow IAT Mean": 1080786.0,
+        "Flow IAT Std": 2399832.515602704,
+        "Flow Packets/s": 1.110303057219468,
+        "Fwd Packets/s": 0.740202038146312,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.370101019073156
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 8405883.0,
+        "Flow IAT Mean": 933987.0,
+        "Flow IAT Std": 2682330.0673033325,
+        "Flow Packets/s": 1.18964301549284,
+        "Fwd Packets/s": 0.5948215077464201,
+        "Total Fwd Packet": 5.0,
+        "Bwd Packets/s": 0.5948215077464201
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 3378901.0,
+        "Flow IAT Mean": 422362.625,
+        "Flow IAT Std": 791021.3896959763,
+        "Flow Packets/s": 2.66358795359793,
+        "Fwd Packets/s": 1.4797710853321837,
+        "Total Fwd Packet": 5.0,
+        "Bwd Packets/s": 1.1838168682657468
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 20.0,
+        "Flow IAT Mean": 1.6666666666666663,
+        "Flow IAT Std": 1.7232808737106582,
+        "Flow Packets/s": 650000.0,
+        "Fwd Packets/s": 650000.0,
+        "Total Fwd Packet": 13.0,
+        "Bwd Packets/s": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 116023165.0,
+        "Flow IAT Mean": 3314947.571428572,
+        "Flow IAT Std": 4770866.32817952,
+        "Flow Packets/s": 0.3102828646331101,
+        "Fwd Packets/s": 0.1637604007785859,
+        "Total Fwd Packet": 19.0,
+        "Bwd Packets/s": 0.1465224638545242
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 46059618.0,
+        "Flow IAT Mean": 362674.1574803149,
+        "Flow IAT Std": 1833866.7287562063,
+        "Flow Packets/s": 2.7790069817774,
+        "Fwd Packets/s": 1.367792498843564,
+        "Total Fwd Packet": 63.0,
+        "Bwd Packets/s": 1.4112144829338358
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 119142669.0,
+        "Flow IAT Mean": 3843311.903225807,
+        "Flow IAT Std": 4892680.447781716,
+        "Flow Packets/s": 0.2685855560277905,
+        "Fwd Packets/s": 0.1426860766397637,
+        "Total Fwd Packet": 17.0,
+        "Bwd Packets/s": 0.1258994793880268
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5750029.0,
+        "Flow IAT Mean": 1150005.8,
+        "Flow IAT Std": 2529031.3592216885,
+        "Flow Packets/s": 1.0434729981361834,
+        "Fwd Packets/s": 0.6956486654241223,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.3478243327120611
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 48935214.0,
+        "Flow IAT Mean": 1957408.56,
+        "Flow IAT Std": 3795953.8997141537,
+        "Flow Packets/s": 0.5313147297159055,
+        "Fwd Packets/s": 0.286092546770103,
+        "Total Fwd Packet": 14.0,
+        "Bwd Packets/s": 0.2452221829458025
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 69628392.0,
+        "Flow IAT Mean": 1740709.8,
+        "Flow IAT Std": 3804757.244449167,
+        "Flow Packets/s": 0.5888402535563366,
+        "Fwd Packets/s": 0.2728771906724486,
+        "Total Fwd Packet": 19.0,
+        "Bwd Packets/s": 0.3159630628838879
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5107612.0,
+        "Flow IAT Mean": 851268.6666666667,
+        "Flow IAT Std": 2048574.875108905,
+        "Flow Packets/s": 1.3705034759883876,
+        "Fwd Packets/s": 0.7831448434219358,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.5873586325664518
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 115216000.0,
+        "Flow IAT Mean": 3716645.161290323,
+        "Flow IAT Std": 4800532.893095058,
+        "Flow Packets/s": 0.2777392028884877,
+        "Fwd Packets/s": 0.1475489515345091,
+        "Total Fwd Packet": 17.0,
+        "Bwd Packets/s": 0.1301902513539786
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 117819587.0,
+        "Flow IAT Mean": 818191.5763888888,
+        "Flow IAT Std": 2691326.193299129,
+        "Flow Packets/s": 1.2306951984138257,
+        "Fwd Packets/s": 0.5601785041056034,
+        "Total Fwd Packet": 66.0,
+        "Bwd Packets/s": 0.6705166943082222
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 48630.0,
+        "Flow IAT Mean": 48630.0,
+        "Flow IAT Std": 0.0,
+        "Flow Packets/s": 41.126876413736376,
+        "Fwd Packets/s": 20.563438206868188,
+        "Total Fwd Packet": 1.0,
+        "Bwd Packets/s": 20.563438206868188
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5250391.0,
+        "Flow IAT Mean": 1050078.2,
+        "Flow IAT Std": 2301995.2499120627,
+        "Flow Packets/s": 1.1427720335495015,
+        "Fwd Packets/s": 0.7618480223663343,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.3809240111831671
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 116839908.0,
+        "Flow IAT Mean": 251810.1465517241,
+        "Flow IAT Std": 1539326.6453364794,
+        "Flow Packets/s": 3.979804571568133,
+        "Fwd Packets/s": 1.5234520725572636,
+        "Total Fwd Packet": 178.0,
+        "Bwd Packets/s": 2.456352499010869
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 11852644.0,
+        "Flow IAT Mean": 2370528.8,
+        "Flow IAT Std": 5274055.865462955,
+        "Flow Packets/s": 0.5062161657770199,
+        "Fwd Packets/s": 0.3374774438513466,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.1687387219256733
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5563393.0,
+        "Flow IAT Mean": 794770.4285714286,
+        "Flow IAT Std": 1376560.399577011,
+        "Flow Packets/s": 1.4379713962324792,
+        "Fwd Packets/s": 0.8987321226452994,
+        "Total Fwd Packet": 5.0,
+        "Bwd Packets/s": 0.5392392735871797
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5717756.0,
+        "Flow IAT Mean": 1143551.2,
+        "Flow IAT Std": 2515726.9936274285,
+        "Flow Packets/s": 1.049362722018918,
+        "Fwd Packets/s": 0.699575148012612,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.349787574006306
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 30949.0,
+        "Flow IAT Mean": 10316.333333333332,
+        "Flow IAT Std": 17862.351310321195,
+        "Flow Packets/s": 129.244886749168,
+        "Fwd Packets/s": 64.622443374584,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 64.622443374584
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 185.0,
+        "Flow IAT Mean": 61.66666666666667,
+        "Flow IAT Std": 105.07774899251189,
+        "Flow Packets/s": 21621.621621621623,
+        "Fwd Packets/s": 10810.810810810812,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 10810.810810810812
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 103462.0,
+        "Flow IAT Mean": 10346.2,
+        "Flow IAT Std": 15487.21409421333,
+        "Flow Packets/s": 106.31922831571012,
+        "Fwd Packets/s": 48.326921961686416,
+        "Total Fwd Packet": 5.0,
+        "Bwd Packets/s": 57.9923063540237
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 118393998.0,
+        "Flow IAT Mean": 3482176.4117647056,
+        "Flow IAT Std": 4653461.5821507,
+        "Flow Packets/s": 0.2956230940017753,
+        "Fwd Packets/s": 0.1604811081723923,
+        "Total Fwd Packet": 19.0,
+        "Bwd Packets/s": 0.135141985829383
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 61255096.0,
+        "Flow IAT Mean": 2784322.5454545454,
+        "Flow IAT Std": 4499807.619940813,
+        "Flow Packets/s": 0.3754789642318085,
+        "Fwd Packets/s": 0.1959020682948566,
+        "Total Fwd Packet": 12.0,
+        "Bwd Packets/s": 0.1795768959369519
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 90968.0,
+        "Flow IAT Mean": 30322.666666666664,
+        "Flow IAT Std": 52475.37100710517,
+        "Flow Packets/s": 43.97150646381145,
+        "Fwd Packets/s": 21.98575323190573,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 21.98575323190573
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 294300.0,
+        "Flow IAT Mean": 42042.857142857145,
+        "Flow IAT Std": 29867.640066514414,
+        "Flow Packets/s": 27.18314644920149,
+        "Fwd Packets/s": 16.989466530750935,
+        "Total Fwd Packet": 5.0,
+        "Bwd Packets/s": 10.19367991845056
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 5698949.0,
+        "Flow IAT Mean": 1139789.8,
+        "Flow IAT Std": 2531370.338948788,
+        "Flow Packets/s": 1.052825705230912,
+        "Fwd Packets/s": 0.7018838034872746,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.3509419017436373
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 162140.0,
+        "Flow IAT Mean": 6485.600000000001,
+        "Flow IAT Std": 13487.24542237344,
+        "Flow Packets/s": 160.35524855063525,
+        "Fwd Packets/s": 92.51264339459726,
+        "Total Fwd Packet": 15.0,
+        "Bwd Packets/s": 67.84260515603799
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 20909141.0,
+        "Flow IAT Mean": 1100481.1052631582,
+        "Flow IAT Std": 2543107.6933580018,
+        "Flow Packets/s": 0.9565194476425406,
+        "Fwd Packets/s": 0.5260856962033973,
+        "Total Fwd Packet": 11.0,
+        "Bwd Packets/s": 0.4304337514391432
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 116041243.0,
+        "Flow IAT Mean": 3626288.843750001,
+        "Flow IAT Std": 4746830.734999357,
+        "Flow Packets/s": 0.2843816486867518,
+        "Fwd Packets/s": 0.1464996372022661,
+        "Total Fwd Packet": 17.0,
+        "Bwd Packets/s": 0.1378820114844857
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Flow Duration": 100469.0,
+        "Flow IAT Mean": 11163.222222222224,
+        "Flow IAT Std": 13107.041569112553,
+        "Flow Packets/s": 99.53318934198607,
+        "Fwd Packets/s": 49.76659467099304,
+        "Total Fwd Packet": 5.0,
+        "Bwd Packets/s": 49.76659467099304
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 165995.0,
+        "Flow IAT Mean": 15090.454545454544,
+        "Flow IAT Std": 41145.880373042535,
+        "Flow Packets/s": 72.2913340763276,
+        "Fwd Packets/s": 36.1456670381638,
+        "Total Fwd Packet": 6.0,
+        "Bwd Packets/s": 36.1456670381638
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 40464.0,
+        "Flow IAT Mean": 3678.545454545455,
+        "Flow IAT Std": 6950.0650408990605,
+        "Flow Packets/s": 296.55990510083035,
+        "Fwd Packets/s": 148.27995255041515,
+        "Total Fwd Packet": 6.0,
+        "Bwd Packets/s": 148.27995255041515
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 160988.0,
+        "Flow IAT Mean": 13415.666666666666,
+        "Flow IAT Std": 36113.99033196096,
+        "Flow Packets/s": 80.75136034983974,
+        "Fwd Packets/s": 43.48150172683678,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 37.26985862300296
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 502981.0,
+        "Flow IAT Mean": 33532.066666666666,
+        "Flow IAT Std": 74369.0018627833,
+        "Flow Packets/s": 31.810346712897704,
+        "Fwd Packets/s": 19.881466695561063,
+        "Total Fwd Packet": 10.0,
+        "Bwd Packets/s": 11.928880017336638
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 32075757.0,
+        "Flow IAT Mean": 2138383.8000000007,
+        "Flow IAT Std": 8278489.43185889,
+        "Flow Packets/s": 0.4988190925626478,
+        "Fwd Packets/s": 0.2494095462813239,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 0.2494095462813239
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 173987.0,
+        "Flow IAT Mean": 12427.642857142857,
+        "Flow IAT Std": 36233.07672790609,
+        "Flow Packets/s": 86.21333777810986,
+        "Fwd Packets/s": 45.98044681499192,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 40.23289096311793
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 191961.0,
+        "Flow IAT Mean": 14766.230769230768,
+        "Flow IAT Std": 37505.53542735136,
+        "Flow Packets/s": 72.93148087371914,
+        "Fwd Packets/s": 36.46574043685957,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 36.46574043685957
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 158991.0,
+        "Flow IAT Mean": 13249.250000000002,
+        "Flow IAT Std": 38893.70694160034,
+        "Flow Packets/s": 81.7656345327723,
+        "Fwd Packets/s": 50.31731355862911,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 31.4483209741432
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 1370942.0,
+        "Flow IAT Mean": 97924.42857142858,
+        "Flow IAT Std": 266180.2824023639,
+        "Flow Packets/s": 10.941381911123884,
+        "Fwd Packets/s": 6.56482914667433,
+        "Total Fwd Packet": 9.0,
+        "Bwd Packets/s": 4.376552764449554
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 1069935.0,
+        "Flow IAT Mean": 82302.69230769233,
+        "Flow IAT Std": 275970.61710545217,
+        "Flow Packets/s": 13.08490702706239,
+        "Fwd Packets/s": 7.477089729749937,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 5.607817297312453
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 1173972.0,
+        "Flow IAT Mean": 83855.14285714287,
+        "Flow IAT Std": 265528.4200031376,
+        "Flow Packets/s": 12.777136081610124,
+        "Fwd Packets/s": 6.814472576858733,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 5.962663504751391
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 67985.0,
+        "Flow IAT Mean": 5229.615384615384,
+        "Flow IAT Std": 10180.882505448317,
+        "Flow Packets/s": 205.92777818636463,
+        "Fwd Packets/s": 102.96388909318232,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 102.96388909318232
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 8996.0,
+        "Flow IAT Mean": 692.0,
+        "Flow IAT Std": 1205.143905653318,
+        "Flow Packets/s": 1556.2472209871053,
+        "Fwd Packets/s": 1000.4446420631392,
+        "Total Fwd Packet": 9.0,
+        "Bwd Packets/s": 555.8025789239662
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 1001497.0,
+        "Flow IAT Mean": 91045.18181818184,
+        "Flow IAT Std": 300627.69863098714,
+        "Flow Packets/s": 11.982062851910689,
+        "Fwd Packets/s": 7.988041901273792,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 3.994020950636896
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 1168953.0,
+        "Flow IAT Mean": 77930.2,
+        "Flow IAT Std": 256822.56345889863,
+        "Flow Packets/s": 13.687462199079006,
+        "Fwd Packets/s": 8.554663874424378,
+        "Total Fwd Packet": 10.0,
+        "Bwd Packets/s": 5.132798324654627
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 9887.0,
+        "Flow IAT Mean": 898.8181818181818,
+        "Flow IAT Std": 1349.680689510065,
+        "Flow Packets/s": 1213.7149792657024,
+        "Fwd Packets/s": 708.0004045716597,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 505.7145746940427
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 32017.0,
+        "Flow IAT Mean": 2286.928571428572,
+        "Flow IAT Std": 3901.3128059526457,
+        "Flow Packets/s": 468.5011087859575,
+        "Fwd Packets/s": 249.8672580191773,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 218.63385076678017
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 166987.0,
+        "Flow IAT Mean": 12845.15384615384,
+        "Flow IAT Std": 38524.0952432071,
+        "Flow Packets/s": 83.83886170779762,
+        "Fwd Packets/s": 41.91943085389881,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 41.91943085389881
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 164977.0,
+        "Flow IAT Mean": 14997.90909090909,
+        "Flow IAT Std": 41267.56002831896,
+        "Flow Packets/s": 72.73741188165623,
+        "Fwd Packets/s": 36.368705940828114,
+        "Total Fwd Packet": 6.0,
+        "Bwd Packets/s": 36.368705940828114
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 82056.0,
+        "Flow IAT Mean": 5861.142857142857,
+        "Flow IAT Std": 12559.129072310112,
+        "Flow Packets/s": 182.80198888563908,
+        "Fwd Packets/s": 97.49439407234084,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 85.30759481329824
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11498789.0,
+        "Flow IAT Mean": 884522.2307692308,
+        "Flow IAT Std": 2169707.606519104,
+        "Flow Packets/s": 1.2175195144462605,
+        "Fwd Packets/s": 0.6957254368264345,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 0.5217940776198259
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11763253.0,
+        "Flow IAT Mean": 904865.6153846156,
+        "Flow IAT Std": 2227691.1967950338,
+        "Flow Packets/s": 1.1901469772009494,
+        "Fwd Packets/s": 0.7650944853434675,
+        "Total Fwd Packet": 9.0,
+        "Bwd Packets/s": 0.4250524918574819
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 54061243.0,
+        "Flow IAT Mean": 5406124.3,
+        "Flow IAT Std": 13155644.031013897,
+        "Flow Packets/s": 0.2034729390147392,
+        "Fwd Packets/s": 0.1294827793730159,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 0.0739901596417233
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11485199.0,
+        "Flow IAT Mean": 883476.846153846,
+        "Flow IAT Std": 2167226.562781676,
+        "Flow Packets/s": 1.218960159070818,
+        "Fwd Packets/s": 0.6965486623261817,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 0.5224114967446363
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 28623440.0,
+        "Flow IAT Mean": 1908229.3333333333,
+        "Flow IAT Std": 4681562.324257555,
+        "Flow Packets/s": 0.5589824283873637,
+        "Fwd Packets/s": 0.3493640177421023,
+        "Total Fwd Packet": 10.0,
+        "Bwd Packets/s": 0.2096184106452613
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11437597.0,
+        "Flow IAT Mean": 816971.2142857143,
+        "Flow IAT Std": 1876449.7274136185,
+        "Flow Packets/s": 1.3114642874722724,
+        "Fwd Packets/s": 0.7868785724833635,
+        "Total Fwd Packet": 9.0,
+        "Bwd Packets/s": 0.5245857149889089
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11458999.0,
+        "Flow IAT Mean": 818499.9285714286,
+        "Flow IAT Std": 2090874.3738890844,
+        "Flow Packets/s": 1.3090148624674809,
+        "Fwd Packets/s": 0.7854089174804885,
+        "Total Fwd Packet": 9.0,
+        "Bwd Packets/s": 0.5236059449869923
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11488854.0,
+        "Flow IAT Mean": 883758.0,
+        "Flow IAT Std": 2167673.939147791,
+        "Flow Packets/s": 1.2185723658773973,
+        "Fwd Packets/s": 0.7833679494926126,
+        "Total Fwd Packet": 9.0,
+        "Bwd Packets/s": 0.4352044163847847
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 10201552.0,
+        "Flow IAT Mean": 1020155.2,
+        "Flow IAT Std": 2138936.530879712,
+        "Flow Packets/s": 1.0782673067784196,
+        "Fwd Packets/s": 0.5881458036973198,
+        "Total Fwd Packet": 6.0,
+        "Bwd Packets/s": 0.4901215030810998
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11711880.0,
+        "Flow IAT Mean": 900913.8461538462,
+        "Flow IAT Std": 2216009.591630485,
+        "Flow Packets/s": 1.195367438874032,
+        "Fwd Packets/s": 0.7684504964190206,
+        "Total Fwd Packet": 9.0,
+        "Bwd Packets/s": 0.4269169424550114
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11403352.0,
+        "Flow IAT Mean": 877180.9230769229,
+        "Flow IAT Std": 2149826.060570229,
+        "Flow Packets/s": 1.2277091858604383,
+        "Fwd Packets/s": 0.7015481062059647,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 0.5261610796544736
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 59378231.0,
+        "Flow IAT Mean": 1979274.3666666672,
+        "Flow IAT Std": 4379455.59527928,
+        "Flow Packets/s": 0.5220768533841973,
+        "Fwd Packets/s": 0.3705061540145916,
+        "Total Fwd Packet": 22.0,
+        "Bwd Packets/s": 0.1515706993696056
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 17625924.0,
+        "Flow IAT Mean": 1355840.3076923075,
+        "Flow IAT Std": 3644708.918130418,
+        "Flow Packets/s": 0.7942846003420869,
+        "Fwd Packets/s": 0.5106115287913416,
+        "Total Fwd Packet": 9.0,
+        "Bwd Packets/s": 0.2836730715507453
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 96282062.0,
+        "Flow IAT Mean": 9628206.2,
+        "Flow IAT Std": 26636672.36699764,
+        "Flow Packets/s": 0.1142476570557867,
+        "Fwd Packets/s": 0.0727030544900461,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 0.0415446025657406
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 42815938.0,
+        "Flow IAT Mean": 4281593.8,
+        "Flow IAT Std": 10017702.98033364,
+        "Flow Packets/s": 0.2569136754635622,
+        "Fwd Packets/s": 0.1634905207495395,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 0.0934231547140226
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 12587249.0,
+        "Flow IAT Mean": 839149.9333333333,
+        "Flow IAT Std": 2013615.3742893992,
+        "Flow Packets/s": 1.2711276308270378,
+        "Fwd Packets/s": 0.7944547692668986,
+        "Total Fwd Packet": 10.0,
+        "Bwd Packets/s": 0.4766728615601391
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11708202.0,
+        "Flow IAT Mean": 1170820.2,
+        "Flow IAT Std": 2221312.581399205,
+        "Flow Packets/s": 0.9395123179460004,
+        "Fwd Packets/s": 0.5978714750565458,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 0.3416408428894548
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 12008330.0,
+        "Flow IAT Mean": 857737.8571428573,
+        "Flow IAT Std": 2205719.829197188,
+        "Flow Packets/s": 1.2491328935830377,
+        "Fwd Packets/s": 0.7494797361498227,
+        "Total Fwd Packet": 9.0,
+        "Bwd Packets/s": 0.4996531574332151
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 5044581.0,
+        "Flow IAT Mean": 360327.2142857143,
+        "Flow IAT Std": 1336065.6429225428,
+        "Flow Packets/s": 2.973487788183003,
+        "Fwd Packets/s": 1.5858601536976014,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 1.3876276344854013
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11043342.0,
+        "Flow IAT Mean": 613519.0000000001,
+        "Flow IAT Std": 1327967.0945436067,
+        "Flow Packets/s": 1.720493669398267,
+        "Fwd Packets/s": 1.1771798790619723,
+        "Total Fwd Packet": 13.0,
+        "Bwd Packets/s": 0.5433137903362949
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 55146272.0,
+        "Flow IAT Mean": 11029254.400000002,
+        "Flow IAT Std": 24656481.448982216,
+        "Flow Packets/s": 0.1088015523515352,
+        "Fwd Packets/s": 0.0544007761757676,
+        "Total Fwd Packet": 3.0,
+        "Bwd Packets/s": 0.0544007761757676
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 105002310.0,
+        "Flow IAT Mean": 35000770.0,
+        "Flow IAT Std": 60623079.03506726,
+        "Flow Packets/s": 0.0380944000184376,
+        "Fwd Packets/s": 0.0190472000092188,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 0.0190472000092188
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 72778493.0,
+        "Flow IAT Mean": 4548655.8125,
+        "Flow IAT Std": 7191505.566448648,
+        "Flow Packets/s": 0.2335854907025898,
+        "Fwd Packets/s": 0.1923645217550739,
+        "Total Fwd Packet": 14.0,
+        "Bwd Packets/s": 0.0412209689475158
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 14.0,
+        "Flow IAT Mean": 14.0,
+        "Flow IAT Std": 0.0,
+        "Flow Packets/s": 142857.14285714287,
+        "Fwd Packets/s": 71428.57142857143,
+        "Total Fwd Packet": 1.0,
+        "Bwd Packets/s": 71428.57142857143
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 35.0,
+        "Flow IAT Mean": 35.0,
+        "Flow IAT Std": 0.0,
+        "Flow Packets/s": 57142.857142857145,
+        "Fwd Packets/s": 28571.42857142857,
+        "Total Fwd Packet": 1.0,
+        "Bwd Packets/s": 28571.42857142857
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 103680743.0,
+        "Flow IAT Mean": 6098867.235294118,
+        "Flow IAT Std": 12878876.612560004,
+        "Flow Packets/s": 0.1736098669740435,
+        "Fwd Packets/s": 0.1446748891450363,
+        "Total Fwd Packet": 15.0,
+        "Bwd Packets/s": 0.0289349778290072
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 103658751.0,
+        "Flow IAT Mean": 6097573.588235294,
+        "Flow IAT Std": 12870076.004480816,
+        "Flow Packets/s": 0.1736466996404384,
+        "Fwd Packets/s": 0.1447055830336987,
+        "Total Fwd Packet": 15.0,
+        "Bwd Packets/s": 0.0289411166067397
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 100000902.0,
+        "Flow IAT Mean": 33333634.0,
+        "Flow IAT Std": 57735372.75177404,
+        "Flow Packets/s": 0.0399996392032543,
+        "Fwd Packets/s": 0.0199998196016271,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 0.0199998196016271
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 108002293.0,
+        "Flow IAT Mean": 36000764.33333333,
+        "Flow IAT Std": 62355063.736030966,
+        "Flow Packets/s": 0.0370362507025661,
+        "Fwd Packets/s": 0.018518125351283,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 0.018518125351283
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 2.0,
+        "Flow IAT Mean": 2.0,
+        "Flow IAT Std": 0.0,
+        "Flow Packets/s": 1000000.0,
+        "Fwd Packets/s": 500000.0,
+        "Total Fwd Packet": 1.0,
+        "Bwd Packets/s": 500000.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 105009314.0,
+        "Flow IAT Mean": 35003104.66666667,
+        "Flow IAT Std": 60627046.58611824,
+        "Flow Packets/s": 0.0380918591659402,
+        "Fwd Packets/s": 0.0190459295829701,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 0.0190459295829701
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 99999545.0,
+        "Flow IAT Mean": 33333181.666666664,
+        "Flow IAT Std": 57734618.73233903,
+        "Flow Packets/s": 0.0400001820008281,
+        "Fwd Packets/s": 0.020000091000414,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 0.020000091000414
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 103690466.0,
+        "Flow IAT Mean": 6099439.176470588,
+        "Flow IAT Std": 12879284.77253365,
+        "Flow Packets/s": 0.1735935876688991,
+        "Fwd Packets/s": 0.1446613230574159,
+        "Total Fwd Packet": 15.0,
+        "Bwd Packets/s": 0.0289322646114831
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 24.0,
+        "Flow IAT Mean": 24.0,
+        "Flow IAT Std": 0.0,
+        "Flow Packets/s": 83333.33333333333,
+        "Fwd Packets/s": 41666.66666666666,
+        "Total Fwd Packet": 1.0,
+        "Bwd Packets/s": 41666.66666666666
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 102685929.0,
+        "Flow IAT Mean": 6417870.5625,
+        "Flow IAT Std": 13223187.897319073,
+        "Flow Packets/s": 0.1655533544425546,
+        "Fwd Packets/s": 0.1363380565997508,
+        "Total Fwd Packet": 14.0,
+        "Bwd Packets/s": 0.0292152978428037
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 108002340.0,
+        "Flow IAT Mean": 36000780.0,
+        "Flow IAT Std": 62355011.19715663,
+        "Flow Packets/s": 0.0370362345852876,
+        "Fwd Packets/s": 0.0185181172926438,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 0.0185181172926438
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 99999858.0,
+        "Flow IAT Mean": 33333286.0,
+        "Flow IAT Std": 57734832.35192187,
+        "Flow Packets/s": 0.0400000568000806,
+        "Fwd Packets/s": 0.0200000284000403,
+        "Total Fwd Packet": 2.0,
+        "Bwd Packets/s": 0.0200000284000403
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 102598587.0,
+        "Flow IAT Mean": 6412411.6875,
+        "Flow IAT Std": 13213498.4334896,
+        "Flow Packets/s": 0.1656942897274014,
+        "Fwd Packets/s": 0.1364541209519776,
+        "Total Fwd Packet": 14.0,
+        "Bwd Packets/s": 0.0292401687754237
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 102617768.0,
+        "Flow IAT Mean": 6413610.5,
+        "Flow IAT Std": 13222970.464371383,
+        "Flow Packets/s": 0.1656633186564728,
+        "Fwd Packets/s": 0.1364286153641541,
+        "Total Fwd Packet": 14.0,
+        "Bwd Packets/s": 0.0292347032923187
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 102727481.0,
+        "Flow IAT Mean": 6420467.5625,
+        "Flow IAT Std": 13233628.410915315,
+        "Flow Packets/s": 0.1654863901510444,
+        "Fwd Packets/s": 0.1362829095361542,
+        "Total Fwd Packet": 14.0,
+        "Bwd Packets/s": 0.0292034806148901
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 110982989.0,
+        "Flow IAT Mean": 10089362.636363637,
+        "Flow IAT Std": 32898368.291740693,
+        "Flow Packets/s": 0.1081246784586059,
+        "Fwd Packets/s": 0.0540623392293029,
+        "Total Fwd Packet": 6.0,
+        "Bwd Packets/s": 0.0540623392293029
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 109826816.0,
+        "Flow IAT Mean": 18304469.333333336,
+        "Flow IAT Std": 44833993.36964338,
+        "Flow Packets/s": 0.0637367107137113,
+        "Fwd Packets/s": 0.0364209775506921,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.0273157331630191
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 109977856.0,
+        "Flow IAT Mean": 18329642.666666668,
+        "Flow IAT Std": 44895624.32792052,
+        "Flow Packets/s": 0.0636491767942812,
+        "Fwd Packets/s": 0.0363709581681606,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.0272782186261205
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 109873921.0,
+        "Flow IAT Mean": 18312320.166666664,
+        "Flow IAT Std": 44853055.38351861,
+        "Flow Packets/s": 0.0637093855966057,
+        "Fwd Packets/s": 0.0364053631980604,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.0273040223985453
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 109281053.0,
+        "Flow IAT Mean": 18213508.83333333,
+        "Flow IAT Std": 44611166.47236104,
+        "Flow Packets/s": 0.0640550196748195,
+        "Fwd Packets/s": 0.0366028683856111,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.0274521512892083
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 109816716.0,
+        "Flow IAT Mean": 18302786.0,
+        "Flow IAT Std": 44829765.22292835,
+        "Flow Packets/s": 0.063742572669902,
+        "Fwd Packets/s": 0.036424327239944,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.027318245429958
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 107472376.0,
+        "Flow IAT Mean": 13434047.0,
+        "Flow IAT Std": 36790330.24968069,
+        "Flow Packets/s": 0.0837424493155338,
+        "Fwd Packets/s": 0.0558282995436892,
+        "Total Fwd Packet": 6.0,
+        "Bwd Packets/s": 0.0279141497718446
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 104.0,
+        "Flow IAT Mean": 104.0,
+        "Flow IAT Std": 0.0,
+        "Flow Packets/s": 19230.76923076923,
+        "Fwd Packets/s": 9615.384615384615,
+        "Total Fwd Packet": 1.0,
+        "Bwd Packets/s": 9615.384615384615
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 3269024.0,
+        "Flow IAT Mean": 272418.6666666667,
+        "Flow IAT Std": 386227.3522295416,
+        "Flow Packets/s": 3.976722104212144,
+        "Fwd Packets/s": 3.0590170032401107,
+        "Total Fwd Packet": 10.0,
+        "Bwd Packets/s": 0.9177051009720332
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 105430529.0,
+        "Flow IAT Mean": 13178816.125000002,
+        "Flow IAT Std": 36069833.90588637,
+        "Flow Packets/s": 0.0853642686360797,
+        "Fwd Packets/s": 0.0569095124240531,
+        "Total Fwd Packet": 6.0,
+        "Bwd Packets/s": 0.0284547562120265
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 109541165.0,
+        "Flow IAT Mean": 18256860.833333336,
+        "Flow IAT Std": 44717375.36754139,
+        "Flow Packets/s": 0.0639029172275098,
+        "Fwd Packets/s": 0.0365159527014342,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.0273869645260756
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 21015339.0,
+        "Flow IAT Mean": 4203067.8,
+        "Flow IAT Std": 9389284.797139168,
+        "Flow Packets/s": 0.2855057441614432,
+        "Fwd Packets/s": 0.1427528720807216,
+        "Total Fwd Packet": 3.0,
+        "Bwd Packets/s": 0.1427528720807216
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 105620046.0,
+        "Flow IAT Mean": 5867780.333333333,
+        "Flow IAT Std": 12521647.516095266,
+        "Flow Packets/s": 0.1798900939694724,
+        "Fwd Packets/s": 0.151486394921661,
+        "Total Fwd Packet": 16.0,
+        "Bwd Packets/s": 0.0284036990478114
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 31437241.0,
+        "Flow IAT Mean": 2245517.2142857146,
+        "Flow IAT Std": 3768019.3686828096,
+        "Flow Packets/s": 0.4771411078981136,
+        "Fwd Packets/s": 0.4135222935116984,
+        "Total Fwd Packet": 13.0,
+        "Bwd Packets/s": 0.0636188143864151
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 111163152.0,
+        "Flow IAT Mean": 10105741.09090909,
+        "Flow IAT Std": 32958296.02284893,
+        "Flow Packets/s": 0.1079494399367157,
+        "Fwd Packets/s": 0.0539747199683578,
+        "Total Fwd Packet": 6.0,
+        "Bwd Packets/s": 0.0539747199683578
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 110735523.0,
+        "Flow IAT Mean": 5273120.142857143,
+        "Flow IAT Std": 7767276.633138511,
+        "Flow Packets/s": 0.1986715681109845,
+        "Fwd Packets/s": 0.1715799906413048,
+        "Total Fwd Packet": 19.0,
+        "Bwd Packets/s": 0.0270915774696797
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 109920456.0,
+        "Flow IAT Mean": 18320076.0,
+        "Flow IAT Std": 44872165.401115306,
+        "Flow Packets/s": 0.0636824141268118,
+        "Fwd Packets/s": 0.0363899509296067,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.027292463197205
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 108615772.0,
+        "Flow IAT Mean": 18102628.666666664,
+        "Flow IAT Std": 44339589.66572005,
+        "Flow Packets/s": 0.0644473622118158,
+        "Fwd Packets/s": 0.0368270641210375,
+        "Total Fwd Packet": 4.0,
+        "Bwd Packets/s": 0.0276202980907781
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 21018261.0,
+        "Flow IAT Mean": 4203652.2,
+        "Flow IAT Std": 9388896.981464952,
+        "Flow Packets/s": 0.2854660525911254,
+        "Fwd Packets/s": 0.1427330262955627,
+        "Total Fwd Packet": 3.0,
+        "Bwd Packets/s": 0.1427330262955627
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 21026964.0,
+        "Flow IAT Mean": 4205392.8,
+        "Flow IAT Std": 9387785.061979247,
+        "Flow Packets/s": 0.2853478990119544,
+        "Fwd Packets/s": 0.1426739495059772,
+        "Total Fwd Packet": 3.0,
+        "Bwd Packets/s": 0.1426739495059772
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 5998841.0,
+        "Flow IAT Mean": 428488.6428571429,
+        "Flow IAT Std": 1589645.2375958026,
+        "Flow Packets/s": 2.500483009968092,
+        "Fwd Packets/s": 1.5002898059808554,
+        "Total Fwd Packet": 9.0,
+        "Bwd Packets/s": 1.000193203987237
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 6849927.0,
+        "Flow IAT Mean": 622720.6363636364,
+        "Flow IAT Std": 1944836.5321481533,
+        "Flow Packets/s": 1.7518434867992023,
+        "Fwd Packets/s": 1.021908700632868,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 0.7299347861663343
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 9760852.0,
+        "Flow IAT Mean": 887350.1818181819,
+        "Flow IAT Std": 2390713.333546405,
+        "Flow Packets/s": 1.2294008760710644,
+        "Fwd Packets/s": 0.8196005840473762,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 0.4098002920236881
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 3746041.0,
+        "Flow IAT Mean": 267574.3571428572,
+        "Flow IAT Std": 904419.2446788592,
+        "Flow Packets/s": 4.004227396336559,
+        "Fwd Packets/s": 2.402536437801936,
+        "Total Fwd Packet": 9.0,
+        "Bwd Packets/s": 1.6016909585346235
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 12457694.0,
+        "Flow IAT Mean": 1132517.6363636365,
+        "Flow IAT Std": 3655144.132820354,
+        "Flow Packets/s": 0.963260134660556,
+        "Fwd Packets/s": 0.5619017452186577,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 0.4013583894418983
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 2254645.0,
+        "Flow IAT Mean": 187887.0833333333,
+        "Flow IAT Std": 620137.2973732157,
+        "Flow Packets/s": 5.765874450301489,
+        "Fwd Packets/s": 3.5482304309547623,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 2.2176440193467264
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 5832767.0,
+        "Flow IAT Mean": 448674.3846153846,
+        "Flow IAT Std": 1201312.4696013755,
+        "Flow Packets/s": 2.4002330283380084,
+        "Fwd Packets/s": 1.371561730478862,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 1.0286712978591466
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 9138707.0,
+        "Flow IAT Mean": 761558.9166666667,
+        "Flow IAT Std": 2313070.949500467,
+        "Flow Packets/s": 1.4225207132693936,
+        "Fwd Packets/s": 0.7659726917604427,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 0.6565480215089509
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 9261645.0,
+        "Flow IAT Mean": 771803.7500000001,
+        "Flow IAT Std": 2641613.585647817,
+        "Flow Packets/s": 1.4036383385456903,
+        "Fwd Packets/s": 0.8637774391050402,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 0.5398608994406502
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 9841728.0,
+        "Flow IAT Mean": 757056.0,
+        "Flow IAT Std": 2238905.59073453,
+        "Flow Packets/s": 1.4225144202318942,
+        "Fwd Packets/s": 0.8128653829896538,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 0.6096490372422404
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 7617169.0,
+        "Flow IAT Mean": 585936.076923077,
+        "Flow IAT Std": 1876618.382217842,
+        "Flow Packets/s": 1.8379531818186,
+        "Fwd Packets/s": 1.0502589610391997,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 0.7876942207793999
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 5774850.0,
+        "Flow IAT Mean": 384990.0,
+        "Flow IAT Std": 1102179.846986805,
+        "Flow Packets/s": 2.7706347351013445,
+        "Fwd Packets/s": 1.3853173675506725,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 1.3853173675506725
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 4020809.0,
+        "Flow IAT Mean": 309293.0,
+        "Flow IAT Std": 1083920.0935336517,
+        "Flow Packets/s": 3.481886356700853,
+        "Fwd Packets/s": 2.238355515021977,
+        "Total Fwd Packet": 9.0,
+        "Bwd Packets/s": 1.2435308416788762
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 9754908.0,
+        "Flow IAT Mean": 696779.1428571428,
+        "Flow IAT Std": 2220753.589774837,
+        "Flow Packets/s": 1.5376874902356843,
+        "Fwd Packets/s": 0.9226124941414108,
+        "Total Fwd Packet": 9.0,
+        "Bwd Packets/s": 0.6150749960942737
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 2667009.0,
+        "Flow IAT Mean": 177800.6,
+        "Flow IAT Std": 635362.635310711,
+        "Flow Packets/s": 5.999229848868152,
+        "Fwd Packets/s": 3.7495186555425946,
+        "Total Fwd Packet": 10.0,
+        "Bwd Packets/s": 2.2497111933255565
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 4216483.0,
+        "Flow IAT Mean": 351373.5833333334,
+        "Flow IAT Std": 1185521.1823548677,
+        "Flow Packets/s": 3.0831382457844607,
+        "Fwd Packets/s": 1.6601513631147096,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 1.422986882669751
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 2052904.0,
+        "Flow IAT Mean": 186627.63636363635,
+        "Flow IAT Std": 605423.3392285554,
+        "Flow Packets/s": 5.8453780595683,
+        "Fwd Packets/s": 3.409803868081508,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 2.435574191486792
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 11774688.0,
+        "Flow IAT Mean": 1177468.8,
+        "Flow IAT Std": 3179574.011257756,
+        "Flow Packets/s": 0.9342073437529724,
+        "Fwd Packets/s": 0.5944955823882553,
+        "Total Fwd Packet": 7.0,
+        "Bwd Packets/s": 0.3397117613647172
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 5530833.0,
+        "Flow IAT Mean": 502803.0,
+        "Flow IAT Std": 1439347.0759539548,
+        "Flow Packets/s": 2.169655095353629,
+        "Fwd Packets/s": 1.4464367302357528,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 0.7232183651178764
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Flow Duration": 12080758.0,
+        "Flow IAT Mean": 929289.076923077,
+        "Flow IAT Std": 2831682.598142062,
+        "Flow Packets/s": 1.1588676803227085,
+        "Fwd Packets/s": 0.6622101030415476,
+        "Total Fwd Packet": 8.0,
+        "Bwd Packets/s": 0.4966575772811606
+      }
+    }
+  ]
+}

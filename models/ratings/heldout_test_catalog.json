@@ -1,0 +1,2617 @@
+{
+  "service": "ratings",
+  "total_test_vectors": 200,
+  "benign_count": 100,
+  "attack_count": 100,
+  "features_order": [
+    "Total Fwd Packet",
+    "Total Bwd packets",
+    "Packet Length Mean",
+    "Packet Length Std",
+    "Packet Length Variance",
+    "PSH Flag Count",
+    "ACK Flag Count"
+  ],
+  "test_vectors": [
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 24.0,
+        "Total Bwd packets": 29.0,
+        "Packet Length Mean": 476.4716981132077,
+        "Packet Length Std": 881.6785260071049,
+        "Packet Length Variance": 777357.0232220611,
+        "PSH Flag Count": 5.0,
+        "ACK Flag Count": 52.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 20.0,
+        "Total Bwd packets": 20.0,
+        "Packet Length Mean": 274.4749999999999,
+        "Packet Length Std": 677.0526998198391,
+        "Packet Length Variance": 458400.3583333332,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 39.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 7.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 5.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 10.0,
+        "Packet Length Mean": 321.6842105263158,
+        "Packet Length Std": 579.174609310677,
+        "Packet Length Variance": 335443.2280701754,
+        "PSH Flag Count": 7.0,
+        "ACK Flag Count": 18.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 58.0,
+        "Packet Length Std": 30.02221399786054,
+        "Packet Length Variance": 901.3333333333334,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 18.0,
+        "Total Bwd packets": 16.0,
+        "Packet Length Mean": 67.17647058823532,
+        "Packet Length Std": 227.8707063743153,
+        "Packet Length Variance": 51925.05882352943,
+        "PSH Flag Count": 3.0,
+        "ACK Flag Count": 33.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Packet Length Mean": 49.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 7.0,
+        "Packet Length Mean": 293.85714285714283,
+        "Packet Length Std": 521.0117165584751,
+        "Packet Length Variance": 271453.2087912088,
+        "PSH Flag Count": 4.0,
+        "ACK Flag Count": 13.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 90.0,
+        "Packet Length Std": 53.11622476544557,
+        "Packet Length Variance": 2821.333333333333,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Packet Length Mean": 136.0,
+        "Packet Length Std": 125.86500705120544,
+        "Packet Length Variance": 15842.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 238.0,
+        "Total Bwd packets": 290.0,
+        "Packet Length Mean": 744.0928030303031,
+        "Packet Length Std": 717.3840053315943,
+        "Packet Length Variance": 514639.8111056008,
+        "PSH Flag Count": 136.0,
+        "ACK Flag Count": 527.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Packet Length Mean": 117.0,
+        "Packet Length Std": 67.88225099390856,
+        "Packet Length Variance": 4608.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 31.333333333333336,
+        "Packet Length Std": 76.75067860720625,
+        "Packet Length Variance": 5890.666666666667,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 5.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 21.0,
+        "Total Bwd packets": 19.0,
+        "Packet Length Mean": 126.00000000000004,
+        "Packet Length Std": 263.605085356184,
+        "Packet Length Variance": 69487.64102564106,
+        "PSH Flag Count": 8.0,
+        "ACK Flag Count": 39.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 20.0,
+        "Total Bwd packets": 21.0,
+        "Packet Length Mean": 804.121951219512,
+        "Packet Length Std": 1016.383298640871,
+        "Packet Length Variance": 1033035.0097560978,
+        "PSH Flag Count": 3.0,
+        "ACK Flag Count": 40.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 0.3846153846153846,
+        "Packet Length Std": 0.5063696835418333,
+        "Packet Length Variance": 0.2564102564102564,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 13.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 8.0,
+        "Packet Length Mean": 0.3749999999999999,
+        "Packet Length Std": 0.5,
+        "Packet Length Variance": 0.25,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 16.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Packet Length Mean": 87.5,
+        "Packet Length Std": 38.89087296526012,
+        "Packet Length Variance": 1512.5,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 42.0,
+        "Packet Length Std": 9.237604307034012,
+        "Packet Length Variance": 85.33333333333331,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Packet Length Mean": 97.0,
+        "Packet Length Std": 59.39696961966999,
+        "Packet Length Variance": 3528.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 7.0,
+        "Packet Length Mean": 211.125,
+        "Packet Length Std": 496.6455308701904,
+        "Packet Length Variance": 246656.7833333333,
+        "PSH Flag Count": 6.0,
+        "ACK Flag Count": 15.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 17.0,
+        "Total Bwd packets": 15.0,
+        "Packet Length Mean": 38.8125,
+        "Packet Length Std": 158.0778569913185,
+        "Packet Length Variance": 24988.60887096774,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 31.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 85.0909090909091,
+        "Packet Length Std": 192.4216487536964,
+        "Packet Length Variance": 37026.09090909091,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 10.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Packet Length Mean": 82.0,
+        "Packet Length Std": 55.15432893255071,
+        "Packet Length Variance": 3042.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 7.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 4.0,
+        "Packet Length Mean": 0.3333333333333333,
+        "Packet Length Std": 0.5,
+        "Packet Length Variance": 0.25,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 9.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 129.9,
+        "Packet Length Std": 291.2770540606009,
+        "Packet Length Variance": 84842.32222222222,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 9.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 269.2,
+        "Packet Length Std": 714.2630701172595,
+        "Packet Length Variance": 510171.7333333333,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 9.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 17.0,
+        "Total Bwd packets": 15.0,
+        "Packet Length Mean": 24.843750000000007,
+        "Packet Length Std": 103.02837359741748,
+        "Packet Length Variance": 10614.84576612903,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 31.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 162.3,
+        "Packet Length Std": 372.5235413888482,
+        "Packet Length Variance": 138773.7888888889,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 9.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 17.0,
+        "Total Bwd packets": 16.0,
+        "Packet Length Mean": 132.30303030303028,
+        "Packet Length Std": 433.0582729876319,
+        "Packet Length Variance": 187539.4678030303,
+        "PSH Flag Count": 4.0,
+        "ACK Flag Count": 32.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 56.0,
+        "Total Bwd packets": 91.0,
+        "Packet Length Mean": 1248.469387755101,
+        "Packet Length Std": 1179.0039521824986,
+        "Packet Length Variance": 1390050.3192619514,
+        "PSH Flag Count": 6.0,
+        "ACK Flag Count": 146.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 21.0,
+        "Total Bwd packets": 18.0,
+        "Packet Length Mean": 146.23076923076923,
+        "Packet Length Std": 315.7432719238562,
+        "Packet Length Variance": 99693.8137651822,
+        "PSH Flag Count": 8.0,
+        "ACK Flag Count": 38.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 12.0,
+        "Total Bwd packets": 11.0,
+        "Packet Length Mean": 60.86956521739128,
+        "Packet Length Std": 211.78447542636488,
+        "Packet Length Variance": 44852.66403162055,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 22.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 13.0,
+        "Total Bwd packets": 13.0,
+        "Packet Length Mean": 192.5,
+        "Packet Length Std": 249.9073828441249,
+        "Packet Length Variance": 62453.70000000001,
+        "PSH Flag Count": 10.0,
+        "ACK Flag Count": 25.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 13.0,
+        "Total Bwd packets": 12.0,
+        "Packet Length Mean": 43.39999999999999,
+        "Packet Length Std": 163.5955378364581,
+        "Packet Length Variance": 26763.5,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 17.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 4.0,
+        "Packet Length Mean": 83.9,
+        "Packet Length Std": 177.66663539712044,
+        "Packet Length Variance": 31565.43333333333,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 8.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 71.0,
+        "Packet Length Std": 18.475208614068023,
+        "Packet Length Variance": 341.33333333333326,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 20.0,
+        "Total Bwd packets": 18.0,
+        "Packet Length Mean": 148.3157894736842,
+        "Packet Length Std": 413.2738837468413,
+        "Packet Length Variance": 170795.3029871977,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 37.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 7.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 19.0,
+        "Total Bwd packets": 16.0,
+        "Packet Length Mean": 81.54285714285714,
+        "Packet Length Std": 247.6695311067864,
+        "Packet Length Variance": 61340.19663865545,
+        "PSH Flag Count": 4.0,
+        "ACK Flag Count": 34.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 25.0,
+        "Total Bwd packets": 22.0,
+        "Packet Length Mean": 168.70212765957444,
+        "Packet Length Std": 422.4394947616819,
+        "Packet Length Variance": 178455.12673450506,
+        "PSH Flag Count": 10.0,
+        "ACK Flag Count": 46.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 5.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 7.0,
+        "Packet Length Mean": 350.93333333333334,
+        "Packet Length Std": 708.3202934373955,
+        "Packet Length Variance": 501717.6380952381,
+        "PSH Flag Count": 4.0,
+        "ACK Flag Count": 14.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 9.0,
+        "Packet Length Mean": 0.3888888888888889,
+        "Packet Length Std": 0.5016313257045503,
+        "Packet Length Variance": 0.2516339869281045,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 18.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 11.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 8.0,
+        "Packet Length Mean": 140.00000000000003,
+        "Packet Length Std": 457.2666618068717,
+        "Packet Length Variance": 209092.8,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 15.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 7.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 69.0,
+        "Packet Length Std": 32.331615074619044,
+        "Packet Length Variance": 1045.3333333333333,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 61.0,
+        "Packet Length Std": 15.01110699893027,
+        "Packet Length Variance": 225.3333333333333,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 48.0,
+        "Packet Length Std": 9.237604307034012,
+        "Packet Length Variance": 85.33333333333331,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 65.0,
+        "Packet Length Std": 28.867513459481287,
+        "Packet Length Variance": 833.3333333333334,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 17.0,
+        "Total Bwd packets": 24.0,
+        "Packet Length Mean": 921.2439024390246,
+        "Packet Length Std": 1112.5388932636874,
+        "Packet Length Variance": 1237742.7890243905,
+        "PSH Flag Count": 5.0,
+        "ACK Flag Count": 40.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 5.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 19.0,
+        "Total Bwd packets": 16.0,
+        "Packet Length Mean": 71.97142857142858,
+        "Packet Length Std": 234.8104975249172,
+        "Packet Length Variance": 55135.96974789914,
+        "PSH Flag Count": 4.0,
+        "ACK Flag Count": 34.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 16.0,
+        "Total Bwd packets": 16.0,
+        "Packet Length Mean": 157.5625,
+        "Packet Length Std": 374.0239717606518,
+        "Packet Length Variance": 139893.93145161285,
+        "PSH Flag Count": 16.0,
+        "ACK Flag Count": 31.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 14.0,
+        "Total Bwd packets": 10.0,
+        "Packet Length Mean": 50.66666666666667,
+        "Packet Length Std": 74.755640570471,
+        "Packet Length Variance": 5588.40579710145,
+        "PSH Flag Count": 8.0,
+        "ACK Flag Count": 22.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 5.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 123.0,
+        "Total Bwd packets": 169.0,
+        "Packet Length Mean": 1148.195205479453,
+        "Packet Length Std": 1239.738634844488,
+        "Packet Length Variance": 1536951.8827260744,
+        "PSH Flag Count": 9.0,
+        "ACK Flag Count": 291.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 244.90909090909088,
+        "Packet Length Std": 480.1450727739388,
+        "Packet Length Variance": 230539.2909090909,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 10.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 41.0,
+        "Packet Length Std": 9.237604307034012,
+        "Packet Length Variance": 85.33333333333331,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 5.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 2.0,
+        "Packet Length Std": 2.309401076758503,
+        "Packet Length Variance": 5.333333333333333,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 4.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 9.1,
+        "Packet Length Std": 19.7171668012082,
+        "Packet Length Variance": 388.76666666666665,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 10.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Packet Length Mean": 80.5,
+        "Packet Length Std": 43.1335136523794,
+        "Packet Length Variance": 1860.5,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 5.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 32.0,
+        "Total Bwd packets": 30.0,
+        "Packet Length Mean": 443.5967741935484,
+        "Packet Length Std": 801.2420575228948,
+        "Packet Length Variance": 641988.8347435219,
+        "PSH Flag Count": 3.0,
+        "ACK Flag Count": 61.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 7.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 5.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 218.60000000000005,
+        "Packet Length Std": 559.7609013379433,
+        "Packet Length Variance": 313332.26666666666,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 9.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 4.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 8.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 13.0,
+        "Total Bwd packets": 0.0,
+        "Packet Length Mean": 50.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 19.0,
+        "Total Bwd packets": 17.0,
+        "Packet Length Mean": 81.61111111111109,
+        "Packet Length Std": 300.3779788179056,
+        "Packet Length Variance": 90226.93015873016,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 35.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 63.0,
+        "Total Bwd packets": 65.0,
+        "Packet Length Mean": 661.5000000000001,
+        "Packet Length Std": 747.9351944641396,
+        "Packet Length Variance": 559407.0551181104,
+        "PSH Flag Count": 3.0,
+        "ACK Flag Count": 127.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 17.0,
+        "Total Bwd packets": 15.0,
+        "Packet Length Mean": 51.687500000000014,
+        "Packet Length Std": 150.84352873521064,
+        "Packet Length Variance": 22753.77016129032,
+        "PSH Flag Count": 4.0,
+        "ACK Flag Count": 31.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 5.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 14.0,
+        "Total Bwd packets": 12.0,
+        "Packet Length Mean": 301.07692307692304,
+        "Packet Length Std": 636.7277548891313,
+        "Packet Length Variance": 405422.2338461538,
+        "PSH Flag Count": 6.0,
+        "ACK Flag Count": 25.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 19.0,
+        "Total Bwd packets": 22.0,
+        "Packet Length Mean": 309.41463414634154,
+        "Packet Length Std": 541.5577981900803,
+        "Packet Length Variance": 293284.84878048784,
+        "PSH Flag Count": 9.0,
+        "ACK Flag Count": 40.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 30.28571428571428,
+        "Packet Length Std": 80.12846827795616,
+        "Packet Length Variance": 6420.571428571428,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 6.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 17.0,
+        "Total Bwd packets": 15.0,
+        "Packet Length Mean": 57.24999999999999,
+        "Packet Length Std": 254.94528192181463,
+        "Packet Length Variance": 64997.09677419356,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 31.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 66.0,
+        "Total Bwd packets": 79.0,
+        "Packet Length Mean": 844.4551724137931,
+        "Packet Length Std": 1014.2063124222256,
+        "Packet Length Variance": 1028614.444157089,
+        "PSH Flag Count": 27.0,
+        "ACK Flag Count": 143.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Packet Length Mean": 86.0,
+        "Packet Length Std": 41.01219330881976,
+        "Packet Length Variance": 1682.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 5.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 178.0,
+        "Total Bwd packets": 287.0,
+        "Packet Length Mean": 927.135483870968,
+        "Packet Length Std": 847.779783520426,
+        "Packet Length Variance": 718730.5613459403,
+        "PSH Flag Count": 14.0,
+        "ACK Flag Count": 462.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 5.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 7.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 5.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 157.0,
+        "Packet Length Std": 147.8016689125442,
+        "Packet Length Variance": 21845.33333333333,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 78.5,
+        "Packet Length Std": 40.99186911246343,
+        "Packet Length Variance": 1680.3333333333333,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 244.90909090909088,
+        "Packet Length Std": 480.1450727739388,
+        "Packet Length Variance": 230539.2909090909,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 10.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 19.0,
+        "Total Bwd packets": 16.0,
+        "Packet Length Mean": 67.68571428571428,
+        "Packet Length Std": 197.6087595445594,
+        "Packet Length Variance": 39049.22184873949,
+        "PSH Flag Count": 4.0,
+        "ACK Flag Count": 34.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 12.0,
+        "Total Bwd packets": 11.0,
+        "Packet Length Mean": 25.34782608695652,
+        "Packet Length Std": 84.42135053928872,
+        "Packet Length Variance": 7126.9644268774655,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 22.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 98.0,
+        "Packet Length Std": 60.04442799572108,
+        "Packet Length Variance": 3605.3333333333335,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 110.625,
+        "Packet Length Std": 208.17913817534304,
+        "Packet Length Variance": 43338.55357142857,
+        "PSH Flag Count": 1.0,
+        "ACK Flag Count": 7.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 0.0,
+        "Packet Length Std": 0.0,
+        "Packet Length Variance": 0.0,
+        "PSH Flag Count": 0.0,
+        "ACK Flag Count": 5.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 15.0,
+        "Total Bwd packets": 11.0,
+        "Packet Length Mean": 195.73076923076923,
+        "Packet Length Std": 441.78244036559965,
+        "Packet Length Variance": 195171.7246153846,
+        "PSH Flag Count": 9.0,
+        "ACK Flag Count": 19.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 11.0,
+        "Total Bwd packets": 9.0,
+        "Packet Length Mean": 437.8499999999999,
+        "Packet Length Std": 536.6572242277089,
+        "Packet Length Variance": 288000.97631578945,
+        "PSH Flag Count": 9.0,
+        "ACK Flag Count": 19.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 17.0,
+        "Total Bwd packets": 16.0,
+        "Packet Length Mean": 45.15151515151516,
+        "Packet Length Std": 179.35825204254635,
+        "Packet Length Variance": 32169.382575757583,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 32.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 128.9,
+        "Packet Length Std": 289.94806048286955,
+        "Packet Length Variance": 84069.87777777777,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 9.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 995.3333333333336,
+        "Packet Length Std": 1769.0485544152789,
+        "Packet Length Variance": 3129532.787878788,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 11.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 995.8333333333331,
+        "Packet Length Std": 1538.3084472198282,
+        "Packet Length Variance": 2366392.878787879,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 11.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 919.846153846154,
+        "Packet Length Std": 2243.886243631565,
+        "Packet Length Variance": 5035025.474358975,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 10.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 10.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 792.375,
+        "Packet Length Std": 1369.9084580121892,
+        "Packet Length Variance": 1876649.183333334,
+        "PSH Flag Count": 4.0,
+        "ACK Flag Count": 14.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 8.0,
+        "Packet Length Mean": 750.75,
+        "Packet Length Std": 1485.9775009512537,
+        "Packet Length Variance": 2208129.1333333333,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 12.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 7.0,
+        "Packet Length Mean": 794.8666666666667,
+        "Packet Length Std": 1621.7651259690854,
+        "Packet Length Variance": 2630122.1238095234,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 11.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 7.0,
+        "Packet Length Mean": 852.2857142857143,
+        "Packet Length Std": 1667.2274741466597,
+        "Packet Length Variance": 2779647.4505494507,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 11.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 920.4615384615388,
+        "Packet Length Std": 1715.4863069202183,
+        "Packet Length Variance": 2942893.26923077,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 12.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 812.8666666666667,
+        "Packet Length Std": 1416.031268150867,
+        "Packet Length Variance": 2005144.5523809523,
+        "PSH Flag Count": 3.0,
+        "ACK Flag Count": 13.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 850.1428571428569,
+        "Packet Length Std": 1461.8311413136216,
+        "Packet Length Variance": 2136950.285714286,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 12.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 7.0,
+        "Packet Length Mean": 796.1333333333333,
+        "Packet Length Std": 1620.6799660577508,
+        "Packet Length Variance": 2626603.5523809525,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 11.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 7.0,
+        "Packet Length Mean": 852.9285714285716,
+        "Packet Length Std": 1460.7532548067695,
+        "Packet Length Variance": 2133800.071428572,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 11.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 853.7142857142854,
+        "Packet Length Std": 2382.502512019708,
+        "Packet Length Variance": 5676318.219780218,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 13.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 4.0,
+        "Packet Length Mean": 995.75,
+        "Packet Length Std": 3339.449114204862,
+        "Packet Length Variance": 11151920.386363637,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 10.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 10.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 744.6875,
+        "Packet Length Std": 1579.467619959333,
+        "Packet Length Variance": 2494717.9625,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 14.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 991.25,
+        "Packet Length Std": 2909.770410343244,
+        "Packet Length Variance": 8466763.84090909,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 10.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 7.0,
+        "Packet Length Mean": 800.5333333333332,
+        "Packet Length Std": 1620.165020989558,
+        "Packet Length Variance": 2624934.6952380952,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 11.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 7.0,
+        "Packet Length Mean": 853.9999999999999,
+        "Packet Length Std": 1344.4798250624665,
+        "Packet Length Variance": 1807626.0,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 12.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 996.75,
+        "Packet Length Std": 1537.8950859712588,
+        "Packet Length Variance": 2365121.2954545454,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 11.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 7.0,
+        "Packet Length Mean": 794.1333333333333,
+        "Packet Length Std": 1621.9937848509894,
+        "Packet Length Variance": 2630863.838095237,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 11.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 853.2142857142858,
+        "Packet Length Std": 1674.5410475053216,
+        "Packet Length Variance": 2804087.71978022,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 13.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 850.4285714285713,
+        "Packet Length Std": 2104.989264152623,
+        "Packet Length Variance": 4430979.802197802,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 13.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 4.0,
+        "Packet Length Mean": 377.0909090909091,
+        "Packet Length Std": 1060.6404154609097,
+        "Packet Length Variance": 1124958.0909090906,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 10.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 859.6428571428571,
+        "Packet Length Std": 1672.4791182848594,
+        "Packet Length Variance": 2797186.4010989005,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 13.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 10.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 755.9999999999999,
+        "Packet Length Std": 1583.6147679702074,
+        "Packet Length Variance": 2507835.7333333334,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 15.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 809.2666666666669,
+        "Packet Length Std": 1800.1387433301063,
+        "Packet Length Variance": 3240499.495238095,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 13.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 812.7333333333335,
+        "Packet Length Std": 1624.615667370799,
+        "Packet Length Variance": 2639376.066666667,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 14.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 858.3571428571429,
+        "Packet Length Std": 2712.420253549979,
+        "Packet Length Variance": 7357223.631868132,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 13.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 377.54545454545456,
+        "Packet Length Std": 723.676082738177,
+        "Packet Length Variance": 523707.0727272728,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 10.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 849.5714285714286,
+        "Packet Length Std": 2182.9606118679817,
+        "Packet Length Variance": 4765317.032967033,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 13.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 859.4999999999999,
+        "Packet Length Std": 1672.521208328221,
+        "Packet Length Variance": 2797327.1923076925,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 13.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 22.0,
+        "Total Bwd packets": 9.0,
+        "Packet Length Mean": 509.0967741935485,
+        "Packet Length Std": 1089.7104922818935,
+        "Packet Length Variance": 1187468.9569892474,
+        "PSH Flag Count": 11.0,
+        "ACK Flag Count": 28.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 859.857142857143,
+        "Packet Length Std": 2102.502898823315,
+        "Packet Length Variance": 4420518.439560441,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 13.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 4.0,
+        "Packet Length Mean": 364.1818181818182,
+        "Packet Length Std": 1058.2095083849715,
+        "Packet Length Variance": 1119807.3636363635,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 10.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 4.0,
+        "Packet Length Mean": 350.0909090909091,
+        "Packet Length Std": 1057.5301843962145,
+        "Packet Length Variance": 1118370.090909091,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 10.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 10.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 754.4999999999999,
+        "Packet Length Std": 1583.9211259823935,
+        "Packet Length Variance": 2508806.1333333333,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 15.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 4.0,
+        "Packet Length Mean": 350.9090909090909,
+        "Packet Length Std": 1057.51316346847,
+        "Packet Length Variance": 1118334.0909090908,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 9.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 807.6666666666667,
+        "Packet Length Std": 1794.9139122478691,
+        "Packet Length Variance": 3221715.952380952,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 14.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 7.0,
+        "Packet Length Mean": 804.3333333333334,
+        "Packet Length Std": 1620.2294223203023,
+        "Packet Length Variance": 2625143.3809523806,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 14.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 13.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 687.3684210526318,
+        "Packet Length Std": 2049.02633274458,
+        "Packet Length Variance": 4198508.912280703,
+        "PSH Flag Count": 4.0,
+        "ACK Flag Count": 16.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 3.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 81.83333333333334,
+        "Packet Length Std": 196.55677720869016,
+        "Packet Length Variance": 38634.56666666666,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 5.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 4.0,
+        "Packet Length Std": 4.618802153517006,
+        "Packet Length Variance": 21.33333333333333,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 4.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 14.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 136.35294117647058,
+        "Packet Length Std": 116.62115008461726,
+        "Packet Length Variance": 13600.492647058823,
+        "PSH Flag Count": 11.0,
+        "ACK Flag Count": 15.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Packet Length Mean": 4.0,
+        "Packet Length Std": 5.656854249492381,
+        "Packet Length Variance": 32.0,
+        "PSH Flag Count": 1.0,
+        "ACK Flag Count": 2.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Packet Length Mean": 4.0,
+        "Packet Length Std": 5.656854249492381,
+        "Packet Length Variance": 32.0,
+        "PSH Flag Count": 1.0,
+        "ACK Flag Count": 2.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 15.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 141.16666666666669,
+        "Packet Length Std": 115.8768362377511,
+        "Packet Length Variance": 13427.441176470587,
+        "PSH Flag Count": 11.0,
+        "ACK Flag Count": 15.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 15.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 141.16666666666669,
+        "Packet Length Std": 115.8768362377511,
+        "Packet Length Variance": 13427.441176470587,
+        "PSH Flag Count": 11.0,
+        "ACK Flag Count": 15.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 4.0,
+        "Packet Length Std": 4.618802153517006,
+        "Packet Length Variance": 21.33333333333333,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 4.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 4.0,
+        "Packet Length Std": 4.618802153517006,
+        "Packet Length Variance": 21.33333333333333,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 4.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Packet Length Mean": 4.0,
+        "Packet Length Std": 5.656854249492381,
+        "Packet Length Variance": 32.0,
+        "PSH Flag Count": 1.0,
+        "ACK Flag Count": 2.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 4.0,
+        "Packet Length Std": 4.618802153517006,
+        "Packet Length Variance": 21.33333333333333,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 4.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 4.0,
+        "Packet Length Std": 4.618802153517006,
+        "Packet Length Variance": 21.33333333333333,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 4.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 15.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 141.16666666666669,
+        "Packet Length Std": 115.8768362377511,
+        "Packet Length Variance": 13427.441176470587,
+        "PSH Flag Count": 11.0,
+        "ACK Flag Count": 15.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Packet Length Mean": 4.0,
+        "Packet Length Std": 5.656854249492381,
+        "Packet Length Variance": 32.0,
+        "PSH Flag Count": 1.0,
+        "ACK Flag Count": 2.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 14.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 149.47058823529412,
+        "Packet Length Std": 113.78879428960636,
+        "Packet Length Variance": 12947.889705882351,
+        "PSH Flag Count": 11.0,
+        "ACK Flag Count": 15.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 4.0,
+        "Packet Length Std": 4.618802153517006,
+        "Packet Length Variance": 21.33333333333333,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 4.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 4.0,
+        "Packet Length Std": 4.618802153517006,
+        "Packet Length Variance": 21.33333333333333,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 4.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 14.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 149.47058823529412,
+        "Packet Length Std": 113.78879428960636,
+        "Packet Length Variance": 12947.889705882351,
+        "PSH Flag Count": 11.0,
+        "ACK Flag Count": 15.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 14.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 149.47058823529412,
+        "Packet Length Std": 113.78879428960636,
+        "Packet Length Variance": 12947.889705882351,
+        "PSH Flag Count": 11.0,
+        "ACK Flag Count": 15.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 14.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 149.47058823529412,
+        "Packet Length Std": 113.78879428960636,
+        "Packet Length Variance": 12947.889705882351,
+        "PSH Flag Count": 11.0,
+        "ACK Flag Count": 15.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 209.16666666666669,
+        "Packet Length Std": 578.2205985660322,
+        "Packet Length Variance": 334339.0606060605,
+        "PSH Flag Count": 3.0,
+        "ACK Flag Count": 10.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 74.85714285714285,
+        "Packet Length Std": 196.2952101397524,
+        "Packet Length Variance": 38531.80952380953,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 6.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 75.85714285714286,
+        "Packet Length Std": 195.89149085776083,
+        "Packet Length Variance": 38373.47619047619,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 6.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 75.42857142857143,
+        "Packet Length Std": 196.0602434141584,
+        "Packet Length Variance": 38439.619047619046,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 6.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 76.71428571428571,
+        "Packet Length Std": 195.5732721051237,
+        "Packet Length Variance": 38248.90476190476,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 6.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 74.85714285714285,
+        "Packet Length Std": 196.2952101397524,
+        "Packet Length Variance": 38531.80952380953,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 6.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 58.66666666666666,
+        "Packet Length Std": 173.02023003105734,
+        "Packet Length Variance": 29936.0,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 6.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Packet Length Mean": 260.0,
+        "Packet Length Std": 367.6955262170047,
+        "Packet Length Variance": 135200.0,
+        "PSH Flag Count": 1.0,
+        "ACK Flag Count": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 10.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 315.3846153846154,
+        "Packet Length Std": 526.3581699536192,
+        "Packet Length Variance": 277052.92307692306,
+        "PSH Flag Count": 7.0,
+        "ACK Flag Count": 11.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 59.11111111111112,
+        "Packet Length Std": 172.87889145616103,
+        "Packet Length Variance": 29887.11111111111,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 6.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 75.71428571428571,
+        "Packet Length Std": 195.9470287992092,
+        "Packet Length Variance": 38395.2380952381,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 6.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 3.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 331.8333333333333,
+        "Packet Length Std": 808.9094922589711,
+        "Packet Length Variance": 654334.5666666665,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 5.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 16.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 301.05263157894734,
+        "Packet Length Std": 263.77378222092983,
+        "Packet Length Variance": 69576.60818713451,
+        "PSH Flag Count": 11.0,
+        "ACK Flag Count": 15.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 13.0,
+        "Total Bwd packets": 2.0,
+        "Packet Length Mean": 112.2,
+        "Packet Length Std": 94.82630738053956,
+        "Packet Length Variance": 8992.028571428573,
+        "PSH Flag Count": 9.0,
+        "ACK Flag Count": 14.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 210.0,
+        "Packet Length Std": 577.9098702927803,
+        "Packet Length Variance": 333979.8181818181,
+        "PSH Flag Count": 3.0,
+        "ACK Flag Count": 10.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 19.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 236.81818181818176,
+        "Packet Length Std": 264.60008213000134,
+        "Packet Length Variance": 70013.20346320345,
+        "PSH Flag Count": 11.0,
+        "ACK Flag Count": 15.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 74.85714285714285,
+        "Packet Length Std": 196.2952101397524,
+        "Packet Length Variance": 38531.80952380953,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 6.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 51.85714285714286,
+        "Packet Length Std": 131.98538880172632,
+        "Packet Length Variance": 17420.14285714286,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 6.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 3.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 332.1666666666667,
+        "Packet Length Std": 808.7497552807462,
+        "Packet Length Variance": 654076.1666666667,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 5.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 3.0,
+        "Total Bwd packets": 3.0,
+        "Packet Length Mean": 332.1666666666667,
+        "Packet Length Std": 808.7497552807462,
+        "Packet Length Variance": 654076.1666666667,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 5.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 866.0,
+        "Packet Length Std": 1717.7832475939113,
+        "Packet Length Variance": 2950779.285714285,
+        "PSH Flag Count": 3.0,
+        "ACK Flag Count": 14.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 967.9166666666669,
+        "Packet Length Std": 2585.499299707481,
+        "Packet Length Variance": 6684806.628787878,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 11.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 4.0,
+        "Packet Length Mean": 967.9166666666669,
+        "Packet Length Std": 2335.471004017404,
+        "Packet Length Variance": 5454424.8106060615,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 11.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 774.3333333333334,
+        "Packet Length Std": 2116.9982679885848,
+        "Packet Length Variance": 4481681.666666667,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 14.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 967.9166666666669,
+        "Packet Length Std": 2513.922558232031,
+        "Packet Length Variance": 6319806.628787878,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 11.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 893.4615384615386,
+        "Packet Length Std": 3215.4168888700524,
+        "Packet Length Variance": 10338905.769230766,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 12.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 829.6428571428572,
+        "Packet Length Std": 1473.9722159547623,
+        "Packet Length Variance": 2172594.0934065934,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 13.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 893.4615384615386,
+        "Packet Length Std": 1921.524334800569,
+        "Packet Length Variance": 3692255.7692307695,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 12.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 893.4615384615386,
+        "Packet Length Std": 3215.4168888700524,
+        "Packet Length Variance": 10338905.769230766,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 12.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 829.6428571428572,
+        "Packet Length Std": 1575.2587873910584,
+        "Packet Length Variance": 2481440.2472527474,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 13.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 829.6428571428572,
+        "Packet Length Std": 1681.8058795483848,
+        "Packet Length Variance": 2828471.016483516,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 13.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 8.0,
+        "Packet Length Mean": 725.9375,
+        "Packet Length Std": 1504.6519184958804,
+        "Packet Length Variance": 2263977.395833333,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 15.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 829.6428571428572,
+        "Packet Length Std": 2706.316304418321,
+        "Packet Length Variance": 7324147.9395604385,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 13.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 774.3333333333334,
+        "Packet Length Std": 2616.6546708854544,
+        "Packet Length Variance": 6846881.666666665,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 14.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 10.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 725.9375,
+        "Packet Length Std": 2241.28922627878,
+        "Packet Length Variance": 5023377.395833332,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 15.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 893.4615384615386,
+        "Packet Length Std": 1921.524334800569,
+        "Packet Length Variance": 3692255.7692307695,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 12.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 5.0,
+        "Packet Length Mean": 967.9166666666669,
+        "Packet Length Std": 1787.941246661968,
+        "Packet Length Variance": 3196733.9015151514,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 11.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 4.0,
+        "Packet Length Mean": 1055.909090909091,
+        "Packet Length Std": 2428.510673418812,
+        "Packet Length Variance": 5897664.090909091,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 10.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 4.0,
+        "Packet Length Mean": 967.9166666666669,
+        "Packet Length Std": 2585.499299707481,
+        "Packet Length Variance": 6684806.628787878,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 11.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 6.0,
+        "Packet Length Mean": 829.6428571428572,
+        "Packet Length Std": 2104.751460099555,
+        "Packet Length Variance": 4429978.708791209,
+        "PSH Flag Count": 2.0,
+        "ACK Flag Count": 13.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "service": "ratings",
+  "app_label": "ratings",
+  "canonical_name": "ratings",
+  "architecture": "random_forest",
+  "feature_count": 7,
+  "features": [
+    "Total Fwd Packet",
+    "Total Bwd packets",
+    "Packet Length Mean",
+    "Packet Length Std",
+    "Packet Length Variance",
+    "PSH Flag Count",
+    "ACK Flag Count"
+  ],
+  "units": [
+    "count",
+    "count",
+    "bytes",
+    "bytes",
+    "bytes^2",
+    "count",
+    "count"
+  ],
+  "model_file": "ratings_bundle_7feat.joblib",
+  "in_distribution_validation": {
+    "accuracy": 0.9998,
+    "recall": 1.0,
+    "precision": 0.9996,
+    "f1": 0.9998,
+    "fpr": 0.0007
+  }
+}

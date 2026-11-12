@@ -1,0 +1,31 @@
+{
+    "service": "details",
+    "feature_count": 7,
+    "feature_names": [
+        "Total Fwd Packet",
+        "Total Bwd packets",
+        "Total Length of Fwd Packet",
+        "Total Length of Bwd Packet",
+        "Fwd Packet Length Mean",
+        "Bwd Packet Length Mean",
+        "Down/Up Ratio"
+    ],
+    "scaler_means": [
+        24.303999773303673,
+        27.828532566344098,
+        778.451111520424,
+        54406.32281556837,
+        56.283577080864745,
+        969.9821897371442,
+        0.7938091359640982
+    ],
+    "scaler_scales": [
+        1556.5018080834368,
+        2060.067756886875,
+        5748.95620862248,
+        4820697.222167968,
+        94.17452491357875,
+        970.0958311060668,
+        0.24482314873891997
+    ]
+}

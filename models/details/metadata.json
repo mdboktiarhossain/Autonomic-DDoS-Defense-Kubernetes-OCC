@@ -1,0 +1,68 @@
+{
+    "service": "details",
+    "dataset": "Improved CIC-IDS2017",
+    "features": [
+        "Total Fwd Packet",
+        "Total Bwd packets",
+        "Total Length of Fwd Packet",
+        "Total Length of Bwd Packet",
+        "Fwd Packet Length Mean",
+        "Bwd Packet Length Mean",
+        "Down/Up Ratio"
+    ],
+    "train_samples": 70579,
+    "test_samples": 17587,
+    "benchmark_results": {
+        "Random Forest": {
+            "fit_time_sec": 3.59,
+            "accuracy": 0.9998,
+            "balanced_accuracy": 0.9998,
+            "precision": 0.9995,
+            "recall": 1.0,
+            "f1_score": 0.9998,
+            "false_positive_rate": 0.0004,
+            "median_latency_us": 3204.9,
+            "sub_attack_recalls": {
+                "DoS Hulk": 1.0,
+                "DoS GoldenEye": 1.0,
+                "DoS Slowloris": 1.0,
+                "DoS Slowhttptest": 1.0,
+                "DDoS": 1.0
+            }
+        },
+        "HistGradientBoosting": {
+            "fit_time_sec": 0.55,
+            "accuracy": 0.9998,
+            "balanced_accuracy": 0.9998,
+            "precision": 0.9998,
+            "recall": 0.9999,
+            "f1_score": 0.9998,
+            "false_positive_rate": 0.0002,
+            "median_latency_us": 655.4,
+            "sub_attack_recalls": {
+                "DoS Hulk": 0.9997,
+                "DoS GoldenEye": 1.0,
+                "DoS Slowloris": 1.0,
+                "DoS Slowhttptest": 1.0,
+                "DDoS": 1.0
+            }
+        },
+        "Decision Tree": {
+            "fit_time_sec": 0.06,
+            "accuracy": 0.9996,
+            "balanced_accuracy": 0.9996,
+            "precision": 0.9993,
+            "recall": 0.9999,
+            "f1_score": 0.9996,
+            "false_positive_rate": 0.0007,
+            "median_latency_us": 60.5,
+            "sub_attack_recalls": {
+                "DoS Hulk": 1.0,
+                "DoS GoldenEye": 0.9993,
+                "DoS Slowloris": 1.0,
+                "DoS Slowhttptest": 1.0,
+                "DDoS": 1.0
+            }
+        }
+    }
+}

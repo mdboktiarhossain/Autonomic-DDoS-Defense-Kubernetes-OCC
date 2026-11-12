@@ -1,0 +1,2617 @@
+{
+  "service": "details",
+  "total_test_vectors": 200,
+  "benign_count": 100,
+  "attack_count": 100,
+  "features_order": [
+    "Total Fwd Packet",
+    "Total Bwd packets",
+    "Total Length of Fwd Packet",
+    "Total Length of Bwd Packet",
+    "Fwd Packet Length Mean",
+    "Bwd Packet Length Mean",
+    "Down/Up Ratio"
+  ],
+  "test_vectors": [
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 24.0,
+        "Total Bwd packets": 29.0,
+        "Total Length of Fwd Packet": 338.0,
+        "Total Length of Bwd Packet": 24915.0,
+        "Fwd Packet Length Mean": 14.083333333333336,
+        "Bwd Packet Length Mean": 859.1379310344829,
+        "Down/Up Ratio": 1.2083333333333333
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 20.0,
+        "Total Bwd packets": 20.0,
+        "Total Length of Fwd Packet": 521.0,
+        "Total Length of Bwd Packet": 10458.0,
+        "Fwd Packet Length Mean": 26.050000000000004,
+        "Bwd Packet Length Mean": 522.9,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.6
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 10.0,
+        "Total Length of Fwd Packet": 680.0,
+        "Total Length of Bwd Packet": 5432.0,
+        "Fwd Packet Length Mean": 75.55555555555557,
+        "Bwd Packet Length Mean": 543.2,
+        "Down/Up Ratio": 1.1111111111111112
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 64.0,
+        "Total Length of Bwd Packet": 168.0,
+        "Fwd Packet Length Mean": 32.0,
+        "Bwd Packet Length Mean": 84.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 18.0,
+        "Total Bwd packets": 16.0,
+        "Total Length of Fwd Packet": 458.0,
+        "Total Length of Bwd Packet": 1826.0,
+        "Fwd Packet Length Mean": 25.444444444444443,
+        "Bwd Packet Length Mean": 114.12499999999996,
+        "Down/Up Ratio": 0.8888888888888888
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Total Length of Fwd Packet": 49.0,
+        "Total Length of Bwd Packet": 49.0,
+        "Fwd Packet Length Mean": 49.0,
+        "Bwd Packet Length Mean": 49.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 7.0,
+        "Total Length of Fwd Packet": 338.0,
+        "Total Length of Bwd Packet": 3776.0,
+        "Fwd Packet Length Mean": 48.28571428571428,
+        "Bwd Packet Length Mean": 539.4285714285713,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 88.0,
+        "Total Length of Bwd Packet": 272.0,
+        "Fwd Packet Length Mean": 44.0,
+        "Bwd Packet Length Mean": 136.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Total Length of Fwd Packet": 47.0,
+        "Total Length of Bwd Packet": 225.0,
+        "Fwd Packet Length Mean": 47.0,
+        "Bwd Packet Length Mean": 225.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 238.0,
+        "Total Bwd packets": 290.0,
+        "Total Length of Fwd Packet": 7310.0,
+        "Total Length of Bwd Packet": 385571.0,
+        "Fwd Packet Length Mean": 30.714285714285715,
+        "Bwd Packet Length Mean": 1329.5551724137931,
+        "Down/Up Ratio": 1.218487394957983
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Total Length of Fwd Packet": 69.0,
+        "Total Length of Bwd Packet": 165.0,
+        "Fwd Packet Length Mean": 69.0,
+        "Bwd Packet Length Mean": 165.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 188.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 94.0,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 21.0,
+        "Total Bwd packets": 19.0,
+        "Total Length of Fwd Packet": 1310.0,
+        "Total Length of Bwd Packet": 3730.0,
+        "Fwd Packet Length Mean": 62.3809523809524,
+        "Bwd Packet Length Mean": 196.31578947368425,
+        "Down/Up Ratio": 0.9047619047619048
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 20.0,
+        "Total Bwd packets": 21.0,
+        "Total Length of Fwd Packet": 313.0,
+        "Total Length of Bwd Packet": 32656.0,
+        "Fwd Packet Length Mean": 15.649999999999997,
+        "Bwd Packet Length Mean": 1555.047619047619,
+        "Down/Up Ratio": 1.05
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 5.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.7142857142857143,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.8571428571428571
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 8.0,
+        "Total Length of Fwd Packet": 6.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.75,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Total Length of Fwd Packet": 60.0,
+        "Total Length of Bwd Packet": 115.0,
+        "Fwd Packet Length Mean": 60.0,
+        "Bwd Packet Length Mean": 115.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 68.0,
+        "Total Length of Bwd Packet": 100.0,
+        "Fwd Packet Length Mean": 34.0,
+        "Bwd Packet Length Mean": 50.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Total Length of Fwd Packet": 55.0,
+        "Total Length of Bwd Packet": 139.0,
+        "Fwd Packet Length Mean": 55.0,
+        "Bwd Packet Length Mean": 139.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 7.0,
+        "Total Length of Fwd Packet": 344.0,
+        "Total Length of Bwd Packet": 3034.0,
+        "Fwd Packet Length Mean": 38.22222222222222,
+        "Bwd Packet Length Mean": 433.4285714285714,
+        "Down/Up Ratio": 0.7777777777777778
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 17.0,
+        "Total Bwd packets": 15.0,
+        "Total Length of Fwd Packet": 446.0,
+        "Total Length of Bwd Packet": 796.0,
+        "Fwd Packet Length Mean": 26.23529411764706,
+        "Bwd Packet Length Mean": 53.06666666666666,
+        "Down/Up Ratio": 0.8823529411764706
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 391.0,
+        "Total Length of Bwd Packet": 545.0,
+        "Fwd Packet Length Mean": 65.16666666666667,
+        "Bwd Packet Length Mean": 109.0,
+        "Down/Up Ratio": 0.8333333333333334
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Total Length of Fwd Packet": 43.0,
+        "Total Length of Bwd Packet": 121.0,
+        "Fwd Packet Length Mean": 43.0,
+        "Bwd Packet Length Mean": 121.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.6
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 4.0,
+        "Total Length of Fwd Packet": 3.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.6,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.8
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 439.0,
+        "Total Length of Bwd Packet": 860.0,
+        "Fwd Packet Length Mean": 87.8,
+        "Bwd Packet Length Mean": 172.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 426.0,
+        "Total Length of Bwd Packet": 2266.0,
+        "Fwd Packet Length Mean": 85.2,
+        "Bwd Packet Length Mean": 453.2,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 17.0,
+        "Total Bwd packets": 15.0,
+        "Total Length of Fwd Packet": 547.0,
+        "Total Length of Bwd Packet": 248.0,
+        "Fwd Packet Length Mean": 32.1764705882353,
+        "Bwd Packet Length Mean": 16.533333333333335,
+        "Down/Up Ratio": 0.8823529411764706
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 499.0,
+        "Total Length of Bwd Packet": 1124.0,
+        "Fwd Packet Length Mean": 99.8,
+        "Bwd Packet Length Mean": 224.8,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 17.0,
+        "Total Bwd packets": 16.0,
+        "Total Length of Fwd Packet": 833.0,
+        "Total Length of Bwd Packet": 3533.0,
+        "Fwd Packet Length Mean": 49.0,
+        "Bwd Packet Length Mean": 220.8125,
+        "Down/Up Ratio": 0.9411764705882352
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 56.0,
+        "Total Bwd packets": 91.0,
+        "Total Length of Fwd Packet": 683.0,
+        "Total Length of Bwd Packet": 182842.0,
+        "Fwd Packet Length Mean": 12.19642857142857,
+        "Bwd Packet Length Mean": 2009.2527472527472,
+        "Down/Up Ratio": 1.625
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 21.0,
+        "Total Bwd packets": 18.0,
+        "Total Length of Fwd Packet": 1787.0,
+        "Total Length of Bwd Packet": 3916.0,
+        "Fwd Packet Length Mean": 85.09523809523809,
+        "Bwd Packet Length Mean": 217.5555555555556,
+        "Down/Up Ratio": 0.8571428571428571
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 12.0,
+        "Total Bwd packets": 11.0,
+        "Total Length of Fwd Packet": 927.0,
+        "Total Length of Bwd Packet": 473.0,
+        "Fwd Packet Length Mean": 77.25,
+        "Bwd Packet Length Mean": 43.0,
+        "Down/Up Ratio": 0.9166666666666666
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 13.0,
+        "Total Bwd packets": 13.0,
+        "Total Length of Fwd Packet": 2280.0,
+        "Total Length of Bwd Packet": 2725.0,
+        "Fwd Packet Length Mean": 175.3846153846154,
+        "Bwd Packet Length Mean": 209.61538461538456,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 13.0,
+        "Total Bwd packets": 12.0,
+        "Total Length of Fwd Packet": 767.0,
+        "Total Length of Bwd Packet": 318.0,
+        "Fwd Packet Length Mean": 59.00000000000001,
+        "Bwd Packet Length Mean": 26.5,
+        "Down/Up Ratio": 0.9230769230769232
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 4.0,
+        "Total Length of Fwd Packet": 384.0,
+        "Total Length of Bwd Packet": 455.0,
+        "Fwd Packet Length Mean": 64.0,
+        "Bwd Packet Length Mean": 113.75,
+        "Down/Up Ratio": 0.6666666666666666
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 110.0,
+        "Total Length of Bwd Packet": 174.0,
+        "Fwd Packet Length Mean": 55.0,
+        "Bwd Packet Length Mean": 87.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 20.0,
+        "Total Bwd packets": 18.0,
+        "Total Length of Fwd Packet": 401.0,
+        "Total Length of Bwd Packet": 5235.0,
+        "Fwd Packet Length Mean": 20.050000000000004,
+        "Bwd Packet Length Mean": 290.8333333333333,
+        "Down/Up Ratio": 0.9
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.6
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 19.0,
+        "Total Bwd packets": 16.0,
+        "Total Length of Fwd Packet": 896.0,
+        "Total Length of Bwd Packet": 1958.0,
+        "Fwd Packet Length Mean": 47.15789473684211,
+        "Bwd Packet Length Mean": 122.375,
+        "Down/Up Ratio": 0.8421052631578947
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 25.0,
+        "Total Bwd packets": 22.0,
+        "Total Length of Fwd Packet": 1095.0,
+        "Total Length of Bwd Packet": 6834.0,
+        "Fwd Packet Length Mean": 43.79999999999998,
+        "Bwd Packet Length Mean": 310.6363636363636,
+        "Down/Up Ratio": 0.88
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 7.0,
+        "Total Length of Fwd Packet": 468.0,
+        "Total Length of Bwd Packet": 4796.0,
+        "Fwd Packet Length Mean": 58.5,
+        "Bwd Packet Length Mean": 685.1428571428572,
+        "Down/Up Ratio": 0.875
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 9.0,
+        "Total Length of Fwd Packet": 7.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.7777777777777778,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.7142857142857143
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 8.0,
+        "Total Length of Fwd Packet": 434.0,
+        "Total Length of Bwd Packet": 1806.0,
+        "Fwd Packet Length Mean": 54.25,
+        "Bwd Packet Length Mean": 225.75,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.6
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 82.0,
+        "Total Length of Bwd Packet": 194.0,
+        "Fwd Packet Length Mean": 41.0,
+        "Bwd Packet Length Mean": 97.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 98.0,
+        "Total Length of Bwd Packet": 146.0,
+        "Fwd Packet Length Mean": 49.0,
+        "Bwd Packet Length Mean": 73.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 80.0,
+        "Total Length of Bwd Packet": 112.0,
+        "Fwd Packet Length Mean": 40.0,
+        "Bwd Packet Length Mean": 56.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 80.0,
+        "Total Length of Bwd Packet": 180.0,
+        "Fwd Packet Length Mean": 40.0,
+        "Bwd Packet Length Mean": 90.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 17.0,
+        "Total Bwd packets": 24.0,
+        "Total Length of Fwd Packet": 1061.0,
+        "Total Length of Bwd Packet": 36710.0,
+        "Fwd Packet Length Mean": 62.41176470588234,
+        "Bwd Packet Length Mean": 1529.5833333333333,
+        "Down/Up Ratio": 1.411764705882353
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 19.0,
+        "Total Bwd packets": 16.0,
+        "Total Length of Fwd Packet": 747.0,
+        "Total Length of Bwd Packet": 1772.0,
+        "Fwd Packet Length Mean": 39.31578947368421,
+        "Bwd Packet Length Mean": 110.74999999999996,
+        "Down/Up Ratio": 0.8421052631578947
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 16.0,
+        "Total Bwd packets": 16.0,
+        "Total Length of Fwd Packet": 590.0,
+        "Total Length of Bwd Packet": 4452.0,
+        "Fwd Packet Length Mean": 36.87500000000001,
+        "Bwd Packet Length Mean": 278.25,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 14.0,
+        "Total Bwd packets": 10.0,
+        "Total Length of Fwd Packet": 656.0,
+        "Total Length of Bwd Packet": 560.0,
+        "Fwd Packet Length Mean": 46.85714285714285,
+        "Bwd Packet Length Mean": 56.0,
+        "Down/Up Ratio": 0.7142857142857143
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 123.0,
+        "Total Bwd packets": 169.0,
+        "Total Length of Fwd Packet": 4470.0,
+        "Total Length of Bwd Packet": 330803.0,
+        "Fwd Packet Length Mean": 36.34146341463415,
+        "Bwd Packet Length Mean": 1957.4142011834333,
+        "Down/Up Ratio": 1.3739837398373984
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 427.0,
+        "Total Length of Bwd Packet": 2267.0,
+        "Fwd Packet Length Mean": 85.4,
+        "Bwd Packet Length Mean": 377.8333333333333,
+        "Down/Up Ratio": 1.2
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 66.0,
+        "Total Length of Bwd Packet": 98.0,
+        "Fwd Packet Length Mean": 33.0,
+        "Bwd Packet Length Mean": 49.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 8.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 4.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 2.0,
+        "Total Length of Bwd Packet": 89.0,
+        "Fwd Packet Length Mean": 0.5,
+        "Bwd Packet Length Mean": 14.833333333333334,
+        "Down/Up Ratio": 1.5
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Total Length of Fwd Packet": 50.0,
+        "Total Length of Bwd Packet": 111.0,
+        "Fwd Packet Length Mean": 50.0,
+        "Bwd Packet Length Mean": 111.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 32.0,
+        "Total Bwd packets": 30.0,
+        "Total Length of Fwd Packet": 668.0,
+        "Total Length of Bwd Packet": 26835.0,
+        "Fwd Packet Length Mean": 20.875000000000004,
+        "Bwd Packet Length Mean": 894.5000000000001,
+        "Down/Up Ratio": 0.9375
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.6
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 419.0,
+        "Total Length of Bwd Packet": 1767.0,
+        "Fwd Packet Length Mean": 83.8,
+        "Bwd Packet Length Mean": 353.4,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 4.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.8
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 13.0,
+        "Total Bwd packets": 0.0,
+        "Total Length of Fwd Packet": 650.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 50.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 19.0,
+        "Total Bwd packets": 17.0,
+        "Total Length of Fwd Packet": 436.0,
+        "Total Length of Bwd Packet": 2502.0,
+        "Fwd Packet Length Mean": 22.94736842105264,
+        "Bwd Packet Length Mean": 147.17647058823528,
+        "Down/Up Ratio": 0.8947368421052632
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 63.0,
+        "Total Bwd packets": 65.0,
+        "Total Length of Fwd Packet": 382.0,
+        "Total Length of Bwd Packet": 84290.0,
+        "Fwd Packet Length Mean": 6.063492063492063,
+        "Bwd Packet Length Mean": 1296.7692307692305,
+        "Down/Up Ratio": 1.031746031746032
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 17.0,
+        "Total Bwd packets": 15.0,
+        "Total Length of Fwd Packet": 1154.0,
+        "Total Length of Bwd Packet": 500.0,
+        "Fwd Packet Length Mean": 67.88235294117646,
+        "Bwd Packet Length Mean": 33.333333333333336,
+        "Down/Up Ratio": 0.8823529411764706
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 14.0,
+        "Total Bwd packets": 12.0,
+        "Total Length of Fwd Packet": 1381.0,
+        "Total Length of Bwd Packet": 6447.0,
+        "Fwd Packet Length Mean": 98.64285714285715,
+        "Bwd Packet Length Mean": 537.25,
+        "Down/Up Ratio": 0.8571428571428571
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 19.0,
+        "Total Bwd packets": 22.0,
+        "Total Length of Fwd Packet": 1539.0,
+        "Total Length of Bwd Packet": 11147.0,
+        "Fwd Packet Length Mean": 81.00000000000001,
+        "Bwd Packet Length Mean": 506.68181818181824,
+        "Down/Up Ratio": 1.1578947368421053
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 212.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 70.66666666666666,
+        "Down/Up Ratio": 0.75
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 17.0,
+        "Total Bwd packets": 15.0,
+        "Total Length of Fwd Packet": 441.0,
+        "Total Length of Bwd Packet": 1391.0,
+        "Fwd Packet Length Mean": 25.94117647058824,
+        "Bwd Packet Length Mean": 92.73333333333332,
+        "Down/Up Ratio": 0.8823529411764706
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 66.0,
+        "Total Bwd packets": 79.0,
+        "Total Length of Fwd Packet": 7644.0,
+        "Total Length of Bwd Packet": 114802.0,
+        "Fwd Packet Length Mean": 115.8181818181818,
+        "Bwd Packet Length Mean": 1453.189873417722,
+        "Down/Up Ratio": 1.196969696969697
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Total Length of Fwd Packet": 57.0,
+        "Total Length of Bwd Packet": 115.0,
+        "Fwd Packet Length Mean": 57.0,
+        "Bwd Packet Length Mean": 115.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 178.0,
+        "Total Bwd packets": 287.0,
+        "Total Length of Fwd Packet": 1137.0,
+        "Total Length of Bwd Packet": 429981.0,
+        "Fwd Packet Length Mean": 6.387640449438204,
+        "Bwd Packet Length Mean": 1498.1916376306613,
+        "Down/Up Ratio": 1.6123595505617978
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.6
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 58.0,
+        "Total Length of Bwd Packet": 570.0,
+        "Fwd Packet Length Mean": 29.0,
+        "Bwd Packet Length Mean": 285.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 86.0,
+        "Total Length of Bwd Packet": 228.0,
+        "Fwd Packet Length Mean": 43.0,
+        "Bwd Packet Length Mean": 114.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 427.0,
+        "Total Length of Bwd Packet": 2267.0,
+        "Fwd Packet Length Mean": 85.4,
+        "Bwd Packet Length Mean": 377.8333333333333,
+        "Down/Up Ratio": 1.2
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 19.0,
+        "Total Bwd packets": 16.0,
+        "Total Length of Fwd Packet": 877.0,
+        "Total Length of Bwd Packet": 1492.0,
+        "Fwd Packet Length Mean": 46.15789473684209,
+        "Bwd Packet Length Mean": 93.25,
+        "Down/Up Ratio": 0.8421052631578947
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 12.0,
+        "Total Bwd packets": 11.0,
+        "Total Length of Fwd Packet": 345.0,
+        "Total Length of Bwd Packet": 238.0,
+        "Fwd Packet Length Mean": 28.75,
+        "Bwd Packet Length Mean": 21.63636363636364,
+        "Down/Up Ratio": 0.9166666666666666
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 92.0,
+        "Total Length of Bwd Packet": 300.0,
+        "Fwd Packet Length Mean": 46.0,
+        "Bwd Packet Length Mean": 150.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 512.0,
+        "Total Length of Bwd Packet": 373.0,
+        "Fwd Packet Length Mean": 102.4,
+        "Bwd Packet Length Mean": 124.33333333333334,
+        "Down/Up Ratio": 0.6
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 0.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 0.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 15.0,
+        "Total Bwd packets": 11.0,
+        "Total Length of Fwd Packet": 508.0,
+        "Total Length of Bwd Packet": 4581.0,
+        "Fwd Packet Length Mean": 33.86666666666667,
+        "Bwd Packet Length Mean": 416.4545454545454,
+        "Down/Up Ratio": 0.7333333333333333
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 11.0,
+        "Total Bwd packets": 9.0,
+        "Total Length of Fwd Packet": 1665.0,
+        "Total Length of Bwd Packet": 7092.0,
+        "Fwd Packet Length Mean": 151.36363636363637,
+        "Bwd Packet Length Mean": 788.0,
+        "Down/Up Ratio": 0.8181818181818182
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 17.0,
+        "Total Bwd packets": 16.0,
+        "Total Length of Fwd Packet": 712.0,
+        "Total Length of Bwd Packet": 778.0,
+        "Fwd Packet Length Mean": 41.88235294117648,
+        "Bwd Packet Length Mean": 48.62499999999999,
+        "Down/Up Ratio": 0.9411764705882352
+      }
+    },
+    {
+      "ground_truth_class": "BENIGN",
+      "ground_truth_label": 0,
+      "features": {
+        "Total Fwd Packet": 5.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 430.0,
+        "Total Length of Bwd Packet": 859.0,
+        "Fwd Packet Length Mean": 86.0,
+        "Bwd Packet Length Mean": 171.8,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 349.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 58.16666666666666,
+        "Bwd Packet Length Mean": 1932.5,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 355.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 59.16666666666666,
+        "Bwd Packet Length Mean": 1932.5,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 363.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 51.85714285714285,
+        "Bwd Packet Length Mean": 1932.5,
+        "Down/Up Ratio": 0.8571428571428571
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 10.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 1083.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 108.3,
+        "Bwd Packet Length Mean": 1932.5,
+        "Down/Up Ratio": 0.6
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 8.0,
+        "Total Length of Fwd Packet": 417.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 52.125,
+        "Bwd Packet Length Mean": 1449.375,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 7.0,
+        "Total Length of Fwd Packet": 328.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 41.0,
+        "Bwd Packet Length Mean": 1656.4285714285716,
+        "Down/Up Ratio": 0.875
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 7.0,
+        "Total Length of Fwd Packet": 337.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 48.142857142857146,
+        "Bwd Packet Length Mean": 1656.4285714285716,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 371.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 46.375,
+        "Bwd Packet Length Mean": 2319.0,
+        "Down/Up Ratio": 0.625
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 598.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 66.44444444444443,
+        "Bwd Packet Length Mean": 1932.5,
+        "Down/Up Ratio": 0.6666666666666666
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 307.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 38.375,
+        "Bwd Packet Length Mean": 1932.5,
+        "Down/Up Ratio": 0.75
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 7.0,
+        "Total Length of Fwd Packet": 347.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 43.375,
+        "Bwd Packet Length Mean": 1656.4285714285716,
+        "Down/Up Ratio": 0.875
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 7.0,
+        "Total Length of Fwd Packet": 346.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 49.42857142857143,
+        "Bwd Packet Length Mean": 1656.4285714285716,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 357.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 39.66666666666667,
+        "Bwd Packet Length Mean": 2319.0,
+        "Down/Up Ratio": 0.5555555555555556
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 4.0,
+        "Total Length of Fwd Packet": 354.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 44.25,
+        "Bwd Packet Length Mean": 2898.75,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 10.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 320.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 32.0,
+        "Bwd Packet Length Mean": 1932.5,
+        "Down/Up Ratio": 0.6
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 300.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 42.85714285714285,
+        "Bwd Packet Length Mean": 2319.0,
+        "Down/Up Ratio": 0.7142857142857143
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 7.0,
+        "Total Length of Fwd Packet": 413.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 51.625,
+        "Bwd Packet Length Mean": 1656.4285714285716,
+        "Down/Up Ratio": 0.875
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 7.0,
+        "Total Length of Fwd Packet": 361.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 51.57142857142858,
+        "Bwd Packet Length Mean": 1656.428571428571,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 366.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 61.0,
+        "Bwd Packet Length Mean": 1932.5,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Hulk",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 7.0,
+        "Total Length of Fwd Packet": 317.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 39.625,
+        "Bwd Packet Length Mean": 1656.4285714285716,
+        "Down/Up Ratio": 0.875
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 313.0,
+        "Total Length of Bwd Packet": 11632.0,
+        "Fwd Packet Length Mean": 39.125,
+        "Bwd Packet Length Mean": 1938.6666666666667,
+        "Down/Up Ratio": 0.75
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 274.0,
+        "Total Length of Bwd Packet": 11632.0,
+        "Fwd Packet Length Mean": 30.444444444444443,
+        "Bwd Packet Length Mean": 2326.4,
+        "Down/Up Ratio": 0.5555555555555556
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 4.0,
+        "Total Length of Fwd Packet": 623.0,
+        "Total Length of Bwd Packet": 3525.0,
+        "Fwd Packet Length Mean": 89.0,
+        "Bwd Packet Length Mean": 881.25,
+        "Down/Up Ratio": 0.5714285714285714
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 403.0,
+        "Total Length of Bwd Packet": 11632.0,
+        "Fwd Packet Length Mean": 50.37499999999999,
+        "Bwd Packet Length Mean": 1938.6666666666667,
+        "Down/Up Ratio": 0.75
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 10.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 464.0,
+        "Total Length of Bwd Packet": 11632.0,
+        "Fwd Packet Length Mean": 46.39999999999999,
+        "Bwd Packet Length Mean": 1938.6666666666667,
+        "Down/Up Ratio": 0.6
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 507.0,
+        "Total Length of Bwd Packet": 11632.0,
+        "Fwd Packet Length Mean": 56.333333333333336,
+        "Bwd Packet Length Mean": 1938.6666666666667,
+        "Down/Up Ratio": 0.6666666666666666
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 559.0,
+        "Total Length of Bwd Packet": 11632.0,
+        "Fwd Packet Length Mean": 62.1111111111111,
+        "Bwd Packet Length Mean": 1938.6666666666667,
+        "Down/Up Ratio": 0.6666666666666666
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 385.0,
+        "Total Length of Bwd Packet": 11632.0,
+        "Fwd Packet Length Mean": 42.77777777777778,
+        "Bwd Packet Length Mean": 2326.4,
+        "Down/Up Ratio": 0.5555555555555556
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 628.0,
+        "Total Length of Bwd Packet": 3525.0,
+        "Fwd Packet Length Mean": 104.66666666666666,
+        "Bwd Packet Length Mean": 705.0,
+        "Down/Up Ratio": 0.8333333333333334
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 262.0,
+        "Total Length of Bwd Packet": 11632.0,
+        "Fwd Packet Length Mean": 29.111111111111104,
+        "Bwd Packet Length Mean": 2326.4,
+        "Down/Up Ratio": 0.5555555555555556
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 401.0,
+        "Total Length of Bwd Packet": 11632.0,
+        "Fwd Packet Length Mean": 50.12500000000001,
+        "Bwd Packet Length Mean": 1938.6666666666667,
+        "Down/Up Ratio": 0.75
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 22.0,
+        "Total Bwd packets": 9.0,
+        "Total Length of Fwd Packet": 4150.0,
+        "Total Length of Bwd Packet": 11632.0,
+        "Fwd Packet Length Mean": 188.6363636363636,
+        "Bwd Packet Length Mean": 1292.4444444444443,
+        "Down/Up Ratio": 0.4090909090909091
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 406.0,
+        "Total Length of Bwd Packet": 11632.0,
+        "Fwd Packet Length Mean": 45.11111111111112,
+        "Bwd Packet Length Mean": 2326.4,
+        "Down/Up Ratio": 0.5555555555555556
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 4.0,
+        "Total Length of Fwd Packet": 481.0,
+        "Total Length of Bwd Packet": 3525.0,
+        "Fwd Packet Length Mean": 68.71428571428572,
+        "Bwd Packet Length Mean": 881.25,
+        "Down/Up Ratio": 0.5714285714285714
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 4.0,
+        "Total Length of Fwd Packet": 326.0,
+        "Total Length of Bwd Packet": 3525.0,
+        "Fwd Packet Length Mean": 46.57142857142858,
+        "Bwd Packet Length Mean": 881.25,
+        "Down/Up Ratio": 0.5714285714285714
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 10.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 440.0,
+        "Total Length of Bwd Packet": 11632.0,
+        "Fwd Packet Length Mean": 44.0,
+        "Bwd Packet Length Mean": 1938.6666666666667,
+        "Down/Up Ratio": 0.6
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 4.0,
+        "Total Length of Fwd Packet": 335.0,
+        "Total Length of Bwd Packet": 3525.0,
+        "Fwd Packet Length Mean": 47.85714285714286,
+        "Bwd Packet Length Mean": 881.25,
+        "Down/Up Ratio": 0.5714285714285714
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 483.0,
+        "Total Length of Bwd Packet": 11632.0,
+        "Fwd Packet Length Mean": 53.66666666666666,
+        "Bwd Packet Length Mean": 1938.6666666666667,
+        "Down/Up Ratio": 0.6666666666666666
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 7.0,
+        "Total Length of Fwd Packet": 433.0,
+        "Total Length of Bwd Packet": 11632.0,
+        "Fwd Packet Length Mean": 54.12499999999999,
+        "Bwd Packet Length Mean": 1661.7142857142858,
+        "Down/Up Ratio": 0.875
+      }
+    },
+    {
+      "ground_truth_class": "DoS GoldenEye",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 13.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 1428.0,
+        "Total Length of Bwd Packet": 11632.0,
+        "Fwd Packet Length Mean": 109.84615384615384,
+        "Bwd Packet Length Mean": 1938.6666666666667,
+        "Down/Up Ratio": 0.4615384615384615
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 3.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 8.0,
+        "Total Length of Bwd Packet": 483.0,
+        "Fwd Packet Length Mean": 2.666666666666667,
+        "Bwd Packet Length Mean": 161.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 16.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 8.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 14.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 2318.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 165.57142857142856,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.2142857142857142
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Total Length of Fwd Packet": 8.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 8.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Total Length of Fwd Packet": 8.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 8.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 15.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 2541.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 169.4,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.2
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 15.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 2541.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 169.4,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.2
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 16.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 8.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 16.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 8.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Total Length of Fwd Packet": 8.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 8.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 16.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 8.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 16.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 8.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 15.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 2541.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 169.4,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.2
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Total Length of Fwd Packet": 8.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 8.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 14.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 2541.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 181.5,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.2142857142857142
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 16.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 8.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 2.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 16.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 8.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 14.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 2541.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 181.5,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.2142857142857142
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 14.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 2541.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 181.5,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.2142857142857142
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowloris",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 14.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 2541.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 181.5,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.2142857142857142
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 527.0,
+        "Total Length of Bwd Packet": 1983.0,
+        "Fwd Packet Length Mean": 87.83333333333334,
+        "Bwd Packet Length Mean": 330.5,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 524.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 131.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.75
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 531.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 132.75,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.75
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 528.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 132.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.75
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 537.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 134.25,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.75
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 524.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 131.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.75
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 528.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 88.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 1.0,
+        "Total Bwd packets": 1.0,
+        "Total Length of Fwd Packet": 520.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 520.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 10.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 2136.0,
+        "Total Length of Bwd Packet": 1964.0,
+        "Fwd Packet Length Mean": 213.6,
+        "Bwd Packet Length Mean": 654.6666666666667,
+        "Down/Up Ratio": 0.3
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 532.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 88.66666666666667,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 530.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 132.5,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.75
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 3.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 8.0,
+        "Total Length of Bwd Packet": 1983.0,
+        "Fwd Packet Length Mean": 2.666666666666667,
+        "Bwd Packet Length Mean": 661.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 16.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 5720.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 357.5,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.1875
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 13.0,
+        "Total Bwd packets": 2.0,
+        "Total Length of Fwd Packet": 1683.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 129.46153846153845,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.1538461538461538
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 6.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 537.0,
+        "Total Length of Bwd Packet": 1983.0,
+        "Fwd Packet Length Mean": 89.5,
+        "Bwd Packet Length Mean": 330.5,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 19.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 5210.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 274.2105263157895,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.1578947368421052
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 524.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 131.0,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.75
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 4.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 363.0,
+        "Total Length of Bwd Packet": 0.0,
+        "Fwd Packet Length Mean": 90.75,
+        "Bwd Packet Length Mean": 0.0,
+        "Down/Up Ratio": 0.75
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 3.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 10.0,
+        "Total Length of Bwd Packet": 1983.0,
+        "Fwd Packet Length Mean": 3.333333333333333,
+        "Bwd Packet Length Mean": 661.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DoS Slowhttptest",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 3.0,
+        "Total Bwd packets": 3.0,
+        "Total Length of Fwd Packet": 10.0,
+        "Total Length of Bwd Packet": 1983.0,
+        "Fwd Packet Length Mean": 3.333333333333333,
+        "Bwd Packet Length Mean": 661.0,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 12970.0,
+        "Fwd Packet Length Mean": 2.2222222222222223,
+        "Bwd Packet Length Mean": 2161.6666666666665,
+        "Down/Up Ratio": 0.6666666666666666
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.857142857142857,
+        "Bwd Packet Length Mean": 2319.0,
+        "Down/Up Ratio": 0.7142857142857143
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 4.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.5,
+        "Bwd Packet Length Mean": 2898.75,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.2222222222222223,
+        "Bwd Packet Length Mean": 1932.5,
+        "Down/Up Ratio": 0.6666666666666666
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.857142857142857,
+        "Bwd Packet Length Mean": 2319.0,
+        "Down/Up Ratio": 0.7142857142857143
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.5,
+        "Bwd Packet Length Mean": 2319.0,
+        "Down/Up Ratio": 0.625
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.5,
+        "Bwd Packet Length Mean": 1932.5,
+        "Down/Up Ratio": 0.75
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.857142857142857,
+        "Bwd Packet Length Mean": 1932.5,
+        "Down/Up Ratio": 0.8571428571428571
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.5,
+        "Bwd Packet Length Mean": 2319.0,
+        "Down/Up Ratio": 0.625
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.5,
+        "Bwd Packet Length Mean": 1932.5,
+        "Down/Up Ratio": 0.75
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.5,
+        "Bwd Packet Length Mean": 1932.5,
+        "Down/Up Ratio": 0.75
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 8.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.5,
+        "Bwd Packet Length Mean": 1449.375,
+        "Down/Up Ratio": 1.0
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.2222222222222223,
+        "Bwd Packet Length Mean": 2319.0,
+        "Down/Up Ratio": 0.5555555555555556
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 9.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.2222222222222223,
+        "Bwd Packet Length Mean": 1932.5,
+        "Down/Up Ratio": 0.6666666666666666
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 10.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.0,
+        "Bwd Packet Length Mean": 1932.5,
+        "Down/Up Ratio": 0.6
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.857142857142857,
+        "Bwd Packet Length Mean": 1932.5,
+        "Down/Up Ratio": 0.8571428571428571
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 5.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.857142857142857,
+        "Bwd Packet Length Mean": 2319.0,
+        "Down/Up Ratio": 0.7142857142857143
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 7.0,
+        "Total Bwd packets": 4.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.857142857142857,
+        "Bwd Packet Length Mean": 2898.75,
+        "Down/Up Ratio": 0.5714285714285714
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 4.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.5,
+        "Bwd Packet Length Mean": 2898.75,
+        "Down/Up Ratio": 0.5
+      }
+    },
+    {
+      "ground_truth_class": "DDoS",
+      "ground_truth_label": 1,
+      "features": {
+        "Total Fwd Packet": 8.0,
+        "Total Bwd packets": 6.0,
+        "Total Length of Fwd Packet": 20.0,
+        "Total Length of Bwd Packet": 11595.0,
+        "Fwd Packet Length Mean": 2.5,
+        "Bwd Packet Length Mean": 1932.5,
+        "Down/Up Ratio": 0.75
+      }
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "productpage": {
+    "service": "productpage",
+    "app_label": "productpage",
+    "canonical_name": "product",
+    "architecture": "random_forest",
+    "feature_count": 7,
+    "features": [
+      "Flow Packets/s",
+      "Total Fwd Packet",
+      "Total Length of Fwd Packet",
+      "Fwd Packet Length Mean",
+      "ACK Flag Count",
+      "PSH Flag Count",
+      "Packet Length Variance"
+    ],
+    "units": [
+      "pkts/s",
+      "count",
+      "bytes",
+      "bytes",
+      "count",
+      "count",
+      "bytes^2"
+    ],
+    "model_file": "productpage_bundle_7feat.joblib",
+    "in_distribution_validation": {
+      "accuracy": 0.9991,
+      "recall": 0.9998,
+      "precision": 0.9987,
+      "f1": 0.9993,
+      "fpr": 0.0023
+    }
+  },
+  "details": {
+    "service": "details",
+    "app_label": "details",
+    "canonical_name": "details",
+    "architecture": "hist_gradient_boosting",
+    "feature_count": 7,
+    "features": [
+      "Total Fwd Packet",
+      "Total Bwd packets",
+      "Total Length of Fwd Packet",
+      "Total Length of Bwd Packet",
+      "Fwd Packet Length Mean",
+      "Bwd Packet Length Mean",
+      "Down/Up Ratio"
+    ],
+    "units": [
+      "count",
+      "count",
+      "bytes",
+      "bytes",
+      "bytes",
+      "bytes",
+      "ratio"
+    ],
+    "model_file": "details_bundle_7feat.joblib",
+    "in_distribution_validation": {
+      "accuracy": 0.9996,
+      "recall": 1.0,
+      "precision": 0.9995,
+      "f1": 0.9997,
+      "fpr": 0.001
+    }
+  },
+  "reviews": {
+    "service": "reviews",
+    "app_label": "reviews",
+    "canonical_name": "reviews",
+    "architecture": "hist_gradient_boosting",
+    "feature_count": 7,
+    "features": [
+      "Total Length of Bwd Packet",
+      "Bwd Packet Length Mean",
+      "Packet Length Variance",
+      "Packet Length Std",
+      "Total Bwd packets",
+      "Down/Up Ratio",
+      "Flow IAT Mean"
+    ],
+    "units": [
+      "bytes",
+      "bytes",
+      "bytes^2",
+      "bytes",
+      "count",
+      "ratio",
+      "us"
+    ],
+    "model_file": "reviews_bundle_7feat.joblib",
+    "in_distribution_validation": {
+      "accuracy": 0.9993,
+      "recall": 0.9998,
+      "precision": 0.9991,
+      "f1": 0.9995,
+      "fpr": 0.0017
+    }
+  },
+  "ratings": {
+    "service": "ratings",
+    "app_label": "ratings",
+    "canonical_name": "ratings",
+    "architecture": "random_forest",
+    "feature_count": 7,
+    "features": [
+      "Total Fwd Packet",
+      "Total Bwd packets",
+      "Packet Length Mean",
+      "Packet Length Std",
+      "Packet Length Variance",
+      "PSH Flag Count",
+      "ACK Flag Count"
+    ],
+    "units": [
+      "count",
+      "count",
+      "bytes",
+      "bytes",
+      "bytes^2",
+      "count",
+      "count"
+    ],
+    "model_file": "ratings_bundle_7feat.joblib",
+    "in_distribution_validation": {
+      "accuracy": 0.9998,
+      "recall": 1.0,
+      "precision": 0.9996,
+      "f1": 0.9998,
+      "fpr": 0.0007
+    }
+  }
+}

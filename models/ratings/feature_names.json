@@ -1,0 +1,31 @@
+{
+    "service": "ratings",
+    "feature_count": 7,
+    "feature_names": [
+        "Total Fwd Packet",
+        "Total Bwd packets",
+        "Packet Length Mean",
+        "Packet Length Std",
+        "Packet Length Variance",
+        "PSH Flag Count",
+        "ACK Flag Count"
+    ],
+    "scaler_means": [
+        24.303999773303673,
+        27.828532566344098,
+        439.3978342534249,
+        971.6766487130324,
+        1836005.8305702591,
+        3.4516640927187976,
+        50.46195043851571
+    ],
+    "scaler_scales": [
+        1556.5018080834368,
+        2060.067756886875,
+        383.5874144702431,
+        944.3782721537325,
+        2552189.249499574,
+        34.883462364809525,
+        3614.9590206551047
+    ]
+}

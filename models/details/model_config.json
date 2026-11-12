@@ -1,0 +1,33 @@
+{
+  "service": "details",
+  "app_label": "details",
+  "canonical_name": "details",
+  "architecture": "hist_gradient_boosting",
+  "feature_count": 7,
+  "features": [
+    "Total Fwd Packet",
+    "Total Bwd packets",
+    "Total Length of Fwd Packet",
+    "Total Length of Bwd Packet",
+    "Fwd Packet Length Mean",
+    "Bwd Packet Length Mean",
+    "Down/Up Ratio"
+  ],
+  "units": [
+    "count",
+    "count",
+    "bytes",
+    "bytes",
+    "bytes",
+    "bytes",
+    "ratio"
+  ],
+  "model_file": "details_bundle_7feat.joblib",
+  "in_distribution_validation": {
+    "accuracy": 0.9996,
+    "recall": 1.0,
+    "precision": 0.9995,
+    "f1": 0.9997,
+    "fpr": 0.001
+  }
+}
