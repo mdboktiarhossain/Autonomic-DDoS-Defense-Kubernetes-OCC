@@ -1,0 +1,23 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+*.tmp
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Large raw datasets and archives (hosted in Cloud Storage; see data/DATA_ARCHIVE.md)
+*.csv
+*.pcap
+*.tar.gz
+!data/sample_evidence/**/*.zip
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
