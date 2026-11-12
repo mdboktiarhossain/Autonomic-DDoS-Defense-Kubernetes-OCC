@@ -1,0 +1,32 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: EnvoyFilter
+metadata:
+  name: details-decoy-identity-observer
+  namespace: default
+spec:
+  workloadSelector:
+    labels:
+      app: details-decoy
+  configPatches:
+  - applyTo: HTTP_FILTER
+    match:
+      context: SIDECAR_INBOUND
+      listener:
+        filterChain:
+          filter:
+            name: envoy.filters.network.http_connection_manager
+            subFilter:
+              name: envoy.filters.http.router
+    patch:
+      operation: INSERT_BEFORE
+      value:
+        name: envoy.filters.http.lua
+        typed_config:
+          "@type": type.googleapis.com/envoy.extensions.filters.http.lua.v3.Lua
+          inlineCode: |
+            function envoy_on_request(handle)
+              local trusted = handle:headers():get("x-trusted-client-ip")
+              if trusted and trusted ~= "" then
+                handle:headers():replace("x-forwarded-for", trusted)
+              end
+            end

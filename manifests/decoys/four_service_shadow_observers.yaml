@@ -1,0 +1,408 @@
+# manifests/four_service_shadow_observers.yaml
+# Step 6I: Declarative Least-Privilege Read-Only Shadow Observers for All Four Bookinfo Services
+# (productpage, details, reviews, ratings)
+# STATUS: STRICTLY READ-ONLY SHADOW MODE — Zero cluster mutations; UNIFIED_ML_SHADOW_MODE=true.
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: ddos-shadow-observer
+  namespace: default
+  labels:
+    app.kubernetes.io/name: ddos-shadow-observer
+    app.kubernetes.io/part-of: ddos-detector
+    app.kubernetes.io/component: shadow-observer
+    security.istio.io/tlsMode: istio
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: ddos-shadow-observer-role
+  namespace: default
+  labels:
+    app.kubernetes.io/name: ddos-shadow-observer
+    app.kubernetes.io/part-of: ddos-detector
+    app.kubernetes.io/component: shadow-observer
+rules:
+  # Strictly read-only telemetry observation: pods, pod logs, endpoints, services
+  - apiGroups: [""]
+    resources: ["pods", "pods/log", "endpoints", "services"]
+    verbs: ["get", "list", "watch"]
+  # Coordination Lease read-only observation: inspect current holder & token
+  # EXPLICIT ZERO WRITE: NO "create", "update", "patch", "delete"
+  - apiGroups: ["coordination.k8s.io"]
+    resources: ["leases"]
+    verbs: ["get", "list", "watch"]
+  # Istio VirtualService read-only observation: inspect routing specs
+  # EXPLICIT ZERO WRITE: NO "create", "update", "patch", "delete"
+  - apiGroups: ["networking.istio.io"]
+    resources: ["virtualservices", "destinationrules"]
+    verbs: ["get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: ddos-shadow-observer-binding
+  namespace: default
+  labels:
+    app.kubernetes.io/name: ddos-shadow-observer
+    app.kubernetes.io/part-of: ddos-detector
+    app.kubernetes.io/component: shadow-observer
+subjects:
+  - kind: ServiceAccount
+    name: ddos-shadow-observer
+    namespace: default
+roleRef:
+  kind: Role
+  name: ddos-shadow-observer-role
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: ddos-shadow-observer-gateway-role
+  namespace: istio-system
+  labels:
+    app.kubernetes.io/name: ddos-shadow-observer
+    app.kubernetes.io/part-of: ddos-detector
+    app.kubernetes.io/component: shadow-observer
+rules:
+  # Strictly read-only gateway log observation for request-ID correlation and provenance
+  # EXPLICIT ZERO WRITE: NO "create", "update", "patch", "delete"
+  - apiGroups: [""]
+    resources: ["pods", "pods/log"]
+    verbs: ["get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: ddos-shadow-observer-gateway-binding
+  namespace: istio-system
+  labels:
+    app.kubernetes.io/name: ddos-shadow-observer
+    app.kubernetes.io/part-of: ddos-detector
+    app.kubernetes.io/component: shadow-observer
+subjects:
+  - kind: ServiceAccount
+    name: ddos-shadow-observer
+    namespace: default
+roleRef:
+  kind: Role
+  name: ddos-shadow-observer-gateway-role
+  apiGroup: rbac.authorization.k8s.io
+---
+# 1. Productpage Read-Only Shadow Observer Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ddos-shadow-observer-productpage
+  namespace: default
+  labels:
+    app.kubernetes.io/name: ddos-shadow-observer-productpage
+    app.kubernetes.io/part-of: ddos-detector
+    app.kubernetes.io/component: shadow-observer
+    target-service: productpage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: ddos-shadow-observer-productpage
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: ddos-shadow-observer-productpage
+        app.kubernetes.io/part-of: ddos-detector
+        app.kubernetes.io/component: shadow-observer
+        target-service: productpage
+        sidecar.istio.io/inject: "false"
+    spec:
+      serviceAccountName: ddos-shadow-observer
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+      containers:
+        - name: shadow-observer
+          image: ddos-shadow-observer:v1.0.0
+          imagePullPolicy: IfNotPresent
+          workingDir: /app
+          command:
+            - "python"
+            - "/app/dev_hardened_decentralized_controller.py"
+          env:
+            - name: STAGE3B_SAFETY_FIRST_MODE
+              value: "true"
+            - name: UNIFIED_ML_SHADOW_MODE
+              value: "true"
+            - name: READ_ONLY_CANARY_ACTIVE
+              value: "true"
+            - name: UNIFIED_MODEL_DIR
+              value: "/app/models_unified_dimensionless"
+            - name: TARGET_SERVICE
+              value: "productpage"
+            - name: TARGET_APP_LABEL
+              value: "productpage-canary"
+            - name: SERVICE_ROLE
+              value: "frontend"
+            - name: FEATURE_SCHEMA
+              value: "dimensionless_8"
+            - name: LOG_LEVEL
+              value: "INFO"
+            - name: PYTHONUNBUFFERED
+              value: "1"
+          securityContext:
+            readOnlyRootFilesystem: true
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop: ["ALL"]
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "128Mi"
+            limits:
+              cpu: "250m"
+              memory: "256Mi"
+          volumeMounts:
+            - name: tmp-dir
+              mountPath: /tmp
+      volumes:
+        - name: tmp-dir
+          emptyDir: {}
+---
+# 2. Details Read-Only Shadow Observer Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ddos-shadow-observer-details
+  namespace: default
+  labels:
+    app.kubernetes.io/name: ddos-shadow-observer-details
+    app.kubernetes.io/part-of: ddos-detector
+    app.kubernetes.io/component: shadow-observer
+    target-service: details
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: ddos-shadow-observer-details
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: ddos-shadow-observer-details
+        app.kubernetes.io/part-of: ddos-detector
+        app.kubernetes.io/component: shadow-observer
+        target-service: details
+        sidecar.istio.io/inject: "false"
+    spec:
+      serviceAccountName: ddos-shadow-observer
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+      containers:
+        - name: shadow-observer
+          image: ddos-shadow-observer:v1.0.0
+          imagePullPolicy: IfNotPresent
+          workingDir: /app
+          command:
+            - "python"
+            - "/app/dev_hardened_decentralized_controller.py"
+          env:
+            - name: STAGE3B_SAFETY_FIRST_MODE
+              value: "true"
+            - name: UNIFIED_ML_SHADOW_MODE
+              value: "true"
+            - name: READ_ONLY_CANARY_ACTIVE
+              value: "true"
+            - name: UNIFIED_MODEL_DIR
+              value: "/app/models_unified_dimensionless"
+            - name: TARGET_SERVICE
+              value: "details"
+            - name: TARGET_APP_LABEL
+              value: "details-dataset"
+            - name: SERVICE_ROLE
+              value: "backend"
+            - name: FEATURE_SCHEMA
+              value: "dimensionless_8"
+            - name: LOG_LEVEL
+              value: "INFO"
+            - name: PYTHONUNBUFFERED
+              value: "1"
+          securityContext:
+            readOnlyRootFilesystem: true
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop: ["ALL"]
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "128Mi"
+            limits:
+              cpu: "250m"
+              memory: "256Mi"
+          volumeMounts:
+            - name: tmp-dir
+              mountPath: /tmp
+      volumes:
+        - name: tmp-dir
+          emptyDir: {}
+---
+# 3. Reviews Read-Only Shadow Observer Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ddos-shadow-observer-reviews
+  namespace: default
+  labels:
+    app.kubernetes.io/name: ddos-shadow-observer-reviews
+    app.kubernetes.io/part-of: ddos-detector
+    app.kubernetes.io/component: shadow-observer
+    target-service: reviews
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: ddos-shadow-observer-reviews
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: ddos-shadow-observer-reviews
+        app.kubernetes.io/part-of: ddos-detector
+        app.kubernetes.io/component: shadow-observer
+        target-service: reviews
+        sidecar.istio.io/inject: "false"
+    spec:
+      serviceAccountName: ddos-shadow-observer
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+      containers:
+        - name: shadow-observer
+          image: ddos-shadow-observer:v1.0.0
+          imagePullPolicy: IfNotPresent
+          workingDir: /app
+          command:
+            - "python"
+            - "/app/dev_hardened_decentralized_controller.py"
+          env:
+            - name: STAGE3B_SAFETY_FIRST_MODE
+              value: "true"
+            - name: UNIFIED_ML_SHADOW_MODE
+              value: "true"
+            - name: READ_ONLY_CANARY_ACTIVE
+              value: "true"
+            - name: UNIFIED_MODEL_DIR
+              value: "/app/models_unified_dimensionless"
+            - name: TARGET_SERVICE
+              value: "reviews"
+            - name: TARGET_APP_LABEL
+              value: "reviews-ratings-canary"
+            - name: SERVICE_ROLE
+              value: "backend"
+            - name: FEATURE_SCHEMA
+              value: "dimensionless_8"
+            - name: LOG_LEVEL
+              value: "INFO"
+            - name: PYTHONUNBUFFERED
+              value: "1"
+          securityContext:
+            readOnlyRootFilesystem: true
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop: ["ALL"]
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "128Mi"
+            limits:
+              cpu: "250m"
+              memory: "256Mi"
+          volumeMounts:
+            - name: tmp-dir
+              mountPath: /tmp
+      volumes:
+        - name: tmp-dir
+          emptyDir: {}
+---
+# 4. Ratings Read-Only Shadow Observer Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ddos-shadow-observer-ratings
+  namespace: default
+  labels:
+    app.kubernetes.io/name: ddos-shadow-observer-ratings
+    app.kubernetes.io/part-of: ddos-detector
+    app.kubernetes.io/component: shadow-observer
+    target-service: ratings
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: ddos-shadow-observer-ratings
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: ddos-shadow-observer-ratings
+        app.kubernetes.io/part-of: ddos-detector
+        app.kubernetes.io/component: shadow-observer
+        target-service: ratings
+        sidecar.istio.io/inject: "false"
+    spec:
+      serviceAccountName: ddos-shadow-observer
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+      containers:
+        - name: shadow-observer
+          image: ddos-shadow-observer:v1.0.0
+          imagePullPolicy: IfNotPresent
+          workingDir: /app
+          command:
+            - "python"
+            - "/app/dev_hardened_decentralized_controller.py"
+          env:
+            - name: STAGE3B_SAFETY_FIRST_MODE
+              value: "true"
+            - name: UNIFIED_ML_SHADOW_MODE
+              value: "true"
+            - name: READ_ONLY_CANARY_ACTIVE
+              value: "true"
+            - name: UNIFIED_MODEL_DIR
+              value: "/app/models_unified_dimensionless"
+            - name: TARGET_SERVICE
+              value: "ratings"
+            - name: TARGET_APP_LABEL
+              value: "ratings-dataset"
+            - name: SERVICE_ROLE
+              value: "backend"
+            - name: FEATURE_SCHEMA
+              value: "dimensionless_8"
+            - name: LOG_LEVEL
+              value: "INFO"
+            - name: PYTHONUNBUFFERED
+              value: "1"
+          securityContext:
+            readOnlyRootFilesystem: true
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop: ["ALL"]
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "128Mi"
+            limits:
+              cpu: "250m"
+              memory: "256Mi"
+          volumeMounts:
+            - name: tmp-dir
+              mountPath: /tmp
+      volumes:
+        - name: tmp-dir
+          emptyDir: {}

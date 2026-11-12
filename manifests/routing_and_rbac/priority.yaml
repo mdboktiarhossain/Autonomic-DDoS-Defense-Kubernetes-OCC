@@ -1,0 +1,18 @@
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: ddos-defender-critical
+value: 1000000
+globalDefault: false
+description: "DDoS Defender must survive even when all other pods are evicted"
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: ddos-defender-pdb
+  namespace: default
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      app: ddos-defender

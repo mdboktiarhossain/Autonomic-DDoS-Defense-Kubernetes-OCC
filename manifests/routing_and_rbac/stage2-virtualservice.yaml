@@ -1,0 +1,65 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: bookinfo
+  namespace: default
+spec:
+  gateways:
+    - bookinfo-gateway
+  hosts:
+    - '*'
+  http:
+    # Rule 1: Priority quarantine diversion for identified malicious traffic (Client A)
+    - name: quarantine-malicious
+      match:
+        - headers:
+            x-attack-test:
+              exact: client-a
+          uri:
+            exact: /productpage
+        - headers:
+            x-attack-test:
+              exact: client-a
+          uri:
+            prefix: /static
+        - headers:
+            x-attack-test:
+              exact: client-a
+          uri:
+            exact: /login
+        - headers:
+            x-attack-test:
+              exact: client-a
+          uri:
+            exact: /logout
+        - headers:
+            x-attack-test:
+              exact: client-a
+          uri:
+            prefix: /api/v1/products
+      route:
+        - destination:
+            host: productpage-decoy
+            port:
+              number: 9080
+
+    # Rule 2: Normal production routing (Client B & legitimate traffic, subject to RPS failover)
+    - name: normal-production
+      match:
+        - uri:
+            exact: /productpage
+        - uri:
+            prefix: /static
+        - uri:
+            exact: /login
+        - uri:
+            exact: /logout
+        - uri:
+            prefix: /api/v1/products
+      route:
+        - destination:
+            host: productpage
+            port:
+              number: 9080
+            subset: v1
+          weight: 100

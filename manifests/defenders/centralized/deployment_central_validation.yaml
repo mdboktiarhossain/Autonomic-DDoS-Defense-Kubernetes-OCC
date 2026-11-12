@@ -1,0 +1,105 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ddos-defender-central
+  namespace: default
+  labels:
+    app: ddos-defender-central
+    architecture: centralized
+    version: cic-v5.3
+    mode: validation
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ddos-defender-central
+  template:
+    metadata:
+      labels:
+        app: ddos-defender-central
+        architecture: centralized
+        mode: validation
+      annotations:
+        sidecar.istio.io/inject: "false"
+    spec:
+      serviceAccountName: ddos-defender-sa
+      terminationGracePeriodSeconds: 5
+      containers:
+        - name: defender
+          image: boktiar/ddos-defender:cic-v5.3-central
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
+              name: http
+          env:
+            - name: NAMESPACE
+              value: "default"
+            - name: DETECTION_MODE
+              value: "central"
+            - name: SERVICE_NAME
+              value: ""
+            - name: DDOS_RPS_THRESHOLD
+              value: "15.0"
+            - name: DDOS_RPS_THRESHOLD_PRODUCT
+              value: "50.0"
+            - name: DDOS_RPS_THRESHOLD_BACKEND
+              value: "15.0"
+            - name: DDOS_REVERT_SECONDS
+              value: "60"
+            - name: SCRAPE_INTERVAL
+              value: "1.0"
+            - name: DETECTION_INTERVAL
+              value: "1.0"
+            - name: DETECTION_INTERVAL_PRODUCT
+              value: "1.0"
+            - name: DETECTION_INTERVAL_BACKEND
+              value: "5.0"
+            - name: L7_INFERENCE_INTERVAL
+              value: "2.0"
+            - name: L7_PREDICTION_TTL
+              value: "8.0"
+            - name: SETTLING_DELAY_SECONDS
+              value: "3.0"
+            - name: ENABLE_L7_INFERENCE
+              value: "true"
+            # Strict Non-Enforcing Read-Only Validation Mode:
+            - name: READ_ONLY_MODE
+              value: "true"
+            - name: ENABLE_RPS_ENFORCEMENT
+              value: "false"
+            - name: ENABLE_ML_MITIGATION
+              value: "false"
+            - name: ENABLE_STAGE3B_ATTRIBUTION
+              value: "true"
+            - name: ENABLE_STAGE3B_ENFORCEMENT
+              value: "false"
+            - name: ALLOW_REPLAY_ENFORCEMENT
+              value: "false"
+            - name: AUTHORIZED_TEST_CLIENT_IPS
+              value: "10.244.0.130,10.244.0.131"
+            - name: TEST_AUTH_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: ddos-bench-auth
+                  key: token
+            - name: MODEL_REGISTRY_PATH
+              value: "/app/models/model_registry.json"
+          resources:
+            requests:
+              cpu: "400m"
+              memory: "1024Mi"
+            limits:
+              cpu: "4000m"
+              memory: "8192Mi"
+          readinessProbe:
+            httpGet:
+              path: /api/status
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /api/status
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 10

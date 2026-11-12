@@ -1,0 +1,92 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ddos-defender-details
+  namespace: default
+  labels:
+    app: ddos-defender-details
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ddos-defender-details
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: ddos-defender-details
+      annotations:
+        sidecar.istio.io/inject: 'false'
+    spec:
+      serviceAccountName: ddos-defender-sa
+      containers:
+      - name: defender
+        image: boktiar/ddos-defender:cic-v5.3
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
+        resources:
+          limits:
+            cpu: '1'
+            memory: 2Gi
+          requests:
+            cpu: 100m
+            memory: 256Mi
+        env:
+        - name: TEST_AUTH_TOKEN
+          valueFrom:
+            secretKeyRef:
+              key: token
+              name: ddos-bench-auth
+        - name: NAMESPACE
+          value: default
+        - name: DDOS_RPS_THRESHOLD
+          value: '15'
+        - name: DDOS_REVERT_SECONDS
+          value: '60'
+        - name: SCRAPE_INTERVAL
+          value: '1.0'
+        - name: DETECTION_INTERVAL
+          value: '5.0'
+        - name: DETECTION_MODE
+          value: decentralized
+        - name: SERVICE_NAME
+          value: details
+        - name: MODEL_REGISTRY_PATH
+          value: /app/models/model_registry_decentralized.json
+        - name: ENABLE_ML_MITIGATION
+          value: 'true'
+        - name: ENABLE_L7_INFERENCE
+          value: 'true'
+        - name: ENABLE_STAGE3B_ATTRIBUTION
+          value: 'true'
+        - name: ENABLE_STAGE3B_ENFORCEMENT
+          value: 'true'
+        - name: ALLOW_REPLAY_ENFORCEMENT
+          value: 'true'
+        livenessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /api/health
+            port: 8080
+            scheme: HTTP
+          initialDelaySeconds: 15
+          periodSeconds: 15
+          successThreshold: 1
+          timeoutSeconds: 1
+        readinessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /api/health
+            port: 8080
+            scheme: HTTP
+          initialDelaySeconds: 10
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 1
