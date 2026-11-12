@@ -1,0 +1,62 @@
+{
+  "latency_decomposition_audit.json": {
+    "sha256": "af0869d45d51b9f5c6472ab8f0b3248ca1d045fbc2175266934138467e7bf487",
+    "size_bytes": 11552
+  },
+  "SCENARIO2_MEASUREMENT_AUDIT_REPORT.md": {
+    "sha256": "5c53c7b6930a1d33746e83cb06aedcd079aa5d13d3fce53da02d46807cb2598b",
+    "size_bytes": 9562
+  },
+  "condition1_sweep\\rps_120\\scenario2_ab_raw_20261107_061652.json": {
+    "sha256": "025fc66e94af895c81a2d81a690dc6c285e34026e52dda7ee24ac6f6cd3c0e8a",
+    "size_bytes": 865211
+  },
+  "condition1_sweep\\rps_120\\scenario2_ab_summary_20261107_061652.json": {
+    "sha256": "6138cdf2762ae0c98fe46fbc7d5d06841b3786a2a39c35c60ca6776c12fcba3a",
+    "size_bytes": 2909
+  },
+  "condition1_sweep\\rps_30\\scenario2_ab_raw_20261107_061502.json": {
+    "sha256": "a369c183f406f4bb5cc907735e52f8db3e73a64ced5df2aa98302906834b812b",
+    "size_bytes": 861606
+  },
+  "condition1_sweep\\rps_30\\scenario2_ab_summary_20261107_061502.json": {
+    "sha256": "06faec425fe84774af17b6f019d2d1bd7685e87877134fbb24a21bad3d835333",
+    "size_bytes": 2918
+  },
+  "condition1_sweep\\rps_60\\scenario2_ab_raw_20261107_061542.json": {
+    "sha256": "571995f6abc64beddb304e87916a4a793cdc4e9fa4b924405ce0518ee5f39d0f",
+    "size_bytes": 864652
+  },
+  "condition1_sweep\\rps_60\\scenario2_ab_summary_20261107_061542.json": {
+    "sha256": "1f4820899ed3e8deacebe81d46d7b1242d3d736ba169c019a0a868e38b530ef2",
+    "size_bytes": 2915
+  },
+  "condition1_sweep\\rps_90\\scenario2_ab_raw_20261107_061618.json": {
+    "sha256": "b94df6bd07a5273e0f2f8b2c8377740440b6392edf0c3f2553186cc1fdeb4500",
+    "size_bytes": 865070
+  },
+  "condition1_sweep\\rps_90\\scenario2_ab_summary_20261107_061618.json": {
+    "sha256": "db4d8f4172d1e15608493e1364edca1469786185073c5442868cd234e50ae226",
+    "size_bytes": 2876
+  },
+  "condition2_results\\condition2_summary_results.json": {
+    "sha256": "c3248dc1c1acaf5d42f4b7ae51d52c0e9b3584fd608644cb91dcd72645b99ee4",
+    "size_bytes": 744
+  },
+  "condition2_results\\rps_60\\scenario2_ab_raw_20261107_061859.json": {
+    "sha256": "f6ea4559f66ff57c77a64437ee49c3c51b7f306b832765f123bac32f53790c96",
+    "size_bytes": 864837
+  },
+  "condition2_results\\rps_60\\scenario2_ab_summary_20261107_061859.json": {
+    "sha256": "d064182ecf41e6b303cdfd92a51d8663669169e302937bb1891618c44be1d30c",
+    "size_bytes": 2921
+  },
+  "condition2_results\\rps_90\\scenario2_ab_raw_20261107_061936.json": {
+    "sha256": "7b17bab8000fb076c9813baabca11d62e3f7440bc142047363c7a37f01330a6e",
+    "size_bytes": 865188
+  },
+  "condition2_results\\rps_90\\scenario2_ab_summary_20261107_061936.json": {
+    "sha256": "21f2a269a032b28767d0140f524b802bf5cd6d28fee8f75c22baca70a2822360",
+    "size_bytes": 2899
+  }
+}

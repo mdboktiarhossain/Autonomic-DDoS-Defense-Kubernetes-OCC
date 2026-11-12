@@ -1,0 +1,92 @@
+{
+  "package_name": "SCENARIO_1_PARITY_RAW_EVIDENCE.zip",
+  "description": "Scenario 1 Centralized vs. Decentralized Pre-Benchmark Verification Evidence Package",
+  "total_files": 17,
+  "files": {
+    "read_only_validation_evidence.json": {
+      "file_name": "read_only_validation_evidence.json",
+      "size_bytes": 5540,
+      "sha256": "139c34078961051b5f28a0cea28ff061e93bd71f0b306735da4fd5310223058e"
+    },
+    "active_enforcement_parity_comparison.json": {
+      "file_name": "active_enforcement_parity_comparison.json",
+      "size_bytes": 3885,
+      "sha256": "c6983267019e1102b06e6801d7ea8370c0c50a14357f151aafe327d83f4c697e"
+    },
+    "resource_throttling_audit.json": {
+      "file_name": "resource_throttling_audit.json",
+      "size_bytes": 1132,
+      "sha256": "c03a8347a45bafaf6f0f0305e5e0b87955b0c1040dd4724d5c03e78dc375f022"
+    },
+    "container_cgroup_throttling_comparison.json": {
+      "file_name": "container_cgroup_throttling_comparison.json",
+      "size_bytes": 2751,
+      "sha256": "864f9f957076dd08276b5964e87ae461d2aaf7090b1d282501b3d2608d693ec7"
+    },
+    "model_sha256_audit.json": {
+      "file_name": "model_sha256_audit.json",
+      "size_bytes": 1741,
+      "sha256": "e5b143bc65525661eef4749dcbe5b66acef2bcc8eb1e5893288def885be76422"
+    },
+    "model_prediction_parity_verification.json": {
+      "file_name": "model_prediction_parity_verification.json",
+      "size_bytes": 3509,
+      "sha256": "9a79870f288da6adfaa4d250aafd5db14f0026d889199b07e313f2126dafbf32"
+    },
+    "vs_details_centralized_baseline.json": {
+      "file_name": "vs_details_centralized_baseline.json",
+      "size_bytes": 2252,
+      "sha256": "7da58cbefbd0244d4aab30fd9719469fbd452a419f872fd7dc91a2d59f2a2168"
+    },
+    "vs_details_centralized_mitigated.json": {
+      "file_name": "vs_details_centralized_mitigated.json",
+      "size_bytes": 3728,
+      "sha256": "ceaacacd7d58c432896bbf6d5ebaa87803d1bcadf15e4ad025f7adbf972445af"
+    },
+    "vs_details_centralized_restored.json": {
+      "file_name": "vs_details_centralized_restored.json",
+      "size_bytes": 1980,
+      "sha256": "fc4e46ccf6512b1797dd57b03c5d05fc28d7aff48a418c3b84c27e618bb8e092"
+    },
+    "vs_details_decentralized_baseline.json": {
+      "file_name": "vs_details_decentralized_baseline.json",
+      "size_bytes": 2252,
+      "sha256": "30ab4357a2bd4dcd1ac250223c3f42192156fd67918ada3431679e9e27552f9f"
+    },
+    "vs_details_decentralized_mitigated.json": {
+      "file_name": "vs_details_decentralized_mitigated.json",
+      "size_bytes": 3728,
+      "sha256": "9db6d174d1a494ad082bc3d1f22156c85acaae2f2a2b7d54a577106dc29e7b59"
+    },
+    "vs_details_decentralized_restored.json": {
+      "file_name": "vs_details_decentralized_restored.json",
+      "size_bytes": 1980,
+      "sha256": "fc4e46ccf6512b1797dd57b03c5d05fc28d7aff48a418c3b84c27e618bb8e092"
+    },
+    "logs_centralized.txt": {
+      "file_name": "logs_centralized.txt",
+      "size_bytes": 12390,
+      "sha256": "c327245d19e63838f0807bd876315b50cf7a9d3c3d205355718ad7225f83e577"
+    },
+    "logs_decentralized_details.txt": {
+      "file_name": "logs_decentralized_details.txt",
+      "size_bytes": 6216,
+      "sha256": "337b4eefa01e942f5595f97c4bf0d3ebb3eb593cf57c00fa41f840f7e1c19dad"
+    },
+    "deployment_central_validation.yaml": {
+      "file_name": "deployment_central_validation.yaml",
+      "size_bytes": 3177,
+      "sha256": "fb997322a72c174a60313f3cce855827b7098e5919ee24d12aa27ff5a97cdfb6"
+    },
+    "deployment_central_active.yaml": {
+      "file_name": "deployment_central_active.yaml",
+      "size_bytes": 3143,
+      "sha256": "e174244a5c02a55b175e4ee8ebd75bc68c0dadab4efe2f25669e365f5eac573c"
+    },
+    "secret_bench_auth.yaml": {
+      "file_name": "secret_bench_auth.yaml",
+      "size_bytes": 390,
+      "sha256": "a6ae5b98d09e4d923d8437a663b2dd30d390bc908a3eef6304540b74aafda281"
+    }
+  }
+}

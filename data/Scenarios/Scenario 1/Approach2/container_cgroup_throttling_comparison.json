@@ -1,0 +1,70 @@
+{
+  "test_name": "Container-Level Cgroup CPU Throttling Comparison Under Active Workload",
+  "timestamp_iso": "2026-11-04T14:25:23Z",
+  "cgroup_version": "Linux cgroups v2 (/sys/fs/cgroup/cpu.stat)",
+  "scientific_attribution_note": "The observed reduction in CPU throttling (25.0% down to 3.6%) compares a 1-CPU limit (1000m CFS quota) against a 4-CPU limit (4000m CFS quota), representing aggregate resource parity. This data reflects the operational buffering provided by a wider CFS quota allocation against multithreaded OpenMP bursts, and is not an inherent advantage of centralized control logic over decentralized control logic.",
+  "decentralized_1cpu": {
+    "pod_name": "ddos-defender-details-bf946c45b-2tqhx",
+    "deployment": "ddos-defender-details",
+    "configured_cpu_limit": "1000m (1 CPU)",
+    "configured_cpu_request": "100m",
+    "workload_description": "100 consecutive 7-feature HistGradientBoostingClassifier inference evaluations",
+    "raw_before_counters": {
+      "usage_usec": 16371082,
+      "user_usec": 7604351,
+      "system_usec": 8766731,
+      "nr_periods": 650,
+      "nr_throttled": 16,
+      "throttled_usec": 1327654
+    },
+    "raw_after_counters": {
+      "usage_usec": 18406297,
+      "user_usec": 9090504,
+      "system_usec": 9315793,
+      "nr_periods": 678,
+      "nr_throttled": 23,
+      "throttled_usec": 3006874
+    },
+    "deltas": {
+      "delta_cpu_usage_usec": 2035215,
+      "delta_cpu_usage_ms": 2035.21,
+      "delta_cfs_periods": 28,
+      "delta_throttled_periods": 7,
+      "delta_throttled_time_usec": 1679220,
+      "delta_throttled_time_ms": 1679.22,
+      "throttling_rate_pct": 25.0
+    }
+  },
+  "centralized_4cpu": {
+    "pod_name": "ddos-defender-central-5d9b75457f-dljlg",
+    "deployment": "ddos-defender-central",
+    "configured_cpu_limit": "4000m (4 CPUs)",
+    "configured_cpu_request": "400m",
+    "workload_description": "100 consecutive 7-feature HistGradientBoostingClassifier inference evaluations",
+    "raw_before_counters": {
+      "usage_usec": 5891342,
+      "user_usec": 3038640,
+      "system_usec": 2852702,
+      "nr_periods": 113,
+      "nr_throttled": 2,
+      "throttled_usec": 1182225
+    },
+    "raw_after_counters": {
+      "usage_usec": 11618749,
+      "user_usec": 5760096,
+      "system_usec": 5858653,
+      "nr_periods": 168,
+      "nr_throttled": 4,
+      "throttled_usec": 2236079
+    },
+    "deltas": {
+      "delta_cpu_usage_usec": 5727407,
+      "delta_cpu_usage_ms": 5727.41,
+      "delta_cfs_periods": 55,
+      "delta_throttled_periods": 2,
+      "delta_throttled_time_usec": 1053854,
+      "delta_throttled_time_ms": 1053.85,
+      "throttling_rate_pct": 3.6364
+    }
+  }
+}

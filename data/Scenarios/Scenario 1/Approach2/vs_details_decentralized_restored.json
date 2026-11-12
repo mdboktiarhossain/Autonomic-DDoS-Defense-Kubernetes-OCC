@@ -1,0 +1,43 @@
+{
+  "apiVersion": "networking.istio.io/v1",
+  "kind": "VirtualService",
+  "metadata": {
+    "annotations": {
+      "ddos.defender/fencing-token": "273",
+      "ddos.defender/quarantine-state": "CLEAN",
+      "ddos.defender/reconciled-at": "2026-10-29T05:43:53.139071+00:00",
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"networking.istio.io/v1\",\"kind\":\"VirtualService\",\"metadata\":{\"annotations\":{\"ddos.defender/fencing-token\":\"256\",\"ddos.defender/quarantine-state\":\"CLEAN\",\"ddos.defender/reconciled-at\":\"2026-10-29T05:43:53.139071+00:00\",\"test.concurrency/out-of-band-touch\":\"touch-1793724173\",\"test.concurrency/rollback-intent\":\"safe-baseline\",\"test.occ/conflict-inducer\":\"inline-rollback-test\"},\"creationTimestamp\":\"2026-10-05T04:29:04Z\",\"generation\":266,\"name\":\"details\",\"namespace\":\"default\",\"resourceVersion\":\"2805366\",\"uid\":\"a2d28d7c-ce44-4a7e-ace1-8916064c8979\"},\"spec\":{\"hosts\":[\"details\"],\"http\":[{\"name\":\"normal-production\",\"route\":[{\"destination\":{\"host\":\"details\",\"port\":{\"number\":9080},\"subset\":\"v1\"},\"weight\":100}]}]}}\n",
+      "test.concurrency/out-of-band-touch": "touch-1793724173",
+      "test.concurrency/rollback-intent": "safe-baseline",
+      "test.occ/conflict-inducer": "inline-rollback-test"
+    },
+    "creationTimestamp": "2026-10-05T04:29:04Z",
+    "generation": 283,
+    "name": "details",
+    "namespace": "default",
+    "resourceVersion": "2863802",
+    "uid": "a2d28d7c-ce44-4a7e-ace1-8916064c8979"
+  },
+  "spec": {
+    "hosts": [
+      "details"
+    ],
+    "http": [
+      {
+        "name": "normal-production",
+        "route": [
+          {
+            "destination": {
+              "host": "details",
+              "port": {
+                "number": 9080
+              },
+              "subset": "v1"
+            },
+            "weight": 100
+          }
+        ]
+      }
+    ]
+  }
+}

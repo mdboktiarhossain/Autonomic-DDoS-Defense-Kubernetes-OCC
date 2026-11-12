@@ -1,0 +1,78 @@
+{
+  "FINAL_ML_ACCURACY_FPR_MANUSCRIPT.tex": {
+    "size_bytes": 13642,
+    "sha256": "6ad846b92b5aacc910bef9481df4230d71975153a965632134aff4a6870d8e5e"
+  },
+  "FINAL_ML_ACCURACY_FPR_REPORT.md": {
+    "size_bytes": 19304,
+    "sha256": "2bf3077cca20af0a49763979d6f2a77c653cf3a718afd41eeb627a4365e62fe8"
+  },
+  "dataset_calibration_split_manifest.json": {
+    "size_bytes": 622,
+    "sha256": "5315a7fc98376e40f13fecd421c5fa88c6cea45afb995a07e584e557e053e0a9"
+  },
+  "dataset_leakage_and_hash_audit.json": {
+    "size_bytes": 2451,
+    "sha256": "7043a45b81d8e5214f35dcae064b289428344ec0db0bc06aa6201ea46892e3c2"
+  },
+  "deployed_models_manifest.json": {
+    "size_bytes": 4178,
+    "sha256": "01eea468d517dce07c0d9691b91bfca0efbe85738a85435f9da5911c660e0ead"
+  },
+  "in_distribution_metrics.json": {
+    "size_bytes": 2053,
+    "sha256": "87c25ef4d549b00c46c01495d2951d37ceb324dad0b4a9475db0c4ac53286e4d"
+  },
+  "in_distribution_test_predictions.csv": {
+    "size_bytes": 726487,
+    "sha256": "8af06abb4a17efb3095916d938a085a25860c1460031f15195318066bfe70d87"
+  },
+  "live_benign_400_request_id_evaluations.csv": {
+    "size_bytes": 58225,
+    "sha256": "a4200c1c289bc5f0ee7f34689919f0e53b9f269cedf28671c66f8fde84cf0891"
+  },
+  "live_benign_defender_logs.txt": {
+    "size_bytes": 5307,
+    "sha256": "ee6dc77edbb75d49b6d122abf6f58cbc857732db93766b532856f87ecd865611"
+  },
+  "live_benign_envoy_logs.txt": {
+    "size_bytes": 272386,
+    "sha256": "95466afc38256f79f7734ea2e4ce0062924d11c3be87748c4a348a318aa0452d"
+  },
+  "live_benign_leases_after.json": {
+    "size_bytes": 7489,
+    "sha256": "6b860dc91cf066a1c4cf2beeec0ba890d95353a6a7d643ad1a3d4d720a55d648"
+  },
+  "live_benign_leases_before.json": {
+    "size_bytes": 7489,
+    "sha256": "6b860dc91cf066a1c4cf2beeec0ba890d95353a6a7d643ad1a3d4d720a55d648"
+  },
+  "live_benign_test_results.json": {
+    "size_bytes": 3972,
+    "sha256": "f39b829e989d9f0fcdccf7041b31c9f22b28606b074abb2eafc2b77987460f17"
+  },
+  "live_benign_virtualservices_after.json": {
+    "size_bytes": 19878,
+    "sha256": "5d2cd0dbc24a92384579d998ffea369897bd08b2ce7895e0c526097da68dd332"
+  },
+  "live_benign_virtualservices_before.json": {
+    "size_bytes": 19878,
+    "sha256": "5d2cd0dbc24a92384579d998ffea369897bd08b2ce7895e0c526097da68dd332"
+  },
+  "out_of_distribution_friday_benign_predictions.csv": {
+    "size_bytes": 3032987,
+    "sha256": "3424684b8ee356cc0bddd499b5efd9aa354c557883d5dd1774c74bca6104506b"
+  },
+  "out_of_distribution_loic_predictions.csv": {
+    "size_bytes": 1679879,
+    "sha256": "0138599a000d500ab29fd47a8369d067b6483ec6a4962b24e24d7b702d353720"
+  },
+  "out_of_distribution_monday_benign_predictions.csv": {
+    "size_bytes": 3467433,
+    "sha256": "6da5314eb3ded1396f3146d441f4262c1132f7f967f28b2c865b71beddbc5fa7"
+  },
+  "out_of_distribution_predictions_summary.json": {
+    "size_bytes": 2962,
+    "sha256": "4ce9bc367f47c91ee5cdd5ddbb0f58c92debad956d41b816c7c744678dcd0e9e"
+  }
+}

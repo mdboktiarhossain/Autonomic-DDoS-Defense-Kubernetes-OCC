@@ -1,55 +1,33 @@
-# Full Raw Experimental Data Archive (~22 GB)
+# Experimental Data & Cloud Archive Guide
 
-## Overview
+## 1. Data Included Directly in This GitHub Repository (`data/`)
 
-During the experimental evaluation of the decentralized service-mesh DDoS defense framework (including over 50 multi-cycle test runs across Scenarios 1–5, kernel `strace` syscall profiling, and multi-day CIC-IDS2017/DistriNet flow evaluations), approximately **22 GB of raw telemetry, container logs, and dataset splits** were generated.
+All primary benchmark evidence packages, reconciled summary JSONs, SHA-256 integrity manifests, and markdown audit reports required to verify the manuscript's tables and figures are included directly in this repository under [`data/`](./):
 
-Because GitHub enforces a 100 MB per-file limit and recommends keeping code repositories lightweight, we provide:
-1. **In This GitHub Repository (`data/sample_evidence/` and `models/`):**
-   * All frozen 7-feature model bundles (`.joblib`), `StandardScaler` parameters, and JSON model registries (`models/`).
-   * Reconciled trial-by-trial summary JSONs, manifest files, markdown audit reports, and compact raw evidence `.zip` bundles for **Scenarios 1–5** (`data/sample_evidence/Scenario_1/` through `Scenario_5/`).
-2. **In the Cloud Storage Archive (OneDrive):**
-   * The complete ~22 GB raw data archive, organized in the hierarchy below.
+* **[`data/Concurrency/`](Concurrency/):**
+  * `PROCESS_LEVEL_PARALLEL_EVIDENCE_PACKAGE.zip` & `PROCESS_LEVEL_PARALLEL_MANIFEST.sha256`
+  * `EMPIRICAL_VALIDATION_PARALLEL_EXECUTION_REPORT.md`
+  * Multi-process execution overlap, Linux `strace` kernel `futex` contention, and GIL ablation evidence.
+* **[`data/FPR/`](FPR/):**
+  * `FINAL_ML_EVIDENCE_MANIFEST.json` & `FINAL_ML_ACCURACY_FPR_REPORT.md`
+  * Strict out-of-fold accuracy, duplicate-removed sensitivity, and unseen Monday/Friday benign false-positive rate (FPR) validation.
+* **[`data/Scenarios/`](Scenarios/):**
+  * **`Scenario 1/`:** Single-service targeted quarantine (`10/10 PASS` decentralized vs. `10/10 PASS` centralized), `SCENARIO_1_BENCHMARK_RESULTS_RAW.zip`, `scenario1_final_benchmark_summary.json`, and `Approach2/` parity & cgroup throttling audits.
+  * **`Scenario 2/`:** Two-dimensional concurrency, $60\text{ RPS}$ / $90\text{ RPS}$ throughput & latency benchmarks, and `SCENARIO_2_MEASUREMENT_AUDIT_EVIDENCE_PACKAGE.zip`.
+  * **`Scenario 3/`:** Controller crash fault-blast-radius containment (`25%` decentralized blast radius vs. `100%` centralized loss), `SCENARIO_3_BENCHMARK_RAW_EVIDENCE.zip`, and `SCENARIO_3_BENCHMARK_SUMMARY.json`.
+  * **`Scenario 4/`:** Heterogeneous 7-feature classifier evaluation, unseen Friday LOIC recall, container scaling benchmarks, `SCENARIO_4_BENCHMARK_RAW_EVIDENCE.zip`, and `SCENARIO_4_BENCHMARK_SUMMARY.json`.
+  * **`Scenario 5/`:** End-to-end synchronized 4-service $160\text{ RPS}$ attack mitigation, Lease/fencing/OCC audit (`56/56` first-attempt commits), two-stage recovery, and `SCENARIO_5_REPETITIONS_PACKAGE.zip`.
 
 ---
 
-## Cloud Archive Access (Available Upon Request)
+## 2. Full Raw Experimental Archive & Upstream Dataset (Hosted on OneDrive)
 
-* **Cloud Archive Link (OneDrive):** `[Insert Your OneDrive Shared Folder Link Here — Click to Request Access]`
-* *Note for Reviewers and Researchers:* Click the OneDrive link above to request read access, or contact the authors to receive a direct download token.
+Because GitHub enforces a 100 MB per-file limit, the following two large archives are hosted on Cloud Storage (**OneDrive**):
 
----
+1. **`CICIDS2017_improved.zip` (`~335.5 MB`):**
+   * The upstream DistriNet CNS 2022 corrected edition of the CIC-IDS2017 dataset (`wednesday.csv`, `monday.csv`, `friday.csv`) used by [`src/training/train_approved_four_models.py`](../src/training/train_approved_four_models.py) to train and evaluate the four 7-feature service models.
+2. **`Backup raw experimental data for journal/` (`~1.73 GB`):**
+   * The complete, uncondensed multi-cycle experimental archive containing all intermediate pilot runs, per-request client trace logs, raw Envoy sidecar access logs, Kubernetes `VirtualService`/`Lease` YAML snapshots, and historical rollout logs across Scenarios 1–5.
 
-## Cloud Archive Folder Hierarchy
-
-```text
-DDoS_ServiceMesh_Raw_Experimental_Archive/
-├── 01_Datasets_CIC_IDS2017_DistriNet/
-│   ├── wednesday.csv                  # Raw Wednesday HTTP capture (496,641 rows; 43,166 curated flows)
-│   ├── monday_benign.csv              # Unseen Monday benign HTTP flows
-│   ├── friday_benign.csv              # Unseen Friday benign HTTP flows
-│   └── friday_loic_ddos.csv           # Unseen Friday LOIC HTTP flood flows (20,000 flows)
-│
-├── 02_Scenario_1_Single_Service_Quarantine/
-│   ├── decentralized_10_trials/       # Per-trial defender logs, VirtualService YAML snapshots, client latencies
-│   └── centralized_10_trials/         # Per-trial centralized controller logs and client traces
-│
-├── 03_Scenario_2_Concurrency_and_Kernel_Futex_Profiling/
-│   ├── approach1_60rps_90rps_logs/    # Per-request inference latency and throughput traces (10 repetitions)
-│   ├── approach2_live_cluster_cycles/ # Concurrent 4-service L7 cycle logs & T_con micro-benchmarks
-│   └── kernel_strace_futex_dumps/     # Raw Linux strace -f -c -T and getrusage thread-wait profiles
-│
-├── 04_Scenario_3_Fault_Blast_Radius_Containment/
-│   ├── decentralized_crash_trials/    # 10 trials with induced productpage defender outage (30/30 surviving quarantines)
-│   └── centralized_crash_trials/      # 10 trials with central controller outage (100% protection loss)
-│
-├── 05_Scenario_4_Model_Generalization_and_Scaling/
-│   ├── strict_out_of_fold_cv/         # GroupShuffleSplit Flow-ID disjoint folds & duplicate-removed sensitivity
-│   ├── cross_day_loic_and_benign/     # Full confusion matrices, ROC-AUC, PR-AUC, and threshold sweep logs
-│   └── live_pod_scaling_1_to_4_pods/  # In-container RF & HGB scoring latency distributions
-│
-└── 06_Scenario_5_End_to_End_Concurrent_Mitigation_and_Recovery/
-    ├── repetition_1_to_5_raw_logs/    # Full 4-service synchronized 160 RPS attack & 2-stage recovery traces
-    ├── lease_occ_audit_trails/        # 56/56 first-attempt OCC VirtualService patch & fencing token logs
-    └── stage3b_gateway_provenance/    # 95 live windows + anti-framing & East-West spoofing rejection logs
-```
+### Cloud Archive Access Link
+* **OneDrive Shared Folder (Available Upon Request):** `[Insert Your OneDrive Shared Folder Link Here — Click to Request Access]`

@@ -94,8 +94,10 @@ Rather than relying on a single centralized controller that serializes telemetry
 │   ├── scenario4/                     # ML model out-of-fold accuracy, unseen LOIC recall & runtime scaling
 │   └── scenario5/                     # Synchronized 4-service 160 RPS attack & 2-stage recovery
 └── data/
-    ├── sample_evidence/               # Summary JSONs, reports, and compact verification archives
-    └── DATA_ARCHIVE.md                # Structure and access link for the full ~22 GB cloud dataset
+    ├── Concurrency/                   # Process-level parallelism & kernel futex evidence package
+    ├── FPR/                           # Strict out-of-fold accuracy & unseen benign FPR evidence
+    ├── Scenarios/                     # Complete Scenario 1-5 benchmark summaries, manifests & zip packages
+    └── DATA_ARCHIVE.md                # Guide & OneDrive access link for CICIDS2017_improved.zip & full raw archive
 ```
 
 ---
@@ -228,8 +230,11 @@ python evaluation/scenario5/aggregate_scenario5_statistics.py
 
 ---
 
-## 7. Full Raw Experimental Dataset (~22 GB Cloud Archive)
+## 7. Experimental Evidence (`data/`) & OneDrive Cloud Archive
 
-To keep this GitHub repository fast to clone, lightweight summary JSONs, benchmark reports, and sample evidence archives are included in [`data/sample_evidence/`](data/sample_evidence/).
+All primary experimental evidence packages, reconciled summary JSONs, SHA-256 manifests, and markdown audit reports are included directly in this repository under [`data/`](data/):
+* **[`data/Concurrency/`](data/Concurrency/):** Multi-process execution overlap, Linux `strace` kernel `futex` profiling, and GIL ablation evidence (`PROCESS_LEVEL_PARALLEL_EVIDENCE_PACKAGE.zip`).
+* **[`data/FPR/`](data/FPR/):** Strict out-of-fold accuracy, duplicate-removed sensitivity, and unseen Monday/Friday benign false-positive rate validation.
+* **[`data/Scenarios/`](data/Scenarios/):** Complete benchmark summary JSONs, reports, and raw evidence `.zip` packages for **Scenario 1** through **Scenario 5**.
 
-The complete **~22 GB raw experimental archive**—containing all raw trial logs across 50+ experimental cycles, Linux `strace` kernel `futex` profiles, Envoy sidecar access logs, Kubernetes `VirtualService`/`Lease` state snapshots, and the curated CIC-IDS2017/DistriNet CSV splits—is maintained on Cloud Storage (OneDrive). See [`data/DATA_ARCHIVE.md`](data/DATA_ARCHIVE.md) for the folder hierarchy and access request link.
+Because GitHub enforces a 100 MB per-file limit, the upstream corrected dataset (**`CICIDS2017_improved.zip`**, `~335.5 MB`) and the uncondensed historical multi-cycle raw archive (**`Backup raw experimental data for journal`**, `~1.73 GB`) are hosted on **OneDrive**. See [`data/DATA_ARCHIVE.md`](data/DATA_ARCHIVE.md) for details and access instructions.

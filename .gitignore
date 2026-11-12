@@ -10,11 +10,12 @@ __pycache__/
 venv/
 env/
 
-# Large raw datasets and archives (hosted in Cloud Storage; see data/DATA_ARCHIVE.md)
+# Large raw datasets and archives (hosted in OneDrive; see data/DATA_ARCHIVE.md)
 *.csv
 *.pcap
 *.tar.gz
-!data/sample_evidence/**/*.zip
+*.zip
+!data/**/*.zip
 
 # IDE and OS files
 .vscode/

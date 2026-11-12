@@ -1,0 +1,141 @@
+% ==============================================================================
+% Scenario 4: Service-Specific Heterogeneous Model Performance and Latency Trade-Offs
+% Manuscript Results Section for Section VI
+% Active Enforcement Mode (cic-v5.3) - 10 Measured Benchmark Trials Across 4 Pods
+% Reconciled and Certified Baseline
+% ==============================================================================
+
+\subsection{Scenario 4: Service-Specific Heterogeneous Model Performance and Latency Trade-Offs}
+\label{sec:scenario4_heterogeneous_models}
+
+While Scenarios~1--3 establish that decentralized autonomic mitigation provides rapid containment and robust fault isolation, a key architectural premise of our framework is that microservice heterogeneity can be exploited to optimize machine learning performance. In complex service meshes, individual microservices exhibit distinct traffic patterns and semantic responsibilities. Consequently, enforcing a single monolithic DDoS detection model across all services imposes unnecessary feature extraction overhead and uniform latency penalties. 
+
+Scenario~4 investigates whether service-specific machine learning models provide high-fidelity DDoS detection with low inference latency, negligible false-positive rates, and efficient resource utilization across heterogeneous microservices.
+
+\subsubsection{Experimental Setup and Deployed Model Architectures}
+We evaluate the four autonomous defender pods deployed alongside the Istio Bookinfo microservices in the active-enforcement testbed (\texttt{cic-v5.3}). Prior to benchmarking, a real-pod verification gate confirmed process independence across all four running pods (\texttt{ddos-defender-product}, \texttt{ddos-defender-details}, \texttt{ddos-defender-reviews}, and \texttt{ddos-defender-ratings}), verifying unique pod UIDs, distinct container IDs, and strict numerical parity ($\Delta < 10^{-9}$) against certified reference models.
+
+Each defender pod executes a specialized 7-feature model tailored to its upstream call topology:
+\begin{itemize}
+    \item \texttt{productpage}: Edge gateway service handling direct ingress traffic; executes a 100-tree \texttt{RandomForestClassifier} ($T=0.70$) emphasizing forward packet distributions, burst rates, and TCP control flags (\texttt{Flow Packets/s}, \texttt{Total Fwd Packet}, \texttt{PSH/ACK} flags).
+    \item \texttt{details}: Internal database reader; executes a \texttt{HistGradientBoostingClassifier} ($T=0.80$) focusing on bidirectional flow asymmetries (\texttt{Down/Up Ratio}, forward/backward payload length distributions).
+    \item \texttt{reviews}: Intermediate aggregator; executes a \texttt{HistGradientBoostingClassifier} ($T=0.70$) focused on payload variances and inter-arrival timing (\texttt{Flow IAT Mean}, \texttt{Packet Length Variance}).
+    \item \texttt{ratings}: Downstream leaf node; executes a 100-tree \texttt{RandomForestClassifier} ($T=0.70$) monitoring payload variance, packet length moments, and TCP flags.
+\end{itemize}
+
+\subsubsection{Classification Fidelity, Cross-Day Generalization, and Safety}
+Table~\ref{tab:scenario4_accuracy_fidelity} summarizes the certified empirical detection accuracy, cross-day generalization under LOIC attack replay, and benign safety profiles across the four microservices. 
+
+\begin{table}[!t]
+\renewcommand{\arraystretch}{1.2}
+\caption{Classification Fidelity, Cross-Day Generalization, and False-Positive Profiles Across Services.}
+\label{tab:scenario4_accuracy_fidelity}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}l c c c c c c@{}}
+\toprule
+\textbf{Service} & \textbf{Model} & \textbf{Threshold ($T$)} & \textbf{Held-Out Acc.} & \textbf{LOIC Recall} & \textbf{Benign FPR} & \textbf{Live FP ($N=400$)} \\
+\midrule
+\texttt{productpage} & RF  & 0.70 & 99.99\% [99.93, 100] & 99.70\% [99.61, 99.77] & 0.14\% [0.12, 0.17] & \textbf{0 / 400 (0.00\%)} \\
+\texttt{details}     & HGB & 0.80 & 99.99\% [99.93, 100] & 99.76\% [99.68, 99.82] & 0.15\% [0.12, 0.18] & \textbf{0 / 400 (0.00\%)} \\
+\texttt{reviews}     & HGB & 0.70 & 100.00\% [99.95, 100] & 99.89\% [99.84, 99.93] & 0.19\% [0.16, 0.22] & \textbf{0 / 400 (0.00\%)} \\
+\texttt{ratings}     & RF  & 0.70 & 100.00\% [99.95, 100] & 99.97\% [99.93, 99.98] & 0.12\% [0.10, 0.15] & \textbf{0 / 400 (0.00\%)} \\
+\bottomrule
+\multicolumn{7}{@{}l}{\footnotesize Bracketed intervals denote Wilson score 95\% confidence intervals. Held-out accuracy evaluated on Wednesday ($N=8,484$).} \\
+\multicolumn{7}{@{}l}{\footnotesize LOIC recall evaluated on Friday ($N=20,000$). Benign FPR evaluated across Monday and Friday ($N=67,886$).} \\
+\multicolumn{7}{@{}l}{\footnotesize Live FP denotes zero spurious quarantines during 400 benign HTTP requests across 11 scrape decisions.}
+\end{tabular}
+\end{table}
+
+All four service-specific models achieved near-perfect classification accuracy on held-out Wednesday traffic ($99.99\%$ to $100.00\%$, with at most one classification error across 8,484 flows). To evaluate cross-day generalizability against unseen attack tooling, frozen models were evaluated on $20,000$ independent Friday LOIC DDoS attack flows without retraining. Every model preserved $\ge 99.70\%$ recall ($99.70\%$ on \texttt{productpage}, $99.76\%$ on \texttt{details}, $99.89\%$ on \texttt{reviews}, and $99.97\%$ on \texttt{ratings}), confirming that specialized feature subsets capture persistent volumetric DDoS invariants rather than memorizing weekday-specific artifacts. Crucially, large-scale benign false-positive rates across $67,886$ Monday and Friday enterprise HTTP flows remained strictly bounded below $0.20\%$ ($0.12\%$ on \texttt{ratings} to $0.19\%$ on \texttt{reviews}). Live deployment validation confirmed operational safety, recording zero false quarantines across 400 benign HTTP requests ($0.00\%$).
+
+\subsubsection{Single-Model Inference Latency and Memory Trade-Offs}
+To quantify runtime overhead within the real execution environment, we conducted ten independent benchmark trials ($N=10$) measuring 500 timed single-flow inference operations per service inside the live Kubernetes defender containers. Table~\ref{tab:scenario4_latency_memory} details the latency percentiles, throughput, and memory consumption across the four defender pods. Standard deviations represent sample variance across trials ($s$, $N-1=9$), and percentiles are computed via nearest-rank inverted CDF.
+
+\begin{table*}[!t]
+\renewcommand{\arraystretch}{1.2}
+\caption{Inference Latency, Throughput, and Memory Footprint Across Deployed Pods ($N=10$ Trials, 500 Samples/Trial).}
+\label{tab:scenario4_latency_memory}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{@{}l c c c c c c c c c@{}}
+\toprule
+\textbf{Service} & \textbf{Model} & \textbf{Mean Latency (ms)} & \textbf{p50 (ms)} & \textbf{p95 (ms)} & \textbf{p99 (ms)} & \textbf{Throughput (RPS)} & \textbf{VmRSS (MiB)} & \textbf{cgroup (MiB)} & \textbf{Disk Size} \\
+\midrule
+\texttt{productpage} & RF  & $4.44 \pm 0.62$ [4.00, 4.88] & $3.89 \pm 0.36$ & $6.52 \pm 1.45$ & $12.23 \pm 9.82$ & $228.7 \pm 28.6$  & $160.0 \pm 0.18$ & $304.7 \pm 0.08$ & 740.8 KB \\
+\texttt{details}     & HGB & $0.75 \pm 0.11$ [0.67, 0.83] & $0.66 \pm 0.07$ & $1.03 \pm 0.21$ & $1.52 \pm 0.43$  & $1346.4 \pm 178.8$ & $154.6 \pm 0.13$ & $286.0 \pm 0.06$ & 110.5 KB \\
+\texttt{reviews}     & HGB & $0.91 \pm 0.14$ [0.81, 1.01] & $0.79 \pm 0.09$ & $1.24 \pm 0.29$ & $2.16 \pm 1.43$  & $1118.9 \pm 156.8$ & $154.7 \pm 0.16$ & $287.0 \pm 0.08$ & 134.6 KB \\
+\texttt{ratings}     & RF  & $4.21 \pm 0.58$ [3.79, 4.62] & $3.73 \pm 0.38$ & $6.05 \pm 1.65$ & $12.26 \pm 4.97$ & $241.3 \pm 30.4$  & $158.9 \pm 0.24$ & $288.51 \pm 0.12$ & 568.0 KB \\
+\bottomrule
+\multicolumn{10}{@{}l}{\footnotesize Mean latency brackets indicate Student's $t$ 95\% confidence intervals ($df=9$). VmRSS indicates process resident memory; cgroup denotes container memory; Disk denotes serialized joblib bundle.}
+\end{tabular}
+\end{table*}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_scenario4_inference_latencies.pdf}
+\caption{Inference latency distributions across specialized service models and global baselines over 10 benchmark trials ($N=5,000$ timed evaluations per model). Boxes depict the interquartile range (IQR); solid black lines denote median (p50); red dashed lines denote mean; markers indicate p95 and p99 tails on a logarithmic scale.}
+\label{fig:scenario4_latencies}
+\end{figure}
+
+The empirical measurements reveal substantial performance differences between the deployed model configurations:
+\begin{itemize}
+    \item \textbf{Latency Profile by Architecture and Service:} Across the ten trials, the \texttt{RandomForestClassifier} models averaged a trial-level mean latency of $4.324 \pm 0.499\,\text{ms}$, compared to $0.832 \pm 0.114\,\text{ms}$ for the \texttt{HistGradientBoostingClassifier} models. A trial-level Welch's $t$-test confirms that this difference is statistically significant ($t = 21.584$, $p = 1.126 \times 10^{-9}$). We emphasize that this comparison reflects the combined effect of model architecture and service-specific feature schemas rather than isolating pure algorithmic causation.
+    \item \textbf{Decision Tree Traversal vs. Histogram Bins:} The primary computational difference arises from model structure: histogram-based gradient boosting constructs compact, integer-indexed decision bins evaluated sequentially in shallow trees (depth $\le 6$), whereas the random forest ensembles evaluate 100 deep, unbinned trees (max depth $=15$) per prediction. As a result, standalone HGB throughput reached $1,346.4 \pm 178.8\,\text{RPS}$ on \texttt{details}, exceeding RF throughput ($228.7 \pm 28.6\,\text{RPS}$) by $5.89\times$.
+    \item \textbf{Memory Accounting:} We explicitly distinguish serialized disk footprint, process resident memory (\texttt{VmRSS}), and cgroup container usage. Serialized HGB bundles require only $110.5\,\text{KB}$--$134.6\,\text{KB}$ on disk, compared to $568.0\,\text{KB}$--$740.8\,\text{KB}$ for RF. In live memory, however, container overhead is dominated by the Python runtime and scientific libraries: \texttt{VmRSS} remained nearly identical across pods ($154.6\,\text{MiB}$ to $160.0\,\text{MiB}$), while container cgroups stabilized at $286.0\,\text{MiB}$ to $304.7\,\text{MiB}$.
+\end{itemize}
+
+\subsubsection{Feature Budget Ablation: Specialized vs. Global Baselines}
+To evaluate whether service specialization provides advantages over shared monolithic models, we benchmarked two global baselines under identical test splits:
+\begin{enumerate}
+    \item \textbf{7-Feature Global Baseline:} Enforces a strict 7-feature budget identical to the specialized models, selecting the top-7 shared features across all services derived solely from training corpus mutual information (\texttt{Packet Length Variance}, \texttt{Bwd Packet Length Mean}, \texttt{Packet Length Mean}, \texttt{Packet Length Std}, \texttt{Total Bwd packets}, \texttt{Flow Packets/s}, \texttt{Total Length of Bwd Packet}).
+    \item \textbf{14-Feature Extended Baseline:} Ingests the complete union of all 14 features across the mesh, representing an unconstrained monolithic detector.
+\end{enumerate}
+
+\begin{table}[!t]
+\renewcommand{\arraystretch}{1.2}
+\caption{Global Model Baseline Comparison and Feature Budget Ablation ($N=10$ Trials).}
+\label{tab:scenario4_global_ablation}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{@{}l c c c c c@{}}
+\toprule
+\textbf{Model Architecture} & \textbf{Features} & \textbf{Mean Latency (ms)} & \textbf{p95 (ms)} & \textbf{Throughput (RPS)} & \textbf{Disk Size} \\
+\midrule
+Global RF (7-Feature)       & 7  & $29.88 \pm 4.35$ & 38.40 & $34.1 \pm 5.3$   & 1259.9 KB \\
+Global HGB (7-Feature)      & 7  & $1.65 \pm 0.25$  & 2.82  & $618.1 \pm 100.4$ & 318.3 KB \\
+\midrule
+Global RF (14-Feature)      & 14 & $29.75 \pm 4.70$ & 38.34 & $34.4 \pm 5.9$   & 1177.6 KB \\
+Global HGB (14-Feature)     & 14 & $1.87 \pm 0.47$  & 3.47  & $558.1 \pm 122.2$ & 306.5 KB \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:scenario4_global_ablation} presents the ablation results. While the 14-feature global RF achieved $99.99\%$ accuracy, its 14-feature schema requires double the feature extraction pipeline overhead. Furthermore, when constrained to a 7-feature budget, the global RF exhibited $5$ false negatives on held-out attack flows ($99.91\%$ recall) due to competing feature importances across disparate microservices (ingress packet rates vs. backend inter-arrival intervals). In contrast, specialized service models maintained zero false negatives on the same test corpus while reducing mean latency to $0.75\,\text{ms}$ on \texttt{details} and $0.91\,\text{ms}$ on \texttt{reviews}.
+
+\subsubsection{Multi-Pod Concurrency and Execution Overhead Analysis}
+To evaluate multi-service defense under concurrent load, we benchmarked simultaneous inference workloads across all four independent Kubernetes defender pods.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_scenario4_throughput_scaling.pdf}
+\caption{Multi-pod concurrency and overhead analysis: (a) Per-pod mean inference latency under standalone vs. 4-pod concurrent workload, demonstrating sub-millisecond latency preservation; (b) Decomposition of worker execution time between pure mathematical model evaluation and remote container orchestration/transport overhead.}
+\label{fig:scenario4_throughput}
+\end{figure}
+
+In each of the ten trials, four parallel client workers concurrently issued 500 feature vectors to their respective pods, executing 2,000 total inference predictions across the mesh. We recorded the common elapsed wall-clock duration ($T_{\text{common}} = \max(t_{\text{end}}) - \min(t_{\text{start}})$).
+
+The multi-pod workload completed 2,000 predictions in an average of $8.60 \pm 2.20\,\text{s}$, yielding an aggregate end-to-end throughput of $246.39 \pm 61.75\,\text{RPS}$ ($95\%\,\text{CI}: [202.22, 290.57]\,\text{RPS}$). 
+
+A critical finding from our timing decomposition (Fig.~\ref{fig:scenario4_throughput}b) is that worker execution duration ($\approx 6.5$--$8.6\,\text{s}$) is substantially dominated by remote process orchestration overhead rather than model evaluation:
+\begin{enumerate}
+    \item \textbf{Pure Model Evaluation Time:} The sum of in-container model prediction times averaged only $0.56\,\text{s}$ for \texttt{details}, $0.62\,\text{s}$ for \texttt{reviews}, $2.55\,\text{s}$ for \texttt{productpage}, and $2.56\,\text{s}$ for \texttt{ratings}.
+    \item \textbf{Measured Non-Inference Overhead:} Approximately $6\,\text{s}$ per worker ($4.5\,\text{s}$ to $5.3\,\text{s}$ of residual duration beyond model evaluation) represents measured non-inference invocation overhead. In our test environment, potential contributors to this overhead include Paramiko SSH transport negotiation, \texttt{kubectl exec} SPDY streaming session establishment, containerd process creation, Python runtime startup, scikit-learn model unpickling, and initial warmup passes, which were not separately instrumented in-situ.
+    \item \textbf{Latency Stability Under Load:} As shown in Fig.~\ref{fig:scenario4_throughput}a, despite concurrent execution and orchestration overhead, per-flow in-container inference latencies remained tightly bounded: \texttt{details} maintained $0.997 \pm 0.225\,\text{ms}$ (vs.\ $0.75\,\text{ms}$ standalone), \texttt{reviews} maintained $1.139 \pm 0.191\,\text{ms}$ (vs.\ $0.91\,\text{ms}$ standalone), \texttt{productpage} maintained $4.711 \pm 0.367\,\text{ms}$ (vs.\ $4.44\,\text{ms}$ standalone), and \texttt{ratings} maintained $4.756 \pm 0.438\,\text{ms}$ (vs.\ $4.21\,\text{ms}$ standalone).
+    \item \textbf{Cgroup CPU Throttling Audit:} Telemetry from \texttt{/sys/fs/cgroup/cpu.stat} revealed that cumulative container throttling counters increased between the pre-test snapshot and the post-concurrency snapshot (mean delta of $+13$ to $+21$ throttled periods per container, or $\approx 5$--$7\%$ of accounting periods). Because available kernel counters span the entire interval between measurement snapshots rather than isolating only the active prediction burst, we note that modest throttling occurred during the test cycle and do not claim zero CPU throttling.
+\end{enumerate}
+
+These findings confirm that service-specific ML models deliver low inference latency ($< 1.2\,\text{ms}$ on backend services) during simultaneous multi-service load, while highlighting the importance of separating model inference latency from container invocation and transport overhead.

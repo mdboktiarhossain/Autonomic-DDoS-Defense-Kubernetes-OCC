@@ -1,0 +1,584 @@
+{
+  "benchmark": "Scenario 3: Fault Tolerance and Blast Radius Containment",
+  "mode": "Active Enforcement cic-v5.3",
+  "completion_timestamp_utc": "2026-11-04T23:58:43.700637+00:00",
+  "reconciliation_timestamp_utc": "2026-11-05T00:32:17.865095+00:00",
+  "total_trials_executed": 30,
+  "methodological_limitations": {
+    "per_request_records": "Aggregate and percentile metrics were recorded per trial across 14,400 requests to avoid Minikube SSH command pipe exhaustion. Individual request logs were not retained.",
+    "productpage_decoy_counts": "Request-ID matching confirmed positive diversion for all surviving services. Cumulative productpage hit count (18,409) is conservatively noted as unresolved due to ingress gateway drain buffering."
+  },
+  "statistical_methodology": {
+    "sample_standard_deviation": "unbiased_estimator_ddof_1",
+    "percentiles": "textbook_nearest_rank_inverted_cdf_ceil_qn",
+    "confidence_intervals": "two_sided_student_t_95_percent_df_9",
+    "hypothesis_testing": "welch_two_sample_unpaired_t_test_and_fisher_exact_test"
+  },
+  "calculated_experimental_results": {
+    "experiment_a": {
+      "lifecycle_milestones": {
+        "replacement_created_sec": {
+          "metric_name": "replacement_created_sec",
+          "n": 10,
+          "degrees_of_freedom": 9,
+          "mean": 2.0747000000000004,
+          "std_sample": 0.8062230253885501,
+          "standard_error": 0.25495010622995756,
+          "t_critical_95": 2.262157162798205,
+          "ci_95_pct": [
+            1.4979627910357387,
+            2.6514372089642624
+          ],
+          "min": 1.557,
+          "max": 4.304,
+          "p50_nearest_rank": 1.837,
+          "p95_nearest_rank": 4.304,
+          "p99_nearest_rank": 4.304,
+          "sample_values": [
+            4.304,
+            2.061,
+            1.557,
+            1.795,
+            1.976,
+            1.592,
+            2.131,
+            1.656,
+            1.837,
+            1.838
+          ],
+          "calculation_source": "dynamically_calculated_from_raw_trial_records"
+        },
+        "internal_thread_startup_sec": {
+          "metric_name": "internal_thread_startup_sec",
+          "n": 10,
+          "degrees_of_freedom": 9,
+          "mean": 4.2772,
+          "std_sample": 2.6704423603590475,
+          "standard_error": 0.8444680218930732,
+          "t_critical_95": 2.262157162798205,
+          "ci_95_pct": [
+            2.366880615520553,
+            6.1875193844794465
+          ],
+          "min": 3.167,
+          "max": 11.856,
+          "p50_nearest_rank": 3.411,
+          "p95_nearest_rank": 11.856,
+          "p99_nearest_rank": 11.856,
+          "sample_values": [
+            11.856,
+            3.744,
+            3.327,
+            3.411,
+            3.238,
+            3.167,
+            3.69,
+            3.638,
+            3.245,
+            3.456
+          ],
+          "calculation_source": "dynamically_calculated_from_raw_trial_records"
+        },
+        "readiness_probe_ready_sec": {
+          "metric_name": "readiness_probe_ready_sec",
+          "n": 10,
+          "degrees_of_freedom": 9,
+          "mean": 12.6376,
+          "std_sample": 4.260986823625616,
+          "standard_error": 1.3474423442623107,
+          "t_critical_95": 2.262157162798205,
+          "ci_95_pct": [
+            9.58947364946941,
+            15.685726350530592
+          ],
+          "min": 10.414,
+          "max": 20.957,
+          "p50_nearest_rank": 10.678,
+          "p95_nearest_rank": 20.957,
+          "p99_nearest_rank": 20.957,
+          "sample_values": [
+            20.957,
+            20.478,
+            10.698,
+            10.678,
+            10.414,
+            10.499,
+            10.628,
+            10.679,
+            10.642,
+            10.703
+          ],
+          "calculation_source": "dynamically_calculated_from_raw_trial_records"
+        },
+        "external_readiness_confirmed_sec": {
+          "metric_name": "external_readiness_confirmed_sec",
+          "n": 10,
+          "degrees_of_freedom": 9,
+          "mean": 13.192600000000002,
+          "std_sample": 4.266160990867551,
+          "standard_error": 1.3490785596102253,
+          "t_critical_95": 2.262157162798205,
+          "ci_95_pct": [
+            10.140772273200247,
+            16.24442772679976
+          ],
+          "min": 10.965,
+          "max": 21.537,
+          "p50_nearest_rank": 11.231,
+          "p95_nearest_rank": 21.537,
+          "p99_nearest_rank": 21.537,
+          "sample_values": [
+            21.537,
+            21.027,
+            11.247,
+            11.232,
+            10.965,
+            11.06,
+            11.178,
+            11.231,
+            11.197,
+            11.252
+          ],
+          "calculation_source": "dynamically_calculated_from_raw_trial_records"
+        },
+        "total_observed_downtime_sec": {
+          "metric_name": "total_observed_downtime_sec",
+          "n": 10,
+          "degrees_of_freedom": 9,
+          "mean": 13.192600000000002,
+          "std_sample": 4.266160990867551,
+          "standard_error": 1.3490785596102253,
+          "t_critical_95": 2.262157162798205,
+          "ci_95_pct": [
+            10.140772273200247,
+            16.24442772679976
+          ],
+          "min": 10.965,
+          "max": 21.537,
+          "p50_nearest_rank": 11.231,
+          "p95_nearest_rank": 21.537,
+          "p99_nearest_rank": 21.537,
+          "sample_values": [
+            21.537,
+            21.027,
+            11.247,
+            11.232,
+            10.965,
+            11.06,
+            11.178,
+            11.231,
+            11.197,
+            11.252
+          ],
+          "calculation_source": "dynamically_calculated_from_raw_trial_records"
+        }
+      },
+      "sibling_continuity": {
+        "trials_evaluated": 10,
+        "trials_with_full_continuity": 10,
+        "continuity_pass_rate_pct": 100.0,
+        "total_sibling_observations": 30,
+        "uninterrupted_observations": 30,
+        "observation_continuity_rate_pct": 100.0,
+        "calculation_source": "dynamically_calculated_from_raw_trial_records"
+      },
+      "lease_safety": {
+        "trials_evaluated": 10,
+        "trials_with_clean_leases": 10,
+        "lease_safety_pass_rate_pct": 100.0,
+        "calculation_source": "dynamically_calculated_from_raw_trial_records"
+      }
+    },
+    "experiment_b1_decentralized": {
+      "trials_evaluated": 10,
+      "surviving_quarantine_successes": 30,
+      "total_surviving_instances": 30,
+      "surviving_quarantine_rate_pct": 100.0,
+      "reviews_quarantines": 0,
+      "retained_defense_pct": 75.0,
+      "blast_radius_pct": 25.0,
+      "cumulative_decoy_attacker_hits": {
+        "productpage": 18409,
+        "details": 5318,
+        "reviews": 0,
+        "ratings": 4679
+      },
+      "total_attacker_hits_captured": 28406,
+      "cumulative_benign_decoy_leakage": 0,
+      "benign_traffic": {
+        "total_requests": 7200,
+        "successful_requests": 7181,
+        "overall_success_rate_pct": 99.73611111111111,
+        "errors_per_trial": {
+          "metric_name": "http_errors_per_trial",
+          "n": 10,
+          "degrees_of_freedom": 9,
+          "mean": 1.9,
+          "std_sample": 2.514402955419481,
+          "standard_error": 0.7951240294584373,
+          "t_critical_95": 2.262157162798205,
+          "ci_95_pct": [
+            0.10130448144762516,
+            3.6986955185523747
+          ],
+          "min": 0.0,
+          "max": 6.0,
+          "p50_nearest_rank": 0.0,
+          "p95_nearest_rank": 6.0,
+          "p99_nearest_rank": 6.0,
+          "sample_values": [
+            6.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            4.0,
+            2.0,
+            0.0,
+            0.0,
+            6.0
+          ],
+          "calculation_source": "dynamically_calculated_from_raw_trial_records"
+        },
+        "mean_latency_ms": {
+          "metric_name": "mean_latency_ms",
+          "n": 10,
+          "degrees_of_freedom": 9,
+          "mean": 17.127,
+          "std_sample": 9.004179338260403,
+          "standard_error": 2.847371516953057,
+          "t_critical_95": 2.262157162798205,
+          "ci_95_pct": [
+            10.685798127777051,
+            23.568201872222946
+          ],
+          "min": 6.79,
+          "max": 32.06,
+          "p50_nearest_rank": 17.11,
+          "p95_nearest_rank": 32.06,
+          "p99_nearest_rank": 32.06,
+          "sample_values": [
+            25.96,
+            22.22,
+            32.06,
+            6.95,
+            17.11,
+            9.6,
+            18.13,
+            8.07,
+            6.79,
+            24.38
+          ],
+          "calculation_source": "dynamically_calculated_from_raw_trial_records"
+        },
+        "p50_latency_ms": {
+          "metric_name": "p50_latency_ms",
+          "n": 10,
+          "degrees_of_freedom": 9,
+          "mean": 4.4910000000000005,
+          "std_sample": 0.8074576012260816,
+          "standard_error": 0.2553405133890385,
+          "t_critical_95": 2.262157162798205,
+          "ci_95_pct": [
+            3.913379628684416,
+            5.068620371315585
+          ],
+          "min": 3.5,
+          "max": 6.24,
+          "p50_nearest_rank": 4.48,
+          "p95_nearest_rank": 6.24,
+          "p99_nearest_rank": 6.24,
+          "sample_values": [
+            4.8,
+            4.96,
+            4.84,
+            4.19,
+            3.5,
+            4.51,
+            4.48,
+            3.57,
+            3.82,
+            6.24
+          ],
+          "calculation_source": "dynamically_calculated_from_raw_trial_records"
+        },
+        "p95_latency_ms": {
+          "metric_name": "p95_latency_ms",
+          "n": 10,
+          "degrees_of_freedom": 9,
+          "mean": 45.176,
+          "std_sample": 28.28402187337107,
+          "standard_error": 8.944193050987513,
+          "t_critical_95": 2.262157162798205,
+          "ci_95_pct": [
+            24.942829624258668,
+            65.40917037574134
+          ],
+          "min": 18.28,
+          "max": 98.55,
+          "p50_nearest_rank": 24.63,
+          "p95_nearest_rank": 98.55,
+          "p99_nearest_rank": 98.55,
+          "sample_values": [
+            61.02,
+            71.92,
+            98.55,
+            19.16,
+            58.23,
+            21.87,
+            24.63,
+            19.38,
+            18.28,
+            58.72
+          ],
+          "calculation_source": "dynamically_calculated_from_raw_trial_records"
+        },
+        "p99_latency_ms": {
+          "metric_name": "p99_latency_ms",
+          "n": 10,
+          "degrees_of_freedom": 9,
+          "mean": 247.55699999999996,
+          "std_sample": 277.34124796599104,
+          "standard_error": 87.70300326860723,
+          "t_critical_95": 2.262157162798205,
+          "ci_95_pct": [
+            49.15902295700573,
+            445.9549770429942
+          ],
+          "min": 21.84,
+          "max": 910.71,
+          "p50_nearest_rank": 152.02,
+          "p95_nearest_rank": 910.71,
+          "p99_nearest_rank": 910.71,
+          "sample_values": [
+            305.2,
+            501.08,
+            910.71,
+            22.81,
+            220.19,
+            68.25,
+            152.02,
+            44.96,
+            21.84,
+            228.51
+          ],
+          "calculation_source": "dynamically_calculated_from_raw_trial_records"
+        }
+      },
+      "calculation_source": "dynamically_calculated_from_raw_trial_records"
+    },
+    "experiment_b2_centralized": {
+      "trials_evaluated": 10,
+      "quarantine_successes": 0,
+      "total_service_instances": 40,
+      "quarantine_success_rate_pct": 0.0,
+      "retained_defense_pct": 0.0,
+      "blast_radius_pct": 100.0,
+      "cumulative_decoy_attacker_hits": {
+        "productpage": 0,
+        "details": 0,
+        "reviews": 0,
+        "ratings": 0
+      },
+      "total_attacker_hits_captured": 0,
+      "cumulative_benign_decoy_leakage": 0,
+      "benign_traffic": {
+        "total_requests": 7200,
+        "successful_requests": 7179,
+        "overall_success_rate_pct": 99.70833333333333,
+        "errors_per_trial": {
+          "metric_name": "http_errors_per_trial",
+          "n": 10,
+          "degrees_of_freedom": 9,
+          "mean": 2.1,
+          "std_sample": 2.4244128727957577,
+          "standard_error": 0.7666666666666667,
+          "t_critical_95": 2.262157162798205,
+          "ci_95_pct": [
+            0.3656795085213762,
+            3.834320491478624
+          ],
+          "min": 0.0,
+          "max": 7.0,
+          "p50_nearest_rank": 1.0,
+          "p95_nearest_rank": 7.0,
+          "p99_nearest_rank": 7.0,
+          "sample_values": [
+            2.0,
+            2.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            7.0,
+            0.0,
+            6.0
+          ],
+          "calculation_source": "dynamically_calculated_from_raw_trial_records"
+        },
+        "mean_latency_ms": {
+          "metric_name": "mean_latency_ms",
+          "n": 10,
+          "degrees_of_freedom": 9,
+          "mean": 49.528,
+          "std_sample": 16.835447260006028,
+          "standard_error": 5.323835876926001,
+          "t_critical_95": 2.262157162798205,
+          "ci_95_pct": [
+            37.484646537449784,
+            61.57135346255021
+          ],
+          "min": 24.84,
+          "max": 75.21,
+          "p50_nearest_rank": 50.97,
+          "p95_nearest_rank": 75.21,
+          "p99_nearest_rank": 75.21,
+          "sample_values": [
+            50.97,
+            57.7,
+            24.84,
+            65.14,
+            28.17,
+            46.08,
+            51.52,
+            63.5,
+            32.15,
+            75.21
+          ],
+          "calculation_source": "dynamically_calculated_from_raw_trial_records"
+        },
+        "p50_latency_ms": {
+          "metric_name": "p50_latency_ms",
+          "n": 10,
+          "degrees_of_freedom": 9,
+          "mean": 5.142999999999999,
+          "std_sample": 1.396758549085863,
+          "standard_error": 0.44169383564234227,
+          "t_critical_95": 2.262157162798205,
+          "ci_95_pct": [
+            4.143819125937862,
+            6.142180874062136
+          ],
+          "min": 3.6,
+          "max": 7.75,
+          "p50_nearest_rank": 4.52,
+          "p95_nearest_rank": 7.75,
+          "p99_nearest_rank": 7.75,
+          "sample_values": [
+            5.01,
+            6.78,
+            4.0,
+            5.86,
+            3.6,
+            4.52,
+            4.11,
+            7.75,
+            3.83,
+            5.97
+          ],
+          "calculation_source": "dynamically_calculated_from_raw_trial_records"
+        },
+        "p95_latency_ms": {
+          "metric_name": "p95_latency_ms",
+          "n": 10,
+          "degrees_of_freedom": 9,
+          "mean": 149.473,
+          "std_sample": 49.661347153607416,
+          "standard_error": 15.704296867771925,
+          "t_critical_95": 2.262157162798205,
+          "ci_95_pct": [
+            113.94741235386033,
+            184.9985876461397
+          ],
+          "min": 80.92,
+          "max": 209.06,
+          "p50_nearest_rank": 123.78,
+          "p95_nearest_rank": 209.06,
+          "p99_nearest_rank": 209.06,
+          "sample_values": [
+            123.78,
+            185.87,
+            98.4,
+            197.9,
+            80.92,
+            187.43,
+            113.86,
+            195.11,
+            102.4,
+            209.06
+          ],
+          "calculation_source": "dynamically_calculated_from_raw_trial_records"
+        },
+        "p99_latency_ms": {
+          "metric_name": "p99_latency_ms",
+          "n": 10,
+          "degrees_of_freedom": 9,
+          "mean": 723.917,
+          "std_sample": 289.1861670293223,
+          "standard_error": 91.44869556265473,
+          "t_critical_95": 2.262157162798205,
+          "ci_95_pct": [
+            517.0456783043883,
+            930.7883216956118
+          ],
+          "min": 247.0,
+          "max": 1196.85,
+          "p50_nearest_rank": 592.63,
+          "p95_nearest_rank": 1196.85,
+          "p99_nearest_rank": 1196.85,
+          "sample_values": [
+            992.74,
+            495.23,
+            247.0,
+            1196.85,
+            592.63,
+            535.82,
+            999.26,
+            690.09,
+            592.24,
+            897.31
+          ],
+          "calculation_source": "dynamically_calculated_from_raw_trial_records"
+        }
+      },
+      "calculation_source": "dynamically_calculated_from_raw_trial_records"
+    },
+    "hypothesis_tests": {
+      "mean_latency_welch": {
+        "t_statistic": -5.36667334741127,
+        "p_value": 0.00010551191782857966,
+        "statistically_significant_alpha_0_001": true
+      },
+      "p50_latency_welch": {
+        "t_statistic": -1.2779592333827126,
+        "p_value": 0.22146574709472852,
+        "statistically_significant_alpha_0_05": false
+      },
+      "p95_latency_welch": {
+        "t_statistic": -5.770960248930606,
+        "p_value": 4.476770126960211e-05,
+        "statistically_significant_alpha_0_001": true
+      },
+      "p99_latency_welch": {
+        "t_statistic": -3.759537752214447,
+        "p_value": 0.0014388035588079847,
+        "statistically_significant_alpha_0_01": true
+      },
+      "errors_welch": {
+        "t_statistic": -0.18107149208503723,
+        "p_value": 0.8583373719373584,
+        "statistically_significant_alpha_0_05": false
+      },
+      "request_success_fisher_exact": {
+        "p_value": 0.8744548288925329,
+        "statistically_significant_alpha_0_05": false
+      },
+      "calculation_source": "dynamically_calculated_from_raw_trial_records"
+    }
+  },
+  "preserved_telemetry_records": {
+    "source": "copied_from_existing_summary",
+    "post_benchmark_10_lease_audit": {}
+  }
+}

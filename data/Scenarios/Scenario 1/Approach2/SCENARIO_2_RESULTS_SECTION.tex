@@ -1,0 +1,143 @@
+% ==============================================================================
+% SCENARIO 2: PARALLEL FOUR-SERVICE DDOS BENCHMARK RESULTS
+% Delineates:
+%   Part A: Computational ML Engine Concurrency (Micro-benchmark Reference)
+%   Part B: Live End-to-End Traffic Routing & Control Dynamics (20 Measured Trials)
+% ==============================================================================
+
+\subsection{Scenario 2: Decentralized Concurrency and Parallel Attack Defense}
+\label{sec:scenario2}
+
+To evaluate framework resilience and scalability under multi-vector stress, Scenario~2 investigates simultaneous, synchronized DDoS attacks targeting all four Bookinfo microservices (\textit{productpage}, \textit{details}, \textit{reviews}, and \textit{ratings}). We evaluate architectural performance across two distinct tiers: (i)~a computational micro-benchmark isolating ML inference API throughput and latency under concurrent invocation, and (ii)~an empirical end-to-end data-plane mitigation benchmark measuring live multi-target routing responsiveness, quarantine reliability, and legitimate user QoS across twenty measured cluster trials.
+
+\subsubsection{ML Inference Engine Concurrency Micro-benchmark}
+In this evaluation, the computational API overhead ($T_{\text{ML}}$) of the ML engine is evaluated under simultaneous parallel requests across all four services. In the centralized configuration, all incoming feature vectors are evaluated by a single Python process hosting the models, which introduces serialization from FastAPI request handling, JSON parsing, and Python Global Interpreter Lock (GIL) contention. 
+
+In contrast, the decentralized architecture partitions the monitoring workload across four independent Kubernetes pods, each running a dedicated OS process with its own Python interpreter scheduled independently by the Linux Completely Fair Scheduler (CFS). Within each pod, a six-worker \texttt{ThreadPoolExecutor} evaluates service-version feature vectors concurrently. 
+
+Under simultaneous parallel invocation, the decentralized approach achieved an aggregate throughput of \textbf{936.19~rps} compared to \textbf{698.94~rps} for the centralized baseline—a \textbf{34\% throughput gain}—while reducing average inference latency from \textbf{27.59~ms to 19.96~ms} (a \textbf{28\% latency reduction}), as summarized in Tables~\ref{tab:scenario2_dec}, \ref{tab:scenario2_cen}, and \ref{tab:scenario2_comp}.
+
+\begin{table}[htbp]
+\renewcommand{\arraystretch}{1.2}
+\caption{Scenario 2: Decentralized Parallel Attack Micro-benchmark Results.}
+\label{tab:scenario2_dec}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccc}
+\hline
+\textbf{Service} & \textbf{Avg Latency (ms)} & \textbf{p95 Latency (ms)} & \textbf{Throughput (rps)} & \textbf{Errors} \\
+\hline
+productpage & 19.67 & 31.45 & 238.52 & 0 \\
+details     & 20.53 & 32.32 & 235.45 & 0 \\
+reviews     & 19.99 & 31.42 & 239.17 & 0 \\
+ratings     & 19.64 & 31.66 & 237.09 & 0 \\
+\hline
+\textbf{TOTAL} & \textbf{19.96} & \textbf{31.71} & \textbf{936.19} & \textbf{0} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\renewcommand{\arraystretch}{1.2}
+\caption{Scenario 2: Centralized Parallel Attack Micro-benchmark Results.}
+\label{tab:scenario2_cen}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccc}
+\hline
+\textbf{Service} & \textbf{Avg Latency (ms)} & \textbf{p95 Latency (ms)} & \textbf{Throughput (rps)} & \textbf{Errors} \\
+\hline
+productpage & 27.65 & 33.51 & 177.53 & 0 \\
+details     & 27.61 & 32.88 & 175.08 & 0 \\
+reviews     & 27.66 & 32.45 & 175.54 & 0 \\
+ratings     & 27.42 & 33.15 & 175.67 & 0 \\
+\hline
+\textbf{TOTAL} & \textbf{27.59} & \textbf{33.00} & \textbf{698.94} & \textbf{0} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\renewcommand{\arraystretch}{1.2}
+\caption{Scenario 2: Parallel Attack Micro-benchmark Comparison.}
+\label{tab:scenario2_comp}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccc}
+\hline
+\textbf{Metric} & \textbf{Decentralized} & \textbf{Centralized} & \textbf{Difference} \\
+\hline
+Avg Latency & 19.96~ms   & 27.59~ms   & \textbf{$-$28\%} (Decentralized wins) \\
+p95 Latency & 31.71~ms   & 33.00~ms   & \textbf{$-$4\%} (Decentralized wins) \\
+Throughput  & 936.19~rps & 698.94~rps & \textbf{+34\%} (Decentralized wins) \\
+Errors      & 0          & 0          & Tie \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection{Live End-to-End Traffic Mitigation and Coordination Dynamics}
+To evaluate full-system operational behavior beyond isolated API micro-benchmarks, twenty independent empirical trials ($N=20$, 10 decentralized and 10 centralized) were executed against the live Kubernetes cluster. Each trial generated concurrent synchronized DDoS attacks across all four services totaling 125~RPS (65~RPS on \textit{productpage}, 20~RPS on \textit{details}, 20~RPS on \textit{reviews}, and 20~RPS on \textit{ratings}) alongside continuous legitimate background transactions (6~RPS per service, 24~RPS aggregate mesh load, 720 requests per trial). Across all 10 trials per architecture, a total of 37,500 planned attack requests and 7,200 legitimate background requests were submitted.
+
+Between consecutive trials, an automated recovery barrier strictly enforced zero residual quarantine rules, 100\% production routing ($v_1$), all 8/8 unheld Kubernetes Leases, and a 15-second post-recovery settling cooldown. The measured operational metrics are summarized in Table~\ref{tab:scenario2_coordination}.
+
+\begin{table}[htbp]
+\renewcommand{\arraystretch}{1.2}
+\caption{Runtime Routing Actions and Coordination Dynamics Under Live Parallel Attack (20 Measured Trials)}
+\label{tab:scenario2_coordination}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{lcccccc}
+\hline
+\textbf{Architecture} & \textbf{4-Svc Quaran.} & \textbf{Svc Quaran.} & \textbf{Time to 1st Routing Action} & \textbf{OCC Retries} & \textbf{Decoy Hits (Att./Ben.)} & \textbf{Mean Recov.} \\
+\hline
+Decentralized & \textbf{10/10 (100\%)} & \textbf{40/40 (100\%)} & 6.940 $\pm$ 1.513~s & 0 (1.00 att.) & \textbf{31,522 / 0} & 108.91 $\pm$ 6.66~s \\
+Centralized   & 7/10 (70\%)            & 37/40 (92.5\%)         & 8.061 $\pm$ 3.467~s & 0 (1.00 att.) & 27,699 / 0          & 108.82 $\pm$ 7.09~s \\
+\hline
+\end{tabular}
+\end{table}
+
+The empirical findings from the 20-trial live evaluation substantiate four critical operational observations:
+
+\textbf{1. Multi-Target Quarantine Reliability:} A key operational divergence observed under simultaneous multi-service stress is quarantine reliability. The decentralized architecture established complete four-service quarantine in \textbf{10/10 trials} (40/40 service instances). In contrast, the centralized architecture established complete four-service quarantine in \textbf{7/10 trials} (37/40 service instances). As shown in Table~\ref{tab:scenario2_timeline}, the centralized controller executed fallback routing changes to $v_2/v_3$ but failed to insert the dedicated \texttt{quarantine-malicious} rule for \textit{details} in Trials 1 and 2, and \textit{ratings} in Trial 3, resulting in zero recorded decoy hits for those specific service-trials. Fisher's exact test yields $p = 0.211$ at the trial level and $p = 0.241$ at the service level. While these values do not reach statistical significance at $\alpha = 0.05$ (with service instances clustered within 10 trials), the decentralized architecture demonstrated consistent four-service quarantine enforcement throughout the benchmark suite.
+
+\begin{table}[htbp]
+\renewcommand{\arraystretch}{1.2}
+\caption{Representative Service-Level Detection and Mitigation Timelines}
+\label{tab:scenario2_timeline}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llcccc}
+\hline
+\textbf{Trial} & \textbf{Service} & \textbf{Attribution} & \textbf{1st Routing Action} & \textbf{Quarantine Est.} & \textbf{Recovery} \\
+\hline
+Dec. T1  & productpage & BOTH (L7+RPS) & T+5.45~s  & T+5.45~s  & T+41.14~s \\
+Dec. T1  & details     & BOTH (L7+RPS) & T+8.45~s  & T+8.45~s  & T+128.85~s \\
+Dec. T1  & reviews     & BOTH (L7+RPS) & T+9.26~s  & T+9.26~s  & T+129.18~s \\
+Dec. T1  & ratings     & BOTH (L7+RPS) & T+5.75~s  & T+5.75~s  & T+126.02~s \\
+\hline
+Cen. T1  & productpage & BOTH (L7+RPS) & T+8.50~s  & T+8.50~s  & T+44.58~s \\
+Cen. T1  & details     & RPS\_ONLY     & T+15.68~s & \textbf{None} (Failover only) & T+75.85~s \\
+Cen. T1  & reviews     & BOTH (L7+RPS) & T+15.68~s & T+15.68~s & T+136.17~s \\
+Cen. T1  & ratings     & BOTH (L7+RPS) & T+15.68~s & T+15.68~s & T+136.17~s \\
+\hline
+Cen. T2  & details     & RPS\_ONLY     & T+3.76~s  & \textbf{None} (Failover only) & T+63.89~s \\
+Cen. T3  & ratings     & RPS\_ONLY     & T+11.85~s & \textbf{None} (Failover only) & T+71.89~s \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{2. Time to First Routing Action:} The metric reported in Table~\ref{tab:scenario2_coordination} represents the time elapsed from attack onset until the first observed Kubernetes \textit{VirtualService} modification. Across all ten trials, the decentralized architecture reached its first routing action in a mean of 6.940~s ($\sigma = 1.513$~s), compared to 8.061~s ($\sigma = 3.467$~s) for the centralized controller. For the decentralized architecture, all 40 first routing actions established active quarantine routes. For the centralized controller, 37 established quarantine routes while 3 executed non-quarantine production failovers. A two-sided Welch's t-test on trial means yields $t = -0.937$, $p = 0.367$, confirming that runtime network variance establishes an operational descriptive trend rather than statistical significance at $\alpha = 0.05$.
+
+\textbf{3. Legitimate Traffic QoS and Trade-offs:} Latency percentiles were computed using the nearest-observation method applied to successful HTTP requests ($N=7,196$ decentralized, $N=7,198$ centralized; $>99.9\%$ success rate for both). The measurements highlight a clear operational trade-off:
+\begin{itemize}
+    \item \textbf{Decentralized:} Mean = 26.13~ms, $\text{p50} = \mathbf{6.77~ms}$, $\text{p95} = \mathbf{47.59~ms}$, $\text{p99} = 263.25~ms$, Errors = 4.
+    \item \textbf{Centralized:} Mean = 22.87~ms, $\text{p50} = \mathbf{4.55~ms}$, $\text{p95} = 55.87~ms$, $\text{p99} = \mathbf{234.30~ms}$, Errors = 2.
+\end{itemize}
+The centralized baseline achieved lower median latency (4.55~ms vs.\ 6.77~ms) and slightly lower p99 latency (234.30~ms vs.\ 263.25~ms). Conversely, the decentralized architecture achieved a lower pooled 95th-percentile tail latency (47.59~ms vs.\ 55.87~ms, a $-14.82\%$ tail reduction) alongside complete quarantine coverage. Trial-level p95 averages ($60.89 \pm 36.57$~ms decentralized vs.\ $51.14 \pm 40.98$~ms centralized; $p = 0.581$) reflect transient network scheduling noise during active failover.
+
+\textbf{4. Decoy Telemetry & Coordination Correctness:} Decoy counter deltas recorded \textbf{31,522 attack requests} across all four decoys under decentralized control versus \textbf{27,699} under centralized control. Across all 14,400 legitimate background requests, exactly \textbf{zero (0) benign requests were diverted to decoys} (0.00\% false quarantine rate). Unaccounted-for dispatched attack requests (5,858 decentralized vs.\ 9,655 centralized) reflect requests arriving prior to route propagation and generator drainage. Both architectures maintained zero OCC conflicts across all 246 atomic commits (\texttt{mean\_occ\_attempts = 1.00}).

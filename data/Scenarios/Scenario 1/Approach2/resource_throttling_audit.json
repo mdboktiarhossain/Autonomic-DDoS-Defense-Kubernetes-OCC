@@ -1,0 +1,30 @@
+{
+  "timestamp_iso": "2026-11-04T05:30:00Z",
+  "host_memory_mb": {
+    "total": 15946,
+    "used": 6528,
+    "free": 3081,
+    "shared": 655,
+    "buff_cache": 6336,
+    "available": 8432
+  },
+  "host_swap_mb": {
+    "total": 2047,
+    "used": 1028,
+    "free": 1019,
+    "utilization_pct": 50.22
+  },
+  "swap_audit_finding": "Host VM swap usage is observed at 1,028 MiB (out of 2,047 MiB allocated, 50.2% utilized). While Kubernetes containers in this cluster do not have dedicated container swap enabled (Kubelet default failSwapOn=false), the underlying virtualization hypervisor and VM OS actively utilize 1,028 MiB of swap space. Available physical RAM headroom is 8,432 MiB (52.9% free).",
+  "node_cgroup_stat": {
+    "usage_usec": 881900406598,
+    "user_usec": 761611318206,
+    "system_usec": 120289088391,
+    "core_sched_force_idle_usec": 0,
+    "nr_periods": 0,
+    "nr_throttled": 0,
+    "throttled_usec": 0,
+    "nr_bursts": 0,
+    "burst_usec": 0,
+    "note": "Node root cgroup does not enforce CFS bandwidth quota; container cgroup monitoring is required for throttling telemetry."
+  }
+}

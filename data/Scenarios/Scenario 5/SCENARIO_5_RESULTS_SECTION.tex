@@ -1,0 +1,174 @@
+% ==============================================================================
+% Scenario 5: End-to-End Decentralized Mitigation and Autonomous Recovery
+% Manuscript Results Section for Section VI
+% Active Enforcement Mode (cic-v5.4-hmac) - 5 Concurrent Multi-Service Repetitions
+% Full Mesh (productpage, details, reviews, ratings)
+% ==============================================================================
+
+\subsection{Scenario 5: End-to-End Decentralized Mitigation and Autonomous Two-Stage Recovery}
+\label{sec:scenario5_recovery}
+
+While Scenarios~1--4 evaluate specific architectural facets—including centralized versus decentralized coordination overhead, inference throughput, fault containment blast radius, and heterogeneous model specialization—a critical validation requirement for autonomic cloud-native defense is verifying closed-loop system dynamics under synchronized, multi-vector stress. In a production microservice mesh, volumetric attacks rarely target a single isolated component in isolation; rather, adversaries may launch coordinated campaigns against ingress gateways and backend services simultaneously. Under such multi-target saturation, decentralized controllers must independently detect anomalies, acquire distributed synchronization locks, commit atomic routing modifications without race conditions or deadlocks, and autonomously restore healthy baseline routing without human intervention once attacks abate.
+
+Scenario~5 evaluates the complete, closed-loop operational lifecycle of our decentralized framework across the entire Bookinfo mesh under simultaneous four-service DDoS saturation. We examine whether independent controllers can execute localized mitigation and two-stage autonomic recovery while strictly isolating malicious flows to honeypot decoys, guaranteeing continuous availability for legitimate traffic, and maintaining zero residual lock contention or configuration drift.
+
+\subsubsection{Autonomic Two-Stage Recovery Architecture and Algorithm}
+
+In conventional reactive defense systems, mitigation teardown is typically executed abruptly: as soon as ingress traffic rates decline, defense filters are dismantled. In microservice environments, however, premature filter removal exposes recovering services to stealthy, low-rate secondary attacks or residual bursts, triggering oscillatory route flipping. To prevent routing instability, our framework enforces a formal four-state, two-stage closed-loop recovery protocol, formalized in Algorithm~\ref{alg:scenario5_recovery}.
+
+\begin{algorithm}[!t]
+\caption{Decentralized Concurrent Mitigation and Two-Stage Autonomous Recovery}
+\label{alg:scenario5_recovery}
+\begin{algorithmic}[1]
+\Require Service $\mathcal{S}$, detection interval $\Delta t = 5.0\text{ s}$, rate threshold $\tau_{\text{rps}}$, ML decision threshold $T_{\mathcal{S}}$, abatement threshold $\tau_{\text{abate}} = 2.0\text{ rps}$, observation windows $K=2$.
+\State \textbf{State 1 (Baseline):} VirtualService $\mathcal{VS}_{\mathcal{S}}$ configured with single rule $[(v_1, 100\%)]$; Lease $\mathcal{L}_{\mathcal{S}}$ unheld.
+\While{Controller for $\mathcal{S}$ is active}
+    \State Extract 7-feature telemetry vector $\mathbf{f}_t$ and compute ingress rate $R_t$ from Envoy access logs.
+    \State Evaluate classification probability $P_{\text{DDoS}} = \mathcal{M}_{\mathcal{S}}(\mathbf{f}_t)$ and rate condition $R_t \ge \tau_{\text{rps}}$.
+    \State Determine attribution:
+    \State \quad $\alpha_t \leftarrow \text{BOTH}$ if $(P_{\text{DDoS}} \ge T_{\mathcal{S}} \land R_t \ge \tau_{\text{rps}})$
+    \State \quad $\alpha_t \leftarrow \text{ML\_ONLY}$ if $(P_{\text{DDoS}} \ge T_{\mathcal{S}} \land R_t < \tau_{\text{rps}})$
+    \State \quad $\alpha_t \leftarrow \text{STAGE3B\_ONLY}$ if $(P_{\text{DDoS}} < T_{\mathcal{S}} \land R_t \ge \tau_{\text{rps}})$
+    \State \quad $\alpha_t \leftarrow \text{BENIGN}$ otherwise.
+    
+    \If{$\alpha_t \neq \text{BENIGN}$ and $\mathcal{VS}_{\mathcal{S}}$ is unmitigated}
+        \State Acquire Kubernetes Lease $\mathcal{L}_{\mathcal{S}}$ with monotonic fencing token $\phi \leftarrow \phi + 1$.
+        \State \textbf{State 2 (Mitigation \& Decoy Quarantine):}
+        \If{$\alpha_t == \text{BOTH}$}
+            \State Prepend index-0 quarantine rule matching attacker identity $\to \mathcal{S}\text{-decoy}$.
+            \State Mutate production routing rule to failover subsets $[(v_2, 50\%), (v_3, 50\%)]$.
+        \Else \Comment{Targeted Quarantine Only}
+            \State Prepend index-0 quarantine rule matching attacker identity $\to \mathcal{S}\text{-decoy}$.
+            \State Preserve production routing rule strictly at $[(v_1, 100\%)]$.
+        \EndIf
+        \State Commit mutation to $\mathcal{VS}_{\mathcal{S}}$ via atomic Optimistic Concurrency Control (OCC).
+    \EndIf
+
+    \If{$\mathcal{VS}_{\mathcal{S}}$ is mitigated}
+        \State \Comment{\textbf{Stage 1: Production Route Restoration}}
+        \If{$\alpha_t == \text{BOTH}$ and $R_t < \tau_{\text{rps}}$ and production not restored}
+            \State \textbf{State 3 (Stage 1 Restored):}
+            \State Mutate production routing rule to $[(v_1, 100\%)]$; retain index-0 quarantine rule $\to \mathcal{S}\text{-decoy}$.
+            \State Commit atomic OCC update to $\mathcal{VS}_{\mathcal{S}}$.
+        \EndIf
+
+        \State \Comment{\textbf{Stage 2: Decoy Abatement and Teardown}}
+        \State Measure decoy traffic rate $R_{\text{decoy}}$ over window $\Delta t$.
+        \If{$R_{\text{decoy}} \le \tau_{\text{abate}}$ for $K$ consecutive windows after attack cessation}
+            \State \textbf{State 4 (Teardown):}
+            \State Remove index-0 quarantine rule; confirm production routing at $[(v_1, 100\%)]$.
+            \State Commit atomic OCC update to $\mathcal{VS}_{\mathcal{S}}$.
+            \State Release Lease lock $\mathcal{L}_{\mathcal{S}}$ with recorded fencing token.
+            \State Return to \textbf{State 1 (Baseline)}.
+        \EndIf
+    \EndIf
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
+
+The framework dynamically bifurcates mitigation and recovery into two rigorous operational pathways governed strictly by detection attribution ($\alpha_t$):
+\begin{enumerate}
+    \item \textbf{Failover and Restore (\texttt{FAILOVER\_AND\_RESTORE}):} Triggered when telemetry indicates simultaneous L7 volumetric saturation and ML signature matching ($\alpha_t = \text{BOTH}$). Under this path, the primary version ($v_1$) is presumed compromised or severely degraded. The controller diverts identified malicious traffic to the decoy honeypot ($v_4$) while simultaneously failing over benign production traffic across secondary instances ($v_2:50\%, v_3:50\%$). Once ingress volume subsides below threshold ($R_t < \tau_{\text{rps}}$), \textbf{Stage~1} autonomously restores production routing to $v_1=100\%$ while maintaining the decoy quarantine rule intact. Only after attacker traffic to the decoy subsides below $\tau_{\text{abate}} \le 2.0\text{ rps}$ across $K=2$ consecutive observation windows is \textbf{Stage~2} triggered, purging the quarantine rule and releasing the distributed Lease.
+    \item \textbf{Targeted Quarantine Only (\texttt{TARGETED\_QUARANTINE\_ONLY}):} Triggered when classification detects malicious flow signatures but aggregate ingress rates remain below volumetric saturation thresholds ($\alpha_t \in \{\text{ML\_ONLY}, \text{STAGE3B\_ONLY}\}$). Here, production routing remains preserved at $v_1=100\%$ throughout Phase~A and Stage~1, with malicious flows selectively diverted to the decoy honeypot via index-0 header matching. Consequently, teardown requires only the anti-oscillation silence check ($10\text{--}15\text{ s}$) before purging the quarantine rule.
+\end{enumerate}
+
+\subsubsection{Multi-Service Experimental Methodology and Setup}
+
+The benchmark was conducted on the certified Kubernetes testbed with four autonomous defender pods executing the HMAC-SHA256 authenticated controller image (\texttt{boktiar/ddos-defender:cic-v5.4-hmac}). To prevent test-harness artifacts, all benign and malicious traffic generators operated from independent client pods located outside the application namespace.
+
+The experimental workload imposed simultaneous, multi-vector saturation across all four Bookinfo services:
+\begin{itemize}
+    \item \textbf{Synchronized Attack Inception:} An external attacker generator concurrently targeted all four microservices with an aggregate offered attack rate of $160.0\text{ RPS}$ ($85\text{ RPS}$ targeting \texttt{productpage} ingress, and $25\text{ RPS}$ targeting each of \texttt{details}, \texttt{reviews}, and \texttt{ratings} east-west endpoints). All four attack streams were synchronized to a shared microsecond timing barrier ($t_{\text{barrier}}$), achieving sub-millisecond inter-service launch alignment ($\Delta t \le 0.6\text{ ms}$).
+    \item \textbf{Continuous Legitimate Traffic:} Simultaneously, an independent benign client generated steady background HTTP requests across all four services throughout each trial ($12{,}306$ total legitimate requests across the series).
+    \item \textbf{Sequential Repetition Protocol:} Five consecutive repetitions (`concurrent\_rep\_1` through `concurrent\_rep\_5`) were executed. Prior to each repetition, an automated pre-flight audit verified that all 10 Kubernetes Leases were unheld, all 4 defender deployments had zero restarts, and all 4 VirtualServices were at single-rule baseline ($v_1=100\%$, 0 quarantine rules). Following trial completion and autonomous Stage~2 teardown, an identical post-flight verification confirmed pristine restoration.
+\end{itemize}
+
+\begin{table*}[!t]
+\renewcommand{\arraystretch}{1.2}
+\caption{Scenario 5: Multi-Workload Mitigation and Teardown Latency Across 5 Repetitions (20 Service Mitigations).}
+\label{tab:scenario5_latencies}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{@{}l c c c c c c c@{}}
+\toprule
+\textbf{Service} & \textbf{Dominant Recovery Class} & \textbf{Internal OCC Commit (s)} & \textbf{OCC Commit Range} & \textbf{Polled Commit (s)} & \textbf{Internal OCC Teardown (s)} & \textbf{OCC Teardown Range} & \textbf{Polled Teardown (s)} \\
+\midrule
+\texttt{productpage} & Targeted Quarantine (3/5) & $3.49 \pm 1.47$ & 1.86 -- 5.99 & $3.67 \pm 1.51$ & $27.74 \pm 21.47$ & 9.40 -- 56.39 & $27.85 \pm 21.55$ \\
+\texttt{details}     & Failover \& Restore (5/5)   & $6.10 \pm 2.47$ & 3.77 -- 9.85 & $6.30 \pm 2.55$ & $53.21 \pm 1.70$  & 50.98 -- 55.65 & $53.24 \pm 1.67$ \\
+\texttt{reviews}     & Failover \& Restore (5/5)   & $6.05 \pm 1.49$ & 4.09 -- 8.60 & $6.19 \pm 1.49$ & $52.91 \pm 2.40$  & 50.32 -- 56.81 & $52.95 \pm 2.45$ \\
+\texttt{ratings}     & Failover \& Restore (4/5)   & $6.52 \pm 2.47$ & 1.69 -- 8.38 & $6.86 \pm 2.48$ & $46.86 \pm 15.82$ & 15.35 -- 56.71 & $47.03 \pm 15.82$ \\
+\midrule
+\multicolumn{8}{@{}l}{\textbf{Disaggregated Teardown Dynamics by Operational Class:}} \\
+\multicolumn{2}{@{}l}{\texttt{FAILOVER\_AND\_RESTORE} ($N=16$ events)} & \multicolumn{2}{c}{Two-stage abatement window requirement} & \multicolumn{2}{r}{\textbf{Mean OCC:} $\mathbf{53.59 \pm 2.16\text{ s}}$} & \multicolumn{2}{l}{[Min: 50.32\,s, Max: 56.81\,s; Polled: $53.68 \pm 2.20$\,s]} \\
+\multicolumn{2}{@{}l}{\texttt{TARGETED\_QUARANTINE\_ONLY} ($N=4$ events)} & \multicolumn{2}{c}{Direct anti-oscillation check} & \multicolumn{2}{r}{\textbf{Mean OCC:} $\mathbf{11.54 \pm 2.28\text{ s}}$} & \multicolumn{2}{l}{[Min: 9.40\,s, Max: 15.35\,s; Polled: $11.61 \pm 2.32$\,s]} \\
+\bottomrule
+\multicolumn{8}{@{}l}{\footnotesize All values denote Mean $\pm$ Sample Standard Deviation ($s$). Internal OCC commit times represent controller \texttt{[OCC-ATOMIC]} write timestamps; polled denotes external coordinator sampling.}
+\end{tabular}
+\end{table*}
+
+\subsubsection{Mitigation Commit and Disaggregated Teardown Latencies}
+
+Table~\ref{tab:scenario5_latencies} summarizes the mitigation commit and teardown latencies recorded across all 20 service-level mitigation events. Across all five repetitions, every decentralized controller successfully committed its initial decoy quarantine mutation within the sub-10-second target:
+\begin{itemize}
+    \item \texttt{productpage}: Internal OCC commit averaged $3.49 \pm 1.47\text{ s}$ (ranging from $1.86\text{ s}$ to $5.99\text{ s}$).
+    \item \texttt{details}: Internal OCC commit averaged $6.10 \pm 2.47\text{ s}$ (ranging from $3.77\text{ s}$ to $9.85\text{ s}$).
+    \item \texttt{reviews}: Internal OCC commit averaged $6.05 \pm 1.49\text{ s}$ (ranging from $4.09\text{ s}$ to $8.60\text{ s}$).
+    \item \texttt{ratings}: Internal OCC commit averaged $6.52 \pm 2.47\text{ s}$ (ranging from $1.69\text{ s}$ to $8.38\text{ s}$).
+\end{itemize}
+All 20 internal OCC atomic writes satisfied the $t_{\text{occ}} < 10.0\text{ s}$ constraint ($100\%$ compliance). In one instance (\texttt{details} in Repetition~1), external network polling observed the commit at $10.242\text{ s}$ due to a transient SSH telemetry sampling delay, although the controller's internal commit timestamp confirmed atomic execution at $9.849\text{ s}$.
+
+The empirical data demonstrates a fundamental bifurcation in teardown duration between the two recovery pathways:
+\begin{enumerate}
+    \item For the 16 mitigation events executing \texttt{FAILOVER\_AND\_RESTORE}, teardown required an average of $53.59 \pm 2.16\text{ s}$ (internal OCC) and $53.68 \pm 2.20\text{ s}$ (external polling). This duration tightly reflects the theoretical lower bound imposed by Algorithm~\ref{alg:scenario5_recovery}: the controller must first verify production subsidence to restore $v_1$, followed by observing decoy traffic rate $R_{\text{decoy}} \le 2.0\text{ RPS}$ across two full consecutive 5-second sampling windows plus anti-oscillation dampening delays ($\approx 50\text{--}55\text{ s}$).
+    \item For the 4 mitigation events executing \texttt{TARGETED\_QUARANTINE\_ONLY} (\texttt{ratings} in Repetition~2, and \texttt{productpage} in Repetitions~3, 4, and 5), production routing was preserved at $v_1=100\%$ throughout. Teardown therefore bypassed multi-version restoration, executing directly upon expiration of the anti-oscillation cooldown window ($11.54 \pm 2.28\text{ s}$ internal OCC; $11.61 \pm 2.32\text{ s}$ polled).
+\end{enumerate}
+
+\begin{table*}[!t]
+\renewcommand{\arraystretch}{1.2}
+\caption{Benchmark Repetition Series Summary Across Five Sequential Executions ($160.0\text{ RPS}$ Offered Load).}
+\label{tab:scenario5_reps}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}c c c c c c c c c@{}}
+\toprule
+\textbf{Repetition} & \textbf{Recorded Assertions} & \textbf{Retrospective (78-Rule)} & \textbf{Trial Status} & \textbf{Attribution Profile (P, D, Rv, Rt)} & \textbf{Attack Delivered} & \textbf{OCC Updates} & \textbf{Legitimate Success} & \textbf{Availability} \\
+\midrule
+Rep 1 & 75 / 77 & 76 / 78 & Partial Pass & \texttt{BOTH, BOTH, BOTH, BOTH} & 2,224 / 2,230 & 12 & 2,470 / 2,470 & \textbf{100.000\%} \\
+Rep 2 & \textbf{78 / 78} & \textbf{78 / 78} & \textbf{Unconditional Pass} & \texttt{BOTH, BOTH, BOTH, ML\_ONLY} & 2,228 / 2,230 & 11 & 2,470 / 2,470 & \textbf{100.000\%} \\
+Rep 3 & 77 / 78 & 77 / 78 & Partial Pass & \texttt{ML\_ONLY, BOTH, BOTH, BOTH} & 2,226 / 2,230 & 11 & 2,454 / 2,455 & 99.959\% \\
+Rep 4 & 77 / 78 & 77 / 78 & Partial Pass & \texttt{ML\_ONLY, BOTH, BOTH, BOTH} & 2,230 / 2,230 & 11 & 2,435 / 2,436 & 99.959\% \\
+Rep 5 & \textbf{78 / 78} & \textbf{78 / 78} & \textbf{Unconditional Pass} & \texttt{STAGE3B, BOTH, BOTH, BOTH} & 2,229 / 2,230 & 11 & 2,475 / 2,475 & \textbf{100.000\%} \\
+\midrule
+\textbf{Aggregate} & \textbf{385 / 389 (99.0\%)} & \textbf{386 / 390 (98.97\%)} & \textbf{5 Trials (20/20 Mitigated)} & — & \textbf{11,137 / 11,150 (99.88\%)} & \textbf{56} & \textbf{12,304 / 12,306} & \textbf{99.9837\%} \\
+\bottomrule
+\multicolumn{9}{@{}l}{\footnotesize P = \texttt{productpage}, D = \texttt{details}, Rv = \texttt{reviews}, Rt = \texttt{ratings}. Repetition 1 protocol reconciliation discussed in Section~\ref{sec:scenario5_concurrency}.}
+\end{tabular}
+\end{table*}
+
+\subsubsection{Legitimate Quality of Service and Decoy Isolation}
+
+A critical vulnerability of centralized DDoS mitigation is collateral damage: under high-concurrency attack mitigation, legitimate client requests are frequently dropped or misrouted to sinkholes. In our decentralized framework, legitimate traffic preservation is maintained by localized, atomic route updates.
+
+Across the entire five-repetition benchmark series, background clients transmitted **$12{,}306$ legitimate HTTP requests** targeting all four microservices. As detailed in Table~\ref{tab:scenario5_reps}:
+\begin{itemize}
+    \item \texttt{productpage}: $3{,}063 / 3{,}063$ successful HTTP 200 responses ($100.000\%$).
+    \item \texttt{details}: $3{,}073 / 3{,}073$ successful HTTP 200 responses ($100.000\%$).
+    \item \texttt{ratings}: $3{,}114 / 3{,}114$ successful HTTP 200 responses ($100.000\%$).
+    \item \texttt{reviews}: $3{,}054 / 3{,}056$ successful HTTP 200 responses ($99.935\%$).
+\end{itemize}
+The mesh achieved an aggregate legitimate traffic availability of **$99.9837\%$ ($12{,}304 / 12{,}306$ requests)**. Crucially, we do not claim theoretical 100\% availability across all trials. In Repetition~3 and Repetition~4, exactly one benign request targeting \texttt{reviews} timed out during the high-load route transition window ($2{,}454/2{,}455$ in Rep~3 and $2{,}435/2{,}436$ in Rep~4). Inspection of access logs confirmed that neither request was misrouted to a decoy honeypot; both represented isolated upstream proxy timeouts under $160\text{ RPS}$ aggregate load. Most importantly, across all $12{,}306$ legitimate requests, **exactly zero requests were diverted to decoy workloads ($0.000\%$ leakage)**, confirming absolute isolation between authenticated benign traffic and quarantined flows.
+
+\subsubsection{Concurrency Control, Fencing Monotonicity, and Cluster Integrity}
+\label{sec:scenario5_concurrency}
+
+Under synchronized four-service attack, all four controllers actively competed for Kubernetes API server resources and VirtualService updates. The empirical records confirm robust concurrency control:
+\begin{itemize}
+    \item \textbf{Atomic OCC Updates:} Exactly $56$ atomic Optimistic Concurrency Control updates were committed across the series (12 in Rep 1, 11 each in Reps 2--5). Exactly $56 / 56$ updates ($100\%$) succeeded on their initial attempt (`attempt=1`), with **zero OCC conflicts, race conditions, or rolled-back mutations**.
+    \item \textbf{Monotonic Fencing Tokens:} Across 56 independent Lease acquisitions, every lease takeover strictly generated a monotonically increasing fencing token recorded in controller logs. While Kubernetes optimistic concurrency control (`metadata.resourceVersion`) natively prevents stale-token writes, artificial stale-token injection was outside the scope of this active mitigation series.
+    \item \textbf{Protocol Reconciliation for Repetition 1:} Repetition~1 was originally evaluated under an earlier 77-assertion runner that assumed \texttt{productpage} would only undergo targeted quarantine. During Rep~1, however, burst ingress telemetry caused \texttt{productpage} to trigger $\alpha_t = \text{BOTH}$, executing production failover and Stage~1 restoration. The static assertion flagged this valid failover as a failure, yielding 75/77. When evaluated under the unified 78-assertion rules (which dynamically evaluates recovery against observed attribution across all services), Repetition~1 achieved **76 / 78 passed assertions**, failing only the external polled commit latency mark ($10.242\text{ s}$ polled vs. $9.849\text{ s}$ internal commit). Repetitions~2 and~5 both achieved **100\% Unconditional PASS (78 / 78 assertions)**.
+    \item \textbf{Post-Benchmark Cluster Hygiene:} Following completion of all 20 service mitigations, automated cluster audits verified pristine state: exactly 0 of 10 Leases held in namespace `default`, exactly 0 defender restarts across all four deployments, and all four VirtualServices fully restored to baseline single-rule routing ($v_1=100\%$, 0 quarantine rules).
+\end{itemize}
+
+These findings demonstrate that decentralized autonomic mitigation provides rapid, sub-10-second containment under simultaneous multi-service saturation, eliminates cross-service lock contention, preserves $99.984\%$ legitimate user availability with zero decoy leakage, and guarantees clean, autonomous two-stage recovery back to healthy baseline operations.

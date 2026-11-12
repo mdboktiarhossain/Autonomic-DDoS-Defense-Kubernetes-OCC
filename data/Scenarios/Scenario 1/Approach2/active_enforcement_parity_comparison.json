@@ -1,0 +1,69 @@
+{
+  "test_name": "Task 6: Controlled Active Mitigation & Autonomic Recovery Comparison",
+  "timestamp_iso": "2026-11-04T05:29:23Z",
+  "target_service": "details",
+  "attack_vector": {
+    "type": "DoS Hulk",
+    "features": "6.0,6.0,349.0,11595.0,58.16666666666666,1932.5,1.0",
+    "request_count": 6
+  },
+  "decentralized": {
+    "lease_holder": "ddos-defender-details-5f5898b9d8-8jrss",
+    "fencing_token_mitigation": 270,
+    "fencing_token_recovery": 271,
+    "detection_timestamp_iso": "2026-11-04T05:27:39.913Z",
+    "mitigation_commit_timestamp_iso": "2026-11-04T05:27:39.973Z",
+    "recovery_commit_timestamp_iso": "2026-11-04T05:28:00.153Z",
+    "attribution_to_lock_latency_ms": 20.0,
+    "lock_to_occ_commit_duration_ms": 40.0,
+    "total_mitigation_execution_ms": 60.0,
+    "lock_hold_duration_ms": 44.0,
+    "revert_approval_to_occ_restore_ms": 34.0,
+    "autonomic_recovery_duration_sec": 20.18,
+    "mitigated_vs_quarantine_installed": true,
+    "restored_vs_clean_v1": true,
+    "status": "PASS",
+    "evidence_log_file": "logs_decentralized_details.txt",
+    "mitigated_vs_snapshot": "vs_details_decentralized_mitigated.json",
+    "restored_vs_snapshot": "vs_details_decentralized_restored.json"
+  },
+  "centralized": {
+    "lease_holder": "ddos-defender-central-76f5df77c9-h4rkc",
+    "fencing_token_mitigation": 272,
+    "fencing_token_recovery": 273,
+    "detection_timestamp_iso": "2026-11-04T05:28:44.036Z",
+    "mitigation_commit_timestamp_iso": "2026-11-04T05:28:44.076Z",
+    "recovery_commit_timestamp_iso": "2026-11-04T05:29:04.136Z",
+    "inference_to_attribution_latency_ms": 4874.0,
+    "attribution_to_lock_latency_ms": 23.0,
+    "lock_to_occ_commit_duration_ms": 17.0,
+    "total_mitigation_execution_ms": 40.0,
+    "lock_hold_duration_ms": 22.0,
+    "revert_approval_to_occ_restore_ms": 24.0,
+    "autonomic_recovery_duration_sec": 20.06,
+    "mitigated_vs_quarantine_installed": true,
+    "restored_vs_clean_v1": true,
+    "status": "PASS",
+    "evidence_log_file": "logs_centralized.txt",
+    "mitigated_vs_snapshot": "vs_details_centralized_mitigated.json",
+    "restored_vs_snapshot": "vs_details_centralized_restored.json"
+  },
+  "comparison": {
+    "lease_model_parity": true,
+    "occ_atomic_patch_parity": true,
+    "autonomic_recovery_parity": true,
+    "zero_cross_service_lease_interference": true,
+    "verdict": "FUNCTIONAL_PARITY_VERIFIED",
+    "key_findings": [
+      "Identical 7-feature model predictions across decentralized and centralized controllers (100.00% parity across 8,484 flows).",
+      "Identical model SHA-256 hashes across host VM, decentralized containers, and centralized image.",
+      "Centralized controller successfully manages per-service detection intervals (1.0s productpage, 5.0s backend).",
+      "Both controllers acquire the exact service-specific Lease (details-mitigation-lock) without cross-service interference.",
+      "Both controllers enforce monotonic fencing tokens and commit atomic single-write OCC patches.",
+      "Both controllers successfully execute autonomic recovery with zero human intervention upon traffic abatement.",
+      "Strict read-only safety guard verified: blocks all Lease acquisitions and VirtualService mutations during validation runs."
+    ],
+    "status": "PASS"
+  },
+  "scientific_scope_note": "This controlled trial validates the ML_ONLY autonomic recovery path (Stage 2: decoy quarantine teardown upon confirmed target client abatement). During ML_ONLY, production traffic remains on v1=100% throughout mitigation, making Stage 1 production restoration a NOP. Full two-stage recovery with separate production restoration (Stage 1 from v2/v3 back to v1) and subsequent decoy rule removal (Stage 2) will be systematically benchmarked under the BOTH attribution condition during the repeated trials."
+}

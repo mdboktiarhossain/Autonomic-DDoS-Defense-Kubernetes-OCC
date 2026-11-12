@@ -1,0 +1,1554 @@
+{
+  "benchmark_name": "Scenario 1: Centralized vs. Decentralized Performance Evaluation",
+  "timestamp_iso": "2026-11-04T09:40:41.825293-06:00",
+  "trials_per_architecture": 10,
+  "total_trials": 20,
+  "decentralized_summary": {
+    "attack_to_mitigation_sec": {
+      "mean": 4.783,
+      "std": 1.477,
+      "median": 4.769,
+      "min": 2.434,
+      "max": 7.019,
+      "p95": 7.013
+    },
+    "autonomic_recovery_sec": {
+      "mean": 20.123,
+      "std": 0.155,
+      "median": 20.108,
+      "min": 19.808,
+      "max": 20.36,
+      "p95": 20.318
+    },
+    "internal_detection_latency_sec": {
+      "mean": 4.744,
+      "std": 1.485,
+      "median": 4.737,
+      "min": 2.396,
+      "max": 6.986,
+      "p95": 6.983
+    },
+    "internal_lease_acquisition_ms": {
+      "mean": 16.4,
+      "std": 6.264,
+      "median": 14.0,
+      "min": 11.0,
+      "max": 34.0,
+      "p95": 26.8
+    },
+    "internal_occ_commit_ms": {
+      "mean": 21.9,
+      "std": 11.068,
+      "median": 19.0,
+      "min": 13.0,
+      "max": 53.0,
+      "p95": 41.3
+    },
+    "throughput_rps": {
+      "mean": 7.931,
+      "std": 0.207,
+      "median": 8.0,
+      "min": 7.31,
+      "max": 8.0,
+      "p95": 8.0
+    },
+    "overall_mean_latency_ms": {
+      "mean": 6.742,
+      "std": 5.634,
+      "median": 4.69,
+      "min": 4.36,
+      "max": 23.56,
+      "p95": 15.802
+    },
+    "overall_p95_latency_ms": {
+      "mean": 14.294,
+      "std": 4.063,
+      "median": 12.92,
+      "min": 11.88,
+      "max": 26.36,
+      "p95": 20.973
+    },
+    "overall_p99_latency_ms": {
+      "mean": 41.663,
+      "std": 72.792,
+      "median": 15.76,
+      "min": 13.9,
+      "max": 259.69,
+      "p95": 155.816
+    },
+    "cgroup_throttling_rate_pct": {
+      "mean": 0.0,
+      "std": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "p95": 0.0
+    },
+    "cgroup_throttled_time_ms": {
+      "mean": 0.0,
+      "std": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "p95": 0.0
+    },
+    "pass_rate": 1.0,
+    "cross_service_lease_contention_count": 0
+  },
+  "centralized_summary": {
+    "attack_to_mitigation_sec": {
+      "mean": 6.539,
+      "std": 0.977,
+      "median": 6.459,
+      "min": 5.381,
+      "max": 7.77,
+      "p95": 7.71
+    },
+    "autonomic_recovery_sec": {
+      "mean": 15.063,
+      "std": 0.138,
+      "median": 15.046,
+      "min": 14.795,
+      "max": 15.223,
+      "p95": 15.215
+    },
+    "internal_detection_latency_sec": {
+      "mean": 6.488,
+      "std": 0.965,
+      "median": 6.421,
+      "min": 5.35,
+      "max": 7.737,
+      "p95": 7.677
+    },
+    "internal_lease_acquisition_ms": {
+      "mean": 29.0,
+      "std": 28.092,
+      "median": 16.0,
+      "min": 13.0,
+      "max": 96.0,
+      "p95": 77.1
+    },
+    "internal_occ_commit_ms": {
+      "mean": 22.286,
+      "std": 12.068,
+      "median": 17.0,
+      "min": 14.0,
+      "max": 51.0,
+      "p95": 42.9
+    },
+    "throughput_rps": {
+      "mean": 8.0,
+      "std": 0.0,
+      "median": 8.0,
+      "min": 8.0,
+      "max": 8.0,
+      "p95": 8.0
+    },
+    "overall_mean_latency_ms": {
+      "mean": 4.691,
+      "std": 0.927,
+      "median": 4.31,
+      "min": 3.9,
+      "max": 7.09,
+      "p95": 6.437
+    },
+    "overall_p95_latency_ms": {
+      "mean": 12.006,
+      "std": 0.84,
+      "median": 11.845,
+      "min": 10.82,
+      "max": 13.59,
+      "p95": 13.392
+    },
+    "overall_p99_latency_ms": {
+      "mean": 20.967,
+      "std": 17.478,
+      "median": 14.66,
+      "min": 11.95,
+      "max": 72.53,
+      "p95": 50.421
+    },
+    "cgroup_throttling_rate_pct": {
+      "mean": 0.0,
+      "std": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "p95": 0.0
+    },
+    "cgroup_throttled_time_ms": {
+      "mean": 0.0,
+      "std": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "p95": 0.0
+    },
+    "pass_rate": 0.7,
+    "cross_service_lease_contention_count": 0
+  },
+  "all_trials_decentralized": [
+    {
+      "architecture": "decentralized",
+      "trial_id": 1,
+      "timestamp_iso": "2026-11-04T15:17:59Z",
+      "controller_pod": "ddos-defender-details-584547964d-gvk68",
+      "baseline_resource_version": "2911147",
+      "mitigated_resource_version": "2911501",
+      "mitigation_fencing_token": 295,
+      "recovery_fencing_token": 296,
+      "latencies": {
+        "attack_to_mitigation_sec": 3.486,
+        "autonomic_recovery_duration_sec": 20.093,
+        "internal_detection_latency_sec": 3.399,
+        "internal_lease_acquisition_ms": 34.0,
+        "internal_occ_commit_ms": 53.0
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 256,
+        "total_errors": 0,
+        "throughput_rps": 7.31,
+        "overall_mean_latency_ms": 23.56,
+        "overall_p95_latency_ms": 26.36,
+        "overall_p99_latency_ms": 259.69,
+        "per_service": {
+          "productpage": {
+            "requests": 64,
+            "success": 64,
+            "errors": 0,
+            "mean_latency_ms": 74.3,
+            "p95_latency_ms": 36.22,
+            "p99_latency_ms": 1587.77
+          },
+          "details": {
+            "requests": 64,
+            "success": 64,
+            "errors": 0,
+            "mean_latency_ms": 4.42,
+            "p95_latency_ms": 9.55,
+            "p99_latency_ms": 28.04
+          },
+          "reviews": {
+            "requests": 64,
+            "success": 64,
+            "errors": 0,
+            "mean_latency_ms": 4.94,
+            "p95_latency_ms": 11.66,
+            "p99_latency_ms": 52.69
+          },
+          "ratings": {
+            "requests": 64,
+            "success": 64,
+            "errors": 0,
+            "mean_latency_ms": 10.56,
+            "p95_latency_ms": 6.33,
+            "p99_latency_ms": 193.57
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 1701.03,
+        "delta_cfs_periods": 198,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "PASS"
+    },
+    {
+      "architecture": "decentralized",
+      "trial_id": 2,
+      "timestamp_iso": "2026-11-04T15:18:38Z",
+      "controller_pod": "ddos-defender-details-584547964d-gvk68",
+      "baseline_resource_version": "2911543",
+      "mitigated_resource_version": "2911575",
+      "mitigation_fencing_token": 297,
+      "recovery_fencing_token": 298,
+      "latencies": {
+        "attack_to_mitigation_sec": 4.981,
+        "autonomic_recovery_duration_sec": 20.029,
+        "internal_detection_latency_sec": 4.947,
+        "internal_lease_acquisition_ms": 13.0,
+        "internal_occ_commit_ms": 21.0
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 4.78,
+        "overall_p95_latency_ms": 13.01,
+        "overall_p99_latency_ms": 15.5,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 12.17,
+            "p95_latency_ms": 15.28,
+            "p99_latency_ms": 17.48
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.68,
+            "p95_latency_ms": 3.82,
+            "p99_latency_ms": 6.24
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.07,
+            "p95_latency_ms": 3.48,
+            "p99_latency_ms": 6.16
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.21,
+            "p95_latency_ms": 4.3,
+            "p99_latency_ms": 9.43
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 1582.22,
+        "delta_cfs_periods": 189,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "PASS"
+    },
+    {
+      "architecture": "decentralized",
+      "trial_id": 3,
+      "timestamp_iso": "2026-11-04T15:19:17Z",
+      "controller_pod": "ddos-defender-details-584547964d-gvk68",
+      "baseline_resource_version": "2911606",
+      "mitigated_resource_version": "2911637",
+      "mitigation_fencing_token": 299,
+      "recovery_fencing_token": 300,
+      "latencies": {
+        "attack_to_mitigation_sec": 7.019,
+        "autonomic_recovery_duration_sec": 20.36,
+        "internal_detection_latency_sec": 6.986,
+        "internal_lease_acquisition_ms": 15.0,
+        "internal_occ_commit_ms": 18.0
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 1,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 6.32,
+        "overall_p95_latency_ms": 14.39,
+        "overall_p99_latency_ms": 28.86,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 18.7,
+            "p95_latency_ms": 25.18,
+            "p99_latency_ms": 169.04
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.62,
+            "p95_latency_ms": 4.78,
+            "p99_latency_ms": 5.81
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.98,
+            "p95_latency_ms": 3.37,
+            "p99_latency_ms": 3.68
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 69,
+            "errors": 1,
+            "mean_latency_ms": 1.93,
+            "p95_latency_ms": 3.13,
+            "p99_latency_ms": 4.24
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 1489.25,
+        "delta_cfs_periods": 192,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "PASS"
+    },
+    {
+      "architecture": "decentralized",
+      "trial_id": 4,
+      "timestamp_iso": "2026-11-04T15:19:56Z",
+      "controller_pod": "ddos-defender-details-584547964d-gvk68",
+      "baseline_resource_version": "2911664",
+      "mitigated_resource_version": "2911688",
+      "mitigation_fencing_token": 301,
+      "recovery_fencing_token": 302,
+      "latencies": {
+        "attack_to_mitigation_sec": 3.558,
+        "autonomic_recovery_duration_sec": 20.012,
+        "internal_detection_latency_sec": 3.526,
+        "internal_lease_acquisition_ms": 16.0,
+        "internal_occ_commit_ms": 16.0
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 5.45,
+        "overall_p95_latency_ms": 12.86,
+        "overall_p99_latency_ms": 14.67,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 15.75,
+            "p95_latency_ms": 14.06,
+            "p99_latency_ms": 110.96
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.45,
+            "p95_latency_ms": 3.57,
+            "p99_latency_ms": 4.42
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.82,
+            "p95_latency_ms": 2.83,
+            "p99_latency_ms": 4.79
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.76,
+            "p95_latency_ms": 2.65,
+            "p99_latency_ms": 3.29
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 1352.97,
+        "delta_cfs_periods": 176,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "PASS"
+    },
+    {
+      "architecture": "decentralized",
+      "trial_id": 5,
+      "timestamp_iso": "2026-11-04T15:20:34Z",
+      "controller_pod": "ddos-defender-details-584547964d-gvk68",
+      "baseline_resource_version": "2911719",
+      "mitigated_resource_version": "2911750",
+      "mitigation_fencing_token": 303,
+      "recovery_fencing_token": 304,
+      "latencies": {
+        "attack_to_mitigation_sec": 5.668,
+        "autonomic_recovery_duration_sec": 20.261,
+        "internal_detection_latency_sec": 5.641,
+        "internal_lease_acquisition_ms": 13.0,
+        "internal_occ_commit_ms": 14.0
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 4.61,
+        "overall_p95_latency_ms": 12.86,
+        "overall_p99_latency_ms": 16.0,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 11.85,
+            "p95_latency_ms": 15.5,
+            "p99_latency_ms": 19.79
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.69,
+            "p95_latency_ms": 4.21,
+            "p99_latency_ms": 4.99
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.01,
+            "p95_latency_ms": 3.67,
+            "p99_latency_ms": 3.99
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.9,
+            "p95_latency_ms": 2.84,
+            "p99_latency_ms": 3.51
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 1575.41,
+        "delta_cfs_periods": 190,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "PASS"
+    },
+    {
+      "architecture": "decentralized",
+      "trial_id": 6,
+      "timestamp_iso": "2026-11-04T15:21:13Z",
+      "controller_pod": "ddos-defender-details-584547964d-gvk68",
+      "baseline_resource_version": "2911777",
+      "mitigated_resource_version": "2911806",
+      "mitigation_fencing_token": 305,
+      "recovery_fencing_token": 306,
+      "latencies": {
+        "attack_to_mitigation_sec": 2.434,
+        "autonomic_recovery_duration_sec": 20.123,
+        "internal_detection_latency_sec": 2.396,
+        "internal_lease_acquisition_ms": 18.0,
+        "internal_occ_commit_ms": 20.0
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 4.43,
+        "overall_p95_latency_ms": 12.81,
+        "overall_p99_latency_ms": 15.52,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 11.66,
+            "p95_latency_ms": 15.04,
+            "p99_latency_ms": 20.83
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.46,
+            "p95_latency_ms": 3.41,
+            "p99_latency_ms": 3.73
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.83,
+            "p95_latency_ms": 2.34,
+            "p99_latency_ms": 4.43
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.78,
+            "p95_latency_ms": 2.8,
+            "p99_latency_ms": 3.24
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 1397.34,
+        "delta_cfs_periods": 185,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "PASS"
+    },
+    {
+      "architecture": "decentralized",
+      "trial_id": 7,
+      "timestamp_iso": "2026-11-04T15:21:52Z",
+      "controller_pod": "ddos-defender-details-584547964d-gvk68",
+      "baseline_resource_version": "2911833",
+      "mitigated_resource_version": "2911864",
+      "mitigation_fencing_token": 307,
+      "recovery_fencing_token": 308,
+      "latencies": {
+        "attack_to_mitigation_sec": 4.557,
+        "autonomic_recovery_duration_sec": 20.267,
+        "internal_detection_latency_sec": 4.528,
+        "internal_lease_acquisition_ms": 13.0,
+        "internal_occ_commit_ms": 16.0
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 4.73,
+        "overall_p95_latency_ms": 13.01,
+        "overall_p99_latency_ms": 18.89,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 12.09,
+            "p95_latency_ms": 18.73,
+            "p99_latency_ms": 27.03
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.6,
+            "p95_latency_ms": 4.1,
+            "p99_latency_ms": 5.85
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.11,
+            "p95_latency_ms": 3.89,
+            "p99_latency_ms": 4.7
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.13,
+            "p95_latency_ms": 3.11,
+            "p99_latency_ms": 3.98
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 1613.7,
+        "delta_cfs_periods": 181,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "PASS"
+    },
+    {
+      "architecture": "decentralized",
+      "trial_id": 8,
+      "timestamp_iso": "2026-11-04T15:22:31Z",
+      "controller_pod": "ddos-defender-details-584547964d-gvk68",
+      "baseline_resource_version": "2911895",
+      "mitigated_resource_version": "2911923",
+      "mitigation_fencing_token": 309,
+      "recovery_fencing_token": 310,
+      "latencies": {
+        "attack_to_mitigation_sec": 7.006,
+        "autonomic_recovery_duration_sec": 20.034,
+        "internal_detection_latency_sec": 6.98,
+        "internal_lease_acquisition_ms": 13.0,
+        "internal_occ_commit_ms": 13.0
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 4.65,
+        "overall_p95_latency_ms": 12.98,
+        "overall_p99_latency_ms": 15.07,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 11.61,
+            "p95_latency_ms": 14.67,
+            "p99_latency_ms": 18.16
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.81,
+            "p95_latency_ms": 3.94,
+            "p99_latency_ms": 5.14
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.18,
+            "p95_latency_ms": 3.68,
+            "p99_latency_ms": 6.05
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.99,
+            "p95_latency_ms": 3.36,
+            "p99_latency_ms": 4.22
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 1499.93,
+        "delta_cfs_periods": 178,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "PASS"
+    },
+    {
+      "architecture": "decentralized",
+      "trial_id": 9,
+      "timestamp_iso": "2026-11-04T15:23:10Z",
+      "controller_pod": "ddos-defender-details-584547964d-gvk68",
+      "baseline_resource_version": "2911954",
+      "mitigated_resource_version": "2911977",
+      "mitigation_fencing_token": 311,
+      "recovery_fencing_token": 312,
+      "latencies": {
+        "attack_to_mitigation_sec": 3.508,
+        "autonomic_recovery_duration_sec": 19.808,
+        "internal_detection_latency_sec": 3.463,
+        "internal_lease_acquisition_ms": 18.0,
+        "internal_occ_commit_ms": 27.0
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 4.36,
+        "overall_p95_latency_ms": 11.88,
+        "overall_p99_latency_ms": 13.9,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 10.84,
+            "p95_latency_ms": 13.85,
+            "p99_latency_ms": 14.27
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.6,
+            "p95_latency_ms": 3.88,
+            "p99_latency_ms": 4.77
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.09,
+            "p95_latency_ms": 3.52,
+            "p99_latency_ms": 5.12
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.9,
+            "p95_latency_ms": 2.81,
+            "p99_latency_ms": 2.98
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 1461.18,
+        "delta_cfs_periods": 184,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "PASS"
+    },
+    {
+      "architecture": "decentralized",
+      "trial_id": 10,
+      "timestamp_iso": "2026-11-04T15:23:48Z",
+      "controller_pod": "ddos-defender-details-584547964d-gvk68",
+      "baseline_resource_version": "2912008",
+      "mitigated_resource_version": "2912040",
+      "mitigation_fencing_token": 313,
+      "recovery_fencing_token": 314,
+      "latencies": {
+        "attack_to_mitigation_sec": 5.608,
+        "autonomic_recovery_duration_sec": 20.243,
+        "internal_detection_latency_sec": 5.576,
+        "internal_lease_acquisition_ms": 11.0,
+        "internal_occ_commit_ms": 21.0
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 4.53,
+        "overall_p95_latency_ms": 12.78,
+        "overall_p99_latency_ms": 18.53,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 11.38,
+            "p95_latency_ms": 16.28,
+            "p99_latency_ms": 21.57
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.67,
+            "p95_latency_ms": 3.71,
+            "p99_latency_ms": 4.93
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.06,
+            "p95_latency_ms": 3.42,
+            "p99_latency_ms": 7.29
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.01,
+            "p95_latency_ms": 2.99,
+            "p99_latency_ms": 9.72
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 1562.84,
+        "delta_cfs_periods": 178,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "PASS"
+    }
+  ],
+  "all_trials_centralized": [
+    {
+      "architecture": "centralized",
+      "trial_id": 1,
+      "timestamp_iso": "2026-11-04T15:31:35Z",
+      "controller_pod": "ddos-defender-central-5d9b75457f-c99zv",
+      "baseline_resource_version": "2912502",
+      "mitigated_resource_version": null,
+      "mitigation_fencing_token": null,
+      "recovery_fencing_token": null,
+      "latencies": {
+        "attack_to_mitigation_sec": null,
+        "autonomic_recovery_duration_sec": null,
+        "internal_detection_latency_sec": null,
+        "internal_lease_acquisition_ms": null,
+        "internal_occ_commit_ms": null
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 5.64,
+        "overall_p95_latency_ms": 13.59,
+        "overall_p99_latency_ms": 23.4,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 14.63,
+            "p95_latency_ms": 18.5,
+            "p99_latency_ms": 79.11
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.93,
+            "p95_latency_ms": 3.65,
+            "p99_latency_ms": 11.09
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 3.04,
+            "p95_latency_ms": 2.4,
+            "p99_latency_ms": 27.92
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.95,
+            "p95_latency_ms": 2.51,
+            "p99_latency_ms": 6.21
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 2642.14,
+        "delta_cfs_periods": 433,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "FAIL"
+    },
+    {
+      "architecture": "centralized",
+      "trial_id": 2,
+      "timestamp_iso": "2026-11-04T15:32:14Z",
+      "controller_pod": "ddos-defender-central-5d9b75457f-c99zv",
+      "baseline_resource_version": "2912502",
+      "mitigated_resource_version": "2912836",
+      "mitigation_fencing_token": 323,
+      "recovery_fencing_token": 324,
+      "latencies": {
+        "attack_to_mitigation_sec": 7.454,
+        "autonomic_recovery_duration_sec": 15.196,
+        "internal_detection_latency_sec": 7.307,
+        "internal_lease_acquisition_ms": 96.0,
+        "internal_occ_commit_ms": 51.0
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 7.09,
+        "overall_p95_latency_ms": 13.15,
+        "overall_p99_latency_ms": 72.53,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 17.47,
+            "p95_latency_ms": 14.7,
+            "p99_latency_ms": 180.29
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 7.06,
+            "p95_latency_ms": 4.25,
+            "p99_latency_ms": 109.08
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.99,
+            "p95_latency_ms": 3.01,
+            "p99_latency_ms": 7.31
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.82,
+            "p95_latency_ms": 2.73,
+            "p99_latency_ms": 2.96
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 1747.72,
+        "delta_cfs_periods": 258,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "PASS"
+    },
+    {
+      "architecture": "centralized",
+      "trial_id": 3,
+      "timestamp_iso": "2026-11-04T15:32:53Z",
+      "controller_pod": "ddos-defender-central-5d9b75457f-c99zv",
+      "baseline_resource_version": "2912859",
+      "mitigated_resource_version": "2912893",
+      "mitigation_fencing_token": 325,
+      "recovery_fencing_token": 326,
+      "latencies": {
+        "attack_to_mitigation_sec": 7.571,
+        "autonomic_recovery_duration_sec": 15.046,
+        "internal_detection_latency_sec": 7.538,
+        "internal_lease_acquisition_ms": 17.0,
+        "internal_occ_commit_ms": 16.0
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 4.74,
+        "overall_p95_latency_ms": 12.72,
+        "overall_p99_latency_ms": 18.0,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 12.47,
+            "p95_latency_ms": 17.27,
+            "p99_latency_ms": 44.87
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.62,
+            "p95_latency_ms": 4.01,
+            "p99_latency_ms": 6.04
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.98,
+            "p95_latency_ms": 3.43,
+            "p99_latency_ms": 7.36
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.9,
+            "p95_latency_ms": 2.89,
+            "p99_latency_ms": 4.52
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 1832.71,
+        "delta_cfs_periods": 264,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "PASS"
+    },
+    {
+      "architecture": "centralized",
+      "trial_id": 4,
+      "timestamp_iso": "2026-11-04T15:33:32Z",
+      "controller_pod": "ddos-defender-central-5d9b75457f-c99zv",
+      "baseline_resource_version": "2912917",
+      "mitigated_resource_version": "2912954",
+      "mitigation_fencing_token": 327,
+      "recovery_fencing_token": 328,
+      "latencies": {
+        "attack_to_mitigation_sec": 7.77,
+        "autonomic_recovery_duration_sec": 15.019,
+        "internal_detection_latency_sec": 7.737,
+        "internal_lease_acquisition_ms": 16.0,
+        "internal_occ_commit_ms": 17.0
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 4.13,
+        "overall_p95_latency_ms": 11.28,
+        "overall_p99_latency_ms": 12.62,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 10.49,
+            "p95_latency_ms": 12.42,
+            "p99_latency_ms": 15.4
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.38,
+            "p95_latency_ms": 3.07,
+            "p99_latency_ms": 3.88
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.89,
+            "p95_latency_ms": 3.02,
+            "p99_latency_ms": 4.47
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.76,
+            "p95_latency_ms": 2.35,
+            "p99_latency_ms": 3.21
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 1651.33,
+        "delta_cfs_periods": 253,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "PASS"
+    },
+    {
+      "architecture": "centralized",
+      "trial_id": 5,
+      "timestamp_iso": "2026-11-04T15:34:35Z",
+      "controller_pod": "ddos-defender-central-5d9b75457f-c99zv",
+      "baseline_resource_version": "2912977",
+      "mitigated_resource_version": null,
+      "mitigation_fencing_token": null,
+      "recovery_fencing_token": null,
+      "latencies": {
+        "attack_to_mitigation_sec": null,
+        "autonomic_recovery_duration_sec": null,
+        "internal_detection_latency_sec": null,
+        "internal_lease_acquisition_ms": null,
+        "internal_occ_commit_ms": null
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 4.12,
+        "overall_p95_latency_ms": 11.45,
+        "overall_p99_latency_ms": 14.74,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 10.67,
+            "p95_latency_ms": 14.45,
+            "p99_latency_ms": 17.47
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.4,
+            "p95_latency_ms": 3.22,
+            "p99_latency_ms": 4.03
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.74,
+            "p95_latency_ms": 2.62,
+            "p99_latency_ms": 3.22
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.68,
+            "p95_latency_ms": 2.19,
+            "p99_latency_ms": 2.65
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 2670.26,
+        "delta_cfs_periods": 424,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "FAIL"
+    },
+    {
+      "architecture": "centralized",
+      "trial_id": 6,
+      "timestamp_iso": "2026-11-04T15:35:13Z",
+      "controller_pod": "ddos-defender-central-5d9b75457f-c99zv",
+      "baseline_resource_version": "2912977",
+      "mitigated_resource_version": "2913093",
+      "mitigation_fencing_token": 329,
+      "recovery_fencing_token": 330,
+      "latencies": {
+        "attack_to_mitigation_sec": 6.459,
+        "autonomic_recovery_duration_sec": 15.223,
+        "internal_detection_latency_sec": 6.421,
+        "internal_lease_acquisition_ms": 14.0,
+        "internal_occ_commit_ms": 24.0
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 4.44,
+        "overall_p95_latency_ms": 11.36,
+        "overall_p99_latency_ms": 12.57,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 12.12,
+            "p95_latency_ms": 12.46,
+            "p99_latency_ms": 50.59
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.21,
+            "p95_latency_ms": 3.17,
+            "p99_latency_ms": 4.02
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.68,
+            "p95_latency_ms": 2.28,
+            "p99_latency_ms": 4.38
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.73,
+            "p95_latency_ms": 2.53,
+            "p99_latency_ms": 4.2
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 1602.44,
+        "delta_cfs_periods": 251,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "PASS"
+    },
+    {
+      "architecture": "centralized",
+      "trial_id": 7,
+      "timestamp_iso": "2026-11-04T15:35:52Z",
+      "controller_pod": "ddos-defender-central-5d9b75457f-c99zv",
+      "baseline_resource_version": "2913115",
+      "mitigated_resource_version": "2913149",
+      "mitigation_fencing_token": 331,
+      "recovery_fencing_token": 332,
+      "latencies": {
+        "attack_to_mitigation_sec": 5.721,
+        "autonomic_recovery_duration_sec": 15.166,
+        "internal_detection_latency_sec": 5.694,
+        "internal_lease_acquisition_ms": 13.0,
+        "internal_occ_commit_ms": 14.0
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 3.9,
+        "overall_p95_latency_ms": 10.82,
+        "overall_p99_latency_ms": 11.95,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 9.93,
+            "p95_latency_ms": 11.9,
+            "p99_latency_ms": 12.21
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.22,
+            "p95_latency_ms": 3.27,
+            "p99_latency_ms": 4.06
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.77,
+            "p95_latency_ms": 2.86,
+            "p99_latency_ms": 3.49
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.7,
+            "p95_latency_ms": 2.54,
+            "p99_latency_ms": 3.32
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 1671.89,
+        "delta_cfs_periods": 261,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "PASS"
+    },
+    {
+      "architecture": "centralized",
+      "trial_id": 8,
+      "timestamp_iso": "2026-11-04T15:36:31Z",
+      "controller_pod": "ddos-defender-central-5d9b75457f-c99zv",
+      "baseline_resource_version": "2913172",
+      "mitigated_resource_version": "2913206",
+      "mitigation_fencing_token": 333,
+      "recovery_fencing_token": 334,
+      "latencies": {
+        "attack_to_mitigation_sec": 5.381,
+        "autonomic_recovery_duration_sec": 14.995,
+        "internal_detection_latency_sec": 5.35,
+        "internal_lease_acquisition_ms": 14.0,
+        "internal_occ_commit_ms": 17.0
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 4.54,
+        "overall_p95_latency_ms": 12.0,
+        "overall_p99_latency_ms": 15.06,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 12.44,
+            "p95_latency_ms": 14.69,
+            "p99_latency_ms": 51.05
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.44,
+            "p95_latency_ms": 3.37,
+            "p99_latency_ms": 4.83
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.64,
+            "p95_latency_ms": 2.05,
+            "p99_latency_ms": 2.54
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.66,
+            "p95_latency_ms": 2.27,
+            "p99_latency_ms": 3.24
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 1645.6,
+        "delta_cfs_periods": 256,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "PASS"
+    },
+    {
+      "architecture": "centralized",
+      "trial_id": 9,
+      "timestamp_iso": "2026-11-04T15:37:10Z",
+      "controller_pod": "ddos-defender-central-5d9b75457f-c99zv",
+      "baseline_resource_version": "2913230",
+      "mitigated_resource_version": "2913263",
+      "mitigation_fencing_token": 335,
+      "recovery_fencing_token": 336,
+      "latencies": {
+        "attack_to_mitigation_sec": 5.42,
+        "autonomic_recovery_duration_sec": 14.795,
+        "internal_detection_latency_sec": 5.37,
+        "internal_lease_acquisition_ms": 33.0,
+        "internal_occ_commit_ms": 17.0
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 4.18,
+        "overall_p95_latency_ms": 11.77,
+        "overall_p99_latency_ms": 14.22,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 11.06,
+            "p95_latency_ms": 14.07,
+            "p99_latency_ms": 19.75
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.29,
+            "p95_latency_ms": 3.34,
+            "p99_latency_ms": 3.56
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.65,
+            "p95_latency_ms": 2.06,
+            "p99_latency_ms": 3.22
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.71,
+            "p95_latency_ms": 2.25,
+            "p99_latency_ms": 4.4
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 1610.24,
+        "delta_cfs_periods": 254,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "PASS"
+    },
+    {
+      "architecture": "centralized",
+      "trial_id": 10,
+      "timestamp_iso": "2026-11-04T15:38:13Z",
+      "controller_pod": "ddos-defender-central-5d9b75457f-c99zv",
+      "baseline_resource_version": "2913285",
+      "mitigated_resource_version": null,
+      "mitigation_fencing_token": null,
+      "recovery_fencing_token": null,
+      "latencies": {
+        "attack_to_mitigation_sec": null,
+        "autonomic_recovery_duration_sec": null,
+        "internal_detection_latency_sec": null,
+        "internal_lease_acquisition_ms": null,
+        "internal_occ_commit_ms": null
+      },
+      "zero_cross_service_lease_contention": true,
+      "traffic_metrics": {
+        "total_requests": 280,
+        "total_errors": 0,
+        "throughput_rps": 8.0,
+        "overall_mean_latency_ms": 4.13,
+        "overall_p95_latency_ms": 11.92,
+        "overall_p99_latency_ms": 14.58,
+        "per_service": {
+          "productpage": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 10.81,
+            "p95_latency_ms": 14.36,
+            "p99_latency_ms": 15.29
+          },
+          "details": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 2.27,
+            "p95_latency_ms": 2.85,
+            "p99_latency_ms": 4.89
+          },
+          "reviews": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.73,
+            "p95_latency_ms": 2.77,
+            "p99_latency_ms": 3.54
+          },
+          "ratings": {
+            "requests": 70,
+            "success": 70,
+            "errors": 0,
+            "mean_latency_ms": 1.7,
+            "p95_latency_ms": 2.25,
+            "p99_latency_ms": 2.98
+          }
+        }
+      },
+      "cgroup_cpu_telemetry": {
+        "delta_cpu_usage_ms": 2655.68,
+        "delta_cfs_periods": 438,
+        "delta_throttled_periods": 0,
+        "delta_throttled_time_ms": 0.0,
+        "cgroup_throttling_rate_pct": 0.0
+      },
+      "verdict": "FAIL"
+    }
+  ]
+}
