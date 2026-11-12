@@ -30,4 +30,4 @@ Because GitHub enforces a 100 MB per-file limit, the following two large archive
    * The complete, uncondensed multi-cycle experimental archive containing all intermediate pilot runs, per-request client trace logs, raw Envoy sidecar access logs, Kubernetes `VirtualService`/`Lease` YAML snapshots, and historical rollout logs across Scenarios 1–5.
 
 ### Cloud Archive Access Link
-* **OneDrive Shared Folder (Available Upon Request):** `[Insert Your OneDrive Shared Folder Link Here — Click to Request Access]`
+* **OneDrive Shared Folder (Available Upon Request):** [Request Access to `Other Data` (`CICIDS2017_improved.zip` & `Backup raw experimental data for journal`) on OneDrive](https://ostatemailokstate-my.sharepoint.com/my?id=%2Fpersonal%2Fmd%5Fboktiar%5Fhossain%5Fokstate%5Fedu%2FDocuments%2FOther%20Data)

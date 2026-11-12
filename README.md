@@ -237,4 +237,6 @@ All primary experimental evidence packages, reconciled summary JSONs, SHA-256 ma
 * **[`data/FPR/`](data/FPR/):** Strict out-of-fold accuracy, duplicate-removed sensitivity, and unseen Monday/Friday benign false-positive rate validation.
 * **[`data/Scenarios/`](data/Scenarios/):** Complete benchmark summary JSONs, reports, and raw evidence `.zip` packages for **Scenario 1** through **Scenario 5**.
 
-Because GitHub enforces a 100 MB per-file limit, the upstream corrected dataset (**`CICIDS2017_improved.zip`**, `~335.5 MB`) and the uncondensed historical multi-cycle raw archive (**`Backup raw experimental data for journal`**, `~1.73 GB`) are hosted on **OneDrive**. See [`data/DATA_ARCHIVE.md`](data/DATA_ARCHIVE.md) for details and access instructions.
+Because GitHub enforces a 100 MB per-file limit, the upstream corrected dataset (**`CICIDS2017_improved.zip`**, `~335.5 MB`) and the uncondensed historical multi-cycle raw archive (**`Backup raw experimental data for journal`**, `~1.73 GB`) are hosted on **OneDrive**:
+* **OneDrive Archive (Available Upon Request):** [Click Here to Request Access (`CICIDS2017_improved.zip` & `Backup raw experimental data for journal`)](https://ostatemailokstate-my.sharepoint.com/my?id=%2Fpersonal%2Fmd%5Fboktiar%5Fhossain%5Fokstate%5Fedu%2FDocuments%2FOther%20Data)
+* See [`data/DATA_ARCHIVE.md`](data/DATA_ARCHIVE.md) for the complete archive contents and directory guide.
