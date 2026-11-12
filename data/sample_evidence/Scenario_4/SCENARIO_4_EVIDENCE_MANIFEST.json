@@ -1,0 +1,132 @@
+{
+  "scenario": "Scenario 4: Service-Specific Heterogeneous Model Performance and Latency Trade-Offs",
+  "description": "Evidence manifest for full 10-trial benchmark across 4 running Kubernetes defender pods and global baselines",
+  "total_files": 24,
+  "archive": {
+    "filename": "SCENARIO_4_BENCHMARK_RAW_EVIDENCE.zip",
+    "size_bytes": 1548195,
+    "sha256": "e18f51f986cb17e6aad88f2d5e9ece9fe3b362669f8542b34d0403db46e8efd1"
+  },
+  "files": [
+    {
+      "archive_path": "SCENARIO_4_BENCHMARK_RESULTS/raw/trial_1.json",
+      "size_bytes": 127521,
+      "sha256": "52ac9c2eddeb8ad33f3559b5cfa64725304f798b68c2a75b18f10af9b3724677"
+    },
+    {
+      "archive_path": "SCENARIO_4_BENCHMARK_RESULTS/raw/trial_2.json",
+      "size_bytes": 127608,
+      "sha256": "ae9e8de2fe69e7ba63732efb46065d539fb05259176dc859d5e5f9a04b057b8f"
+    },
+    {
+      "archive_path": "SCENARIO_4_BENCHMARK_RESULTS/raw/trial_3.json",
+      "size_bytes": 127608,
+      "sha256": "e9942c22353a604ca68b9c227f7dcc3f06115e33878a2a9a440bc7bea730aeff"
+    },
+    {
+      "archive_path": "SCENARIO_4_BENCHMARK_RESULTS/raw/trial_4.json",
+      "size_bytes": 127573,
+      "sha256": "20d58ca47280f391118395010bdf2f317271ca81c2ba9e8a84825480499e4776"
+    },
+    {
+      "archive_path": "SCENARIO_4_BENCHMARK_RESULTS/raw/trial_5.json",
+      "size_bytes": 127593,
+      "sha256": "ba6f595307cccff03e65bd97075d5531bd7fd49f31ad0f1eab6953ea0c962348"
+    },
+    {
+      "archive_path": "SCENARIO_4_BENCHMARK_RESULTS/raw/trial_6.json",
+      "size_bytes": 127516,
+      "sha256": "9a203f20a9688ec5e314c00a1a9bcc7eecdad93b4ded43c21d084f4a6694d62c"
+    },
+    {
+      "archive_path": "SCENARIO_4_BENCHMARK_RESULTS/raw/trial_7.json",
+      "size_bytes": 127570,
+      "sha256": "99f7845d5ebab945a0a9447e6a2824cdbc8f673142cd87865e81eb26fc651bff"
+    },
+    {
+      "archive_path": "SCENARIO_4_BENCHMARK_RESULTS/raw/trial_8.json",
+      "size_bytes": 127545,
+      "sha256": "a316ac15bc67c0733679b60e0e960162c66fef7817f98286f2f6553fd0c5a606"
+    },
+    {
+      "archive_path": "SCENARIO_4_BENCHMARK_RESULTS/raw/trial_9.json",
+      "size_bytes": 127608,
+      "sha256": "67b14ee823901177325a95419edc40770a231361604fa0470b37cd5565f095d5"
+    },
+    {
+      "archive_path": "SCENARIO_4_BENCHMARK_RESULTS/raw/trial_10.json",
+      "size_bytes": 127538,
+      "sha256": "dd9f22d8802c148e61b6506ef5997568cf9469a48c526937e22b9ec1fd50b56d"
+    },
+    {
+      "archive_path": "SCENARIO_4_PILOT_RESULTS/real_pod_verification_gate_results.json",
+      "size_bytes": 5091,
+      "sha256": "790481667975e70d6410031e85e35b0dd97c85095c59c4556fbcef8c8fd5ef9e"
+    },
+    {
+      "archive_path": "SCENARIO_4_BENCHMARK_SUMMARY.json",
+      "size_bytes": 21693,
+      "sha256": "d3449cbd3c6b75abe2aefbac7e71b0b619b0d7b2deb0d9114e4eb49bf226b4d9"
+    },
+    {
+      "archive_path": "run_scenario4_full_benchmark.py",
+      "size_bytes": 14246,
+      "sha256": "1199caf931d9d4b1a8a20e3304bee313a6059f1f0e092da05cabb93ba5ae9215"
+    },
+    {
+      "archive_path": "reconcile_scenario4_statistics.py",
+      "size_bytes": 21514,
+      "sha256": "2f08d15ca6efb0e8fcd87f8bd726b03743f96009543353d053700f2471da7427"
+    },
+    {
+      "archive_path": "models_global/eval_test_500.json",
+      "size_bytes": 287650,
+      "sha256": "843bccf9d7bac15cd519518f261ba40f2d0edb14d54a73956e585771b13189e2"
+    },
+    {
+      "archive_path": "models_global/global_models_summary.json",
+      "size_bytes": 2574,
+      "sha256": "974a78aabcc026cbbc43d8fafc3c585f551fb4e5c8d41621baba0a7630c8c7a6"
+    },
+    {
+      "archive_path": "models_global/global_random_forest_7feat.joblib",
+      "size_bytes": 1290170,
+      "sha256": "ba12ab6e936f1cf5c5273f40665a926e10c75263e12f6c036d7db579272120e2"
+    },
+    {
+      "archive_path": "models_global/global_hist_gradient_boosting_7feat.joblib",
+      "size_bytes": 325921,
+      "sha256": "073a238504d736bad9288ef1ebe5061f0cb19a0d2a15f1feec9f1ed54ef58911"
+    },
+    {
+      "archive_path": "models_global/global_random_forest_14feat.joblib",
+      "size_bytes": 1205856,
+      "sha256": "4dfa232d9f755128ce84b044e66b80fa6befc056032bfbd38663c70e91dced96"
+    },
+    {
+      "archive_path": "models_global/global_hist_gradient_boosting_14feat.joblib",
+      "size_bytes": 313815,
+      "sha256": "72a369e59d3fa6f5a1109c6a9b8c017a71b2cf00f759010b92166076b094a105"
+    },
+    {
+      "archive_path": "figures/fig_scenario4_inference_latencies.pdf",
+      "size_bytes": 20627,
+      "sha256": "6f48074dd5f88e3ce5651f7b50c0f1271151d10efad4c848563fbde0abd9e384"
+    },
+    {
+      "archive_path": "figures/fig_scenario4_inference_latencies.png",
+      "size_bytes": 182650,
+      "sha256": "ade1e1bafd64cb50e52077a310b3c06dde8fb8bd8e10550edac5d1e30403ff9c"
+    },
+    {
+      "archive_path": "figures/fig_scenario4_throughput_scaling.pdf",
+      "size_bytes": 27224,
+      "sha256": "ac975d56816075059f439831013fcb1be366a92d8ccce474c5908aba25936f32"
+    },
+    {
+      "archive_path": "figures/fig_scenario4_throughput_scaling.png",
+      "size_bytes": 201575,
+      "sha256": "73d0460c2d7bd7842564c3d8b6da04f620903c968891f4d18ef53b511398c5b3"
+    }
+  ]
+}
